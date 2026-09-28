@@ -1,6 +1,6 @@
-# Cómo trabajamos
+# Cómo trabajamos (Si lo hizo chat gpt xd)
 ## Un ciclo completo
-1. Elige una Issue; un responsable y una entrega de 1–3 días como máximo orientativo.
+1. una Issue; un responsable y una entrega de 1–3 días como máximo orientativo.
 2. En Desktop selecciona main → Fetch origin → Pull origin si hay cambios.
 3. Crea una rama desde main: por ejemplo m2/caudal-caso-demo.
 4. Edita los archivos de tu tarea. Incluye unidades, fuentes, supuestos y resultado.
