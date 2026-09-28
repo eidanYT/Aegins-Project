@@ -1,0 +1,11 @@
+# INACTIVO: ejemplo. Sustituir usuarios, comprobar permisos/plan y renombrar CODEOWNERS.
+# No usar estos nombres como destinatarios reales.
+# /modules/movimiento/ @USUARIO_M1
+# /modules/extrusion/ @USUARIO_M2
+# /modules/uv_termica/ @USUARIO_M3
+# /modules/integracion/ @USUARIO_M4
+# /modules/control_metrologia/ @USUARIO_M5
+# /system/ @USUARIO_SISTEMAS
+# /interfaces/ @USUARIO_SISTEMAS
+# /.github/ @USUARIO_ADMIN
+# CODEOWNERS no obliga por si solo a que aprueben ambos lados de cada interfaz.

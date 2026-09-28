@@ -1,0 +1,73 @@
+{
+  "id": "DEMO-001",
+  "status": "EJEMPLO_NO_APROBADO",
+  "purpose": "Sensibilidad nominal v-Q-UV; no control de hardware ni predicción de curado",
+  "platform": null,
+  "environment_pressure_Pa": null,
+  "parameters": {
+    "strand_diameter": {
+      "value": 0.0012,
+      "unit": "m",
+      "source": "supuesto didactico",
+      "status": "EJEMPLO"
+    },
+    "path_speed": {
+      "value": 0.005,
+      "unit": "m/s",
+      "source": "supuesto didactico",
+      "status": "EJEMPLO"
+    },
+    "uv_zone_length": {
+      "value": 0.002,
+      "unit": "m",
+      "source": "supuesto didactico",
+      "status": "EJEMPLO"
+    },
+    "irradiance": {
+      "value": 2500,
+      "unit": "W/m^2",
+      "source": "supuesto didactico",
+      "status": "EJEMPLO"
+    },
+    "timing_offset": {
+      "value": 0.05,
+      "unit": "s",
+      "source": "sensibilidad ilustrativa",
+      "status": "EJEMPLO"
+    }
+  },
+  "geometry": {
+    "frame": "pieza_local",
+    "unit": "m",
+    "points": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0.02
+      ],
+      [
+        0.02,
+        0,
+        0.04
+      ],
+      [
+        0.02,
+        0.02,
+        0.04
+      ]
+    ],
+    "corner_blending": "TBD antes de movimiento continuo",
+    "transform_to_robot_base": "TBD"
+  },
+  "notes": [
+    "La geometria no demuestra alcanzabilidad",
+    "Modelo estacionario ideal; no reologia ni contraccion",
+    "E no determina por si sola conversion",
+    "Caudal y dosis derivados, no duplicados como entradas"
+  ]
+}
