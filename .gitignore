@@ -1,0 +1,12 @@
+# Temporales del sistema, editor y Python
+Thumbs.db
+.DS_Store
+~$*
+*.tmp
+*.bak
+__pycache__/
+.venv/
+# Configuración local
+.env
+.env.*
+!.env.example
