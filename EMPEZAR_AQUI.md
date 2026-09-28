@@ -1,4 +1,4 @@
-# Preparar el repositorio y al equipo (Si fue hecho por chatgpt)
+# Preparar el repositorio y al equipo 
 
 ## 6.  revisiones
 Regla de trabajo: ningún cambio técnico importante se integra sin revisión de otra persona.
