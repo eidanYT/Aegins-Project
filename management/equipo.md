@@ -4,7 +4,7 @@ Completar nombres, usuarios reales y disponibilidad en la primera reunión.
 | Rol | Persona | Usuario GitHub | Dedicación semanal acordada | Suplente |
 |---|---|---|---|---|
 | M1 Movimiento | TBD | TBD | TBD | TBD |
-| M2 Material/extrusión | TBD | TBD | TBD | TBD |
+| M2 Material/extrusión | Gabriel Hurtado | TBD | TBD | TBD |
 | M3 UV/térmica | TBD | TBD | TBD | TBD |
 | M4 Integración | TBD | TBD | TBD | TBD |
 | M5 Control/metrología | Eidan, propuesta según su área | TBD | TBD | TBD |
