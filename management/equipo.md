@@ -6,7 +6,7 @@ Completar nombres, usuarios reales y disponibilidad en la primera reunión.
 | M1 Movimiento | TBD | TBD | TBD | TBD |
 | M2 Material/extrusión | Gabriel Hurtado | TBD | TBD | TBD |
 | M3 UV/térmica | TBD | TBD | TBD | TBD |
-| M4 Integración | TBD | TBD | TBD | TBD |
+| M4 Integración | Shelton Yauri | TBD | TBD | TBD |
 | M5 Control/metrología | Eidan, propuesta según su área | TBD | TBD | TBD |
 | Coordinación de sistemas | TBD | TBD | TBD | TBD |
 
