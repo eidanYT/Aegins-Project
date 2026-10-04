@@ -9,10 +9,5 @@
 | [M5-Eidan — Control y metrología](../modules/control_metrologia_Eidan/README.md) | Eidan | eidanYT |
 | Coordinación de sistemas | Por asignar | Por completar |
 
-Completar los usuarios reales para poder solicitar revisión o mencionar a cada persona con `@usuario`. Escribir un nombre en un documento no le envía una notificación.
-
-Mientras se completa un usuario, registra en el PR el nombre y la pregunta, y comparte su enlace por el canal habitual del equipo. Para M3, pide en la misma conversación que el equipo designe a quien revisará ese punto. No se atribuye conformidad a un módulo sin revisor.
-
-La coordinación es una función transversal: puede asumirla alguien del equipo. Comprueba coherencia entre módulos y registra decisiones; no sustituye la revisión técnica de cada área. Si una persona cubre ambos lados de una interfaz, incluir una revisión independiente.
 
 [Volver al inicio](../README.md) · [Cómo coordinar revisiones](colaboracion.md)
