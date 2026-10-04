@@ -12,7 +12,7 @@ Hipótesis de trabajo: esa coordinación puede mejorar continuidad y geometría 
 Resultado válido: confirmar, limitar o rechazar la hipótesis con incertidumbre explícita.
 No imponer como requisito “demostrar una mejora” antes de obtener evidencia.
 
-## Qué medir
+## Qué medir (pendiente de revision, tomenlo como propuesta|ejemplo)
 | Métrica | Definición propuesta | Cómo obtenerla | Limitación |
 |---|---|---|---|
 | Error geométrico | RMS de distancias del centro del cordón a la trayectoria nominal, con registro definido | Reconstrucción óptica/calibración; inicialmente geometría sintética | Error de TCP no equivale a error del material |
