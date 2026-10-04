@@ -22,6 +22,3 @@ Cada fila se convierte manualmente en una Issue usando la plantilla. Bxx es un I
 | B16 | 11–16/10 | Todos | Ensayo de exposición | B15 | Respuestas y control de cambios |
 | B17 | 17/10 | Todos | SRR y registro de acciones | B16 | Comentarios con responsables/fechas |
 
-Primeras 48 horas: B01–B04, roles y práctica. Cada persona debe terminar una entrega pequeña antes de abrir varias nuevas.
-Hasta PDR: cerrar acciones SRR, madurar CAD e interfaces, reducir TBD y mejorar modelos.
-No tratar la final del programa como un nuevo MDR salvo indicación de organizadores.
