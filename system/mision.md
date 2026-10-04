@@ -5,7 +5,7 @@ Confirmado por el usuario: el programa pide un payload para satélite o estació
 La plataforma, ambiente interno, operación y recursos están TBD. No se declara cumplimiento de requisitos de la ISS.
 Entrega del concurso: concepto, requisitos, modelos y CAD; pruebas físicas son un plan futuro.
 
-## Pregunta científica propuesta
+## Pregunta científica propuesta (Esto puede cambiar)
 ¿Cómo cambia el error geométrico de una estructura no coplanar al orientar la boquilla con la trayectoria y coordinar caudal/UV, comparado con orientación fija, bajo un ambiente de microgravedad definido?
 
 Hipótesis de trabajo: esa coordinación puede mejorar continuidad y geometría para ciertas trayectorias.
