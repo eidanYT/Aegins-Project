@@ -3,7 +3,7 @@ Completar nombres, usuarios reales y disponibilidad en la primera reunión.
 
 | Rol | Persona | Suplente |
 |---|---|---|
-| M1 Movimiento | TBD |TBD |
+| M1 Movimiento | NICOMANUQP |TBD |
 | M2 Material/extrusión | Gabriel Hurtado | | TBD |
 | M3 UV/térmica | TBD | TBD |
 | M4 Integración | Shelton Yauri | TBD |
