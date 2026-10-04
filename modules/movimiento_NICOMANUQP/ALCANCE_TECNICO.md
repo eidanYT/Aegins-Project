@@ -1,5 +1,5 @@
 # M1 — Movimiento
-Responsable y revisor: completar en management/equipo.md.
+Responsable: Responsable por asignar. Revisión según los módulos afectados; consultar management/equipo.md.
 Estado: borrador para organizar la investigación. Candidatos no seleccionados ni calificados para vuelo.
 
 ## Qué medir y relación con la misión
@@ -27,8 +27,11 @@ Distinguir lo que se verificará durante SRR/PDR de las pruebas futuras que exig
 
 ## Información faltante
 Modelo CAD/kinemático del brazo, datos de carga y plataforma; recorrido realista de mangueras.
-Crear Issues acotadas con responsable y fecha. No esperar a conocer todo para producir un primer modelo con incertidumbre.
+Registrar preguntas concretas en Issues enlazadas a la propuesta. No esperar a conocer todo para producir un primer modelo con incertidumbre.
 
 ## Primera entrega
 Una tabla de dos arquitecturas, trayectoria representativa con límites, envolvente y lista de restricciones. No basta un video bonito.
 Entregar como PR con vínculos a requisitos, interfaces y evidencia.
+
+
+[Volver al Get started](README.md) · [Propuesta de trabajo](propuesta.md)

@@ -1,22 +1,35 @@
 ---
 name: Tarea técnica
-about: Entrega acotada con responsable y aceptación
+about: Proponer un resultado concreto y registrar su revisión
 title: "[M_] "
 labels: ""
 assignees: ""
 ---
 ## Objetivo
-Qué decisión o resultado habilita.
-## Responsable y fecha
-Persona: ___. Fecha: ___.
+
+Qué pregunta resolverás y qué propones entregar.
+
+## Archivos de trabajo
+
+Ruta a propuesta.md, cálculos, fichas o modelo. Enlazar rama/PR cuando existan.
+
 ## Requisitos e interfaces
-IDs: ___.
-## Entrega
-Archivos/modelo/ficha: ___.
+
+IDs y apartados afectados.
+
+## Preguntas para otros miembros
+
+| Punto | Propuesta / supuesto | Quién debe revisar | Pregunta concreta |
+|---|---|---|---|
+| Completar | TBR: completar | Nombre y módulo | Completar |
+
 ## Criterios de aceptación
-- [ ] Tiene unidades, fuentes y supuestos.
-- [ ] Resuelve la pregunta definida.
-- [ ] Interfaces afectadas revisadas.
-- [ ] Evidencia enlazada.
-## Dependencias
-Issues o datos bloqueantes: ___.
+
+- [ ] Responde la pregunta definida.
+- [ ] Incluye fuentes, unidades, supuestos y límites.
+- [ ] Evidencia o método de comprobación enlazado.
+- [ ] Puntos compartidos revisados por los afectados.
+
+## Próximo avance
+
+Qué puedes preparar ahora y qué datos siguen TBD. No necesitas esperar una fecha del plan para empezar.

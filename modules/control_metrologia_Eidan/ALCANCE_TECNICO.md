@@ -1,5 +1,5 @@
 # M5 — Control y metrología
-Responsable y revisor: completar en management/equipo.md.
+Responsable: Eidan. Revisión según los módulos afectados; consultar management/equipo.md.
 Estado: borrador para organizar la investigación. Candidatos no seleccionados ni calificados para vuelo.
 
 ## Qué medir y relación con la misión
@@ -27,8 +27,11 @@ Distinguir lo que se verificará durante SRR/PDR de las pruebas futuras que exig
 
 ## Información faltante
 Errores científicamente relevantes, protocolos del hardware candidato, ruido/cadencia de sensores y condiciones ambientales.
-Crear Issues acotadas con responsable y fecha. No esperar a conocer todo para producir un primer modelo con incertidumbre.
+Registrar preguntas concretas en Issues enlazadas a la propuesta. No esperar a conocer todo para producir un primer modelo con incertidumbre.
 
 ## Primera entrega
 Diagrama de estados, diccionario de señales, presupuesto de medida y ejemplo de log. No confundir resolución de píxel con exactitud.
 Entregar como PR con vínculos a requisitos, interfaces y evidencia.
+
+
+[Volver al Get started](README.md) · [Propuesta de trabajo](propuesta.md)

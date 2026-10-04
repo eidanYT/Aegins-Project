@@ -1,5 +1,5 @@
 # M2 — Material y extrusión
-Responsable y revisor: completar en management/equipo.md.
+Responsable: Gabriel Hurtado. Revisión según los módulos afectados; consultar management/equipo.md.
 Estado: borrador para organizar la investigación. Candidatos no seleccionados ni calificados para vuelo.
 
 ## Qué medir y relación con la misión
@@ -27,8 +27,11 @@ Distinguir lo que se verificará durante SRR/PDR de las pruebas futuras que exig
 
 ## Información faltante
 Fichas TDS/SDS, reología, cinética compartida con M3, elasticidad del circuito, precio/cotización y disponibilidad.
-Crear Issues acotadas con responsable y fecha. No esperar a conocer todo para producir un primer modelo con incertidumbre.
+Registrar preguntas concretas en Issues enlazadas a la propuesta. No esperar a conocer todo para producir un primer modelo con incertidumbre.
 
 ## Primera entrega
 Comparación de alimentación y dos materiales, cálculo nominal con sensibilidad y definición de qué significa Q comandado frente a Q entregado.
 Entregar como PR con vínculos a requisitos, interfaces y evidencia.
+
+
+[Volver al Get started](README.md) · [Propuesta de trabajo](propuesta.md)

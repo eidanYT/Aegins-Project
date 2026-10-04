@@ -21,3 +21,9 @@ Esos enlaces pueden requerir permisos de Drive; compartir el repositorio no comp
 Los modelos/valores del caso DEMO-001 son elaboración didáctica propia y no resultados publicados.
 ## Añadir una fuente
 ID; autor/fabricante; título/modelo; versión/fecha; URL/DOI; dato usado y unidades; condiciones; limitaciones; responsable que verificó.
+
+## GitHub: instrucciones prácticas
+
+- [Crear archivos y subcarpetas desde el navegador](https://docs.github.com/en/repositories/working-with-files/managing-files/creating-new-files).
+- [Crear una rama, editar y abrir un PR](https://docs.github.com/en/pull-requests/get-started/pull-request-quickstart).
+- [Crear y continuar un pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request).

@@ -1,15 +1,15 @@
-# M3 — UV y térmica
+# M2-Gabriel — Material y extrusión
 
-**Responsable: Responsable por asignar.** [Volver al inicio](../../README.md) · [Contactos](../../management/equipo.md)
+**Responsable: Gabriel Hurtado.** [Volver al inicio](../../README.md) · [Contactos](../../management/equipo.md)
 
-Propón cómo iluminar el material para curarlo y cómo gestionar la temperatura del proceso y del equipo.
+Gabriel, propón qué material usar y cómo alimentar la boquilla con caudal y presión compatibles con la impresión.
 
 ## Get started: empieza ahora
 
-**Primera entrega:** Una propuesta resina–fuente UV con alternativa, distribución de iluminación, balance térmico inicial y puntos por revisar. No necesitas esperar una fecha ni la respuesta de todos para preparar un borrador.
+**Primera entrega:** Una comparación de dos materiales y dos formas de alimentación, con un cálculo nominal y preguntas sobre movimiento, UV y control. No necesitas esperar una fecha ni la respuesta de todos para preparar un borrador.
 
-1. En GitHub, abre el selector de rama `main`, escribe `m3/propuesta-uv` y selecciona **Create branch … from main**.
-2. En esa rama, entra en `modules/uv_termica` y abre [propuesta.md](propuesta.md). Ya está creado.
+1. En GitHub, abre el selector de rama `main`, escribe `m2/propuesta-extrusion` y selecciona **Create branch … from main**.
+2. En esa rama, entra en `modules/extrusion_Gabriel` y abre [propuesta.md](propuesta.md). Ya está creado.
 3. Pulsa el lápiz (**Edit this file**), rellena la estructura siguiendo los pasos de abajo y usa **Preview**.
 4. Guarda con **Commit changes** en tu rama y un mensaje que explique lo que avanzaste. Para continuar, vuelve a abrir esa misma rama.
 
@@ -17,31 +17,31 @@ La carpeta pertenece al mismo repositorio; no crees otro repositorio para tu mó
 
 ## Desarrolla tu propuesta
 
-### 1. Material y caso
+### 1. Caso de impresión
 
-Abre [misión](../../system/mision.md), [propuesta de Gabriel](../extrusion_Gabriel/propuesta.md) e [ICD-001](../../interfaces/ICD-001.md). Si la resina o velocidad no están acordadas, trabaja con supuestos TBR y registra qué debe confirmarse.
+Abre [misión](../../system/mision.md), [caso demostrativo](../../config/caso_demo.json) e [ICD-001](../../interfaces/ICD-001.md). Usa diámetro y velocidad como supuestos identificados, sin tratarlos como valores aprobados.
 
 Escríbelo en el apartado **Geometría y comparación** de tu propuesta.
 
-### 2. Fuente y óptica
+### 2. Material y alimentación
 
-Compara dos opciones de iluminación compatibles con la evidencia del material. Documenta espectro, irradiancia a distancia definida, cobertura y sombras. Separa potencia eléctrica y óptica.
+Compara dos materiales con sus fichas técnicas/de seguridad, y dos arquitecturas de alimentación. Indica viscosidad, compatibilidad, volumen, presión y datos que faltan; una opción sin ficha sigue siendo concepto.
 
 Escríbelo en el apartado **Alternativas** de tu propuesta.
 
-### 3. Exposición y calor
+### 3. Caudal y respuesta
 
-Estima la exposición a lo largo de la trayectoria y el balance térmico. Incluye geometría, tiempo, fuentes y límites; una dosis calculada no demuestra curado suficiente.
+Documenta el cálculo de caudal nominal del caso, unidades, supuestos y límites. Explica qué diferencia hay entre caudal comandado, estimado y entregado; identifica presión, retrasos y burbujas.
 
 Escríbelo en el apartado **Modelo y verificación** de tu propuesta.
 
-### 4. Integración
+### 4. Montaje y fallos
 
-Propón disposición de óptica, disipación y sensores. Identifica riesgo de curar dentro de la boquilla y cómo afecta la luz a cámaras y recinto.
+Propón depósito, boquilla, tubos y conexiones. Describe qué revisar ante atasco, fuga, pérdida de energía o presión residual.
 
 Escríbelo en el apartado **Interfaces y revisión** de tu propuesta.
 
-Requisitos que debes consultar en [el registro](../../system/requisitos.md): **UV-001 y THM-001**. Los valores del caso demostrativo son ejemplos, no límites aprobados.
+Requisitos que debes consultar en [el registro](../../system/requisitos.md): **EXT-001 y EXT-002**. Los valores del caso demostrativo son ejemplos, no límites aprobados.
 
 ## Si necesitas más archivos
 
@@ -53,7 +53,7 @@ Mantén la primera entrega en `propuesta.md`. Para ampliarla, desde **esta carpe
 
 Escribir `candidatos/CAND-01.md` crea la subcarpeta junto con el archivo. No hace falta crear carpetas vacías. Guarda con **Commit changes** y enlaza cada archivo desde tu propuesta.
 
-Si lo necesitas, crea `analisis/exposicion_termica.md`; conserva en `propuesta.md` el enlace y las conclusiones.
+Si hace falta, crea `analisis/caudal.md`. Las fichas de candidatos se crean en `candidatos/` como se explica abajo.
 
 ## Con quién revisar las interfaces
 
@@ -61,10 +61,10 @@ Una interfaz (ICD) es el acuerdo sobre lo que tu módulo envía, recibe o necesi
 
 | Habla con | Para resolver | Documento compartido |
 |---|---|---|
-| Gabriel — M2 | Material, respuesta al UV, temperatura admisible y boquilla | [ICD-001](../../interfaces/ICD-001.md) / [ICD-002](../../interfaces/ICD-002.md) / [ICD-005](../../interfaces/ICD-005.md) |
-| M1 — NICOMANUQP | Velocidad, orientación y sombras durante la trayectoria | [ICD-001](../../interfaces/ICD-001.md) / [ICD-002](../../interfaces/ICD-002.md) |
-| Shelton — M4 | Montaje óptico, ruta del calor, protección y recursos | [ICD-002](../../interfaces/ICD-002.md) / [ICD-004](../../interfaces/ICD-004.md) / [ICD-005](../../interfaces/ICD-005.md) |
-| Eidan — M5 | Control UV, temperatura, temporización e interferencia con cámaras | [ICD-001](../../interfaces/ICD-001.md) / [ICD-003](../../interfaces/ICD-003.md) / [ICD-005](../../interfaces/ICD-005.md) |
+| M1 — NICOMANUQP | Velocidad, diámetro propuesto, carga del cabezal y recorrido de tubos | [ICD-001](../../interfaces/ICD-001.md) / [ICD-002](../../interfaces/ICD-002.md) |
+| M3 — por asignar | Compatibilidad de resina con espectro UV y ventana de curado | [ICD-001](../../interfaces/ICD-001.md) / [ICD-002](../../interfaces/ICD-002.md) |
+| Shelton — M4 | Montaje del depósito, retención de líquidos, acceso y residuos | [ICD-002](../../interfaces/ICD-002.md) / [ICD-005](../../interfaces/ICD-005.md) |
+| Eidan — M5 | Consigna de caudal, lectura de presión, retrasos y reacción ante fallo | [ICD-001](../../interfaces/ICD-001.md) / [ICD-003](../../interfaces/ICD-003.md) / [ICD-005](../../interfaces/ICD-005.md) |
 
 Cuando M3 no tenga responsable, registra la pregunta y pide al equipo que designe revisor. Los usuarios para solicitar revisión están en [equipo](../../management/equipo.md).
 
@@ -76,23 +76,23 @@ Cuando M3 no tenga responsable, registra la pregunta y pide al equipo que design
 4. Abre o enlaza una Issue de **Cambio de interfaz** y comparte tu PR con esas personas. Registra la respuesta en GitHub y enlázala desde la tabla.
 5. Mientras responden, continúa con tus cálculos o alternativas usando supuestos visibles. Incorpora correcciones en la misma rama; integra el acuerdo cuando los afectados hayan dejado conformidad y se haya revisado el conjunto.
 
-**Ejemplo para tu módulo:** Si propones una fuente UV, marca qué respuesta de la resina debe confirmar Gabriel, qué espacio/disipación debe revisar Shelton y qué tiempos o interferencias de cámara debe revisar Eidan.
+**Ejemplo para tu módulo:** Puedes proponer material y caudal completos usando una ventana de curado TBR. Marca “M3 debe confirmar compatibilidad material–UV” y “Eidan debe revisar consigna y retardo”; continúa comparando alternativas mientras recibes respuesta.
 
 Puedes proponer un modelo completo, incluso con partes de otros módulos. Señala quién debe verificar o confirmar cada parte; no la presentes como aceptada por el equipo. La [guía de colaboración](../../management/colaboracion.md) incluye la tabla y explica cómo registrar conformidades.
 
 ## Comparte y cierra tu primera entrega
 
-1. Ve a **Pull requests → New pull request**: **base: main**, **compare: m3/propuesta-uv**.
+1. Ve a **Pull requests → New pull request**: **base: main**, **compare: m2/propuesta-extrusion**.
 2. Escribe un título que describa la entrega y enlaza tu propuesta, requisitos e ICD modificados.
 3. Incluye los puntos pendientes y solicita revisión a los contactos de la tabla. Si aún está en desarrollo, abre un PR en borrador; al estar listo, márcalo para revisión.
 4. Responde observaciones, guarda correcciones en tu rama y registra la conformidad de los afectados. Otro integrante revisa los cambios técnicos importantes antes de integrarlos.
 
 Tu primera entrega está preparada para revisión cuando:
 
-- [ ] La propuesta responde: **¿La combinación material–fuente cubre el caso supuesto y qué límites ópticos o térmicos siguen pendientes?**
+- [ ] La propuesta responde: **¿Qué alimentación y material cubren el caso propuesto, y qué datos UV, de presión y retardo requieren confirmación?**
 - [ ] Las alternativas, fuentes, unidades, supuestos y límites están claros.
 - [ ] Los puntos que requieren revisión tienen pregunta, contacto y enlace al ICD.
-- [ ] Hay un método o resultado documentado: Mapa aproximado de iluminación y balance térmico justificados. Indica qué requerirá caracterización futura del material.
+- [ ] Hay un método o resultado documentado: Cálculo de caudal y modelo de presión/respuesta con fuentes y límites. Una orden al pistón no prueba el caudal real en la boquilla.
 - [ ] El PR permite encontrar los archivos y distinguir trabajo propuesto de acuerdos.
 
 [Detalle técnico del módulo](ALCANCE_TECNICO.md) · [Guía de GitHub](../../CONTRIBUTING.md) · [Hitos](../../management/plan.md)

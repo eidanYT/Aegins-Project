@@ -1,5 +1,5 @@
 # M4 — Recinto e integración
-Responsable y revisor: completar en management/equipo.md.
+Responsable: Shelton Yauri. Revisión según los módulos afectados; consultar management/equipo.md.
 Estado: borrador para organizar la investigación. Candidatos no seleccionados ni calificados para vuelo.
 
 ## Qué medir y relación con la misión
@@ -27,8 +27,11 @@ Distinguir lo que se verificará durante SRR/PDR de las pruebas futuras que exig
 
 ## Información faltante
 Plataforma de referencia y recursos asignados, ambiente de lanzamiento/operación y concepto de recuperación de muestras.
-Crear Issues acotadas con responsable y fecha. No esperar a conocer todo para producir un primer modelo con incertidumbre.
+Registrar preguntas concretas en Issues enlazadas a la propuesta. No esperar a conocer todo para producir un primer modelo con incertidumbre.
 
 ## Primera entrega
 Cerrar D-001 con el equipo, CAD de envolvente, presupuesto integrado y riesgos con controles y evidencias pendientes.
 Entregar como PR con vínculos a requisitos, interfaces y evidencia.
+
+
+[Volver al Get started](README.md) · [Propuesta de trabajo](propuesta.md)
