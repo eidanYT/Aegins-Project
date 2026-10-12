@@ -53,3 +53,13 @@ Incluir energía perdida, atasco, material desprendido y sensor no válido.
 Ver config/caso_demo.json. Geometría, velocidad y diámetro son EJEMPLOS didácticos.
 La geometría es una polilínea no coplanar en un marco local; sus esquinas requieren transiciones antes de planificar movimiento continuo.
 El transformado entre marco de pieza y robot, el soporte y la factibilidad están TBD.
+
+## Pieza de demostración propuesta por Eidan
+
+Actualización de contexto del 12 de octubre de 2026 — **TBR, pendiente de revisión del equipo**.
+
+Eidan propone imprimir una estructura formada por **dos pirámides unidas por su base**, con **cada arista de 5 cm (0,05 m)**. La denominación geométrica general es bipirámide; no es un prisma. El polígono de la base común y el número de aristas no se han especificado: no se asume automáticamente un octaedro de base cuadrada.
+
+Quedan por definir: base común, geometría final y tolerancias, si se imprimen solo aristas o también caras, diámetro del cordón, anclaje, trayectoria y orden de impresión, transiciones, orientación y viabilidad cinemática. Esta propuesta no cambia todavía config/caso_demo.json, que sigue siendo un ejemplo didáctico.
+
+Se mantienen **estación espacial y satélite como plataformas alternativas**, sin selección D-001. Eidan propone que la impresora opere dentro de una cámara y plantea una salida de gases cuya conexión aún desconoce. El [borrador de contención para el SRR](../reviews/SRR/contencion_gases_borrador.md) recoge la observación del jurado, alternativas y verificaciones pendientes.
