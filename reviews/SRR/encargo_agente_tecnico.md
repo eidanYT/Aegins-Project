@@ -79,3 +79,7 @@ Los responsables humanos registrados son NICOMANUQP para M1, Gabriel Hurtado par
 Lee el plan reviews/SRR/plan_trabajo_hoy.md si está disponible. Primera síntesis técnica después de unos 80 minutos de trabajo efectivo; después corrige con datos de integración. Prioriza propuestas coherentes y evidencia mínima sustentada sobre amplitud de investigación. Las decisiones sin respuesta permanecen abiertas.
 
 En tu respuesta final a Eidan indica qué publicaste, enlace al PR, resultados establecidos, limitaciones y preguntas que desbloquean la integración. Deja comentarios breves en tu propia tarea al completar una fase. Este encargo no te autoriza a enviar mensajes a otras conversaciones.
+
+## Matriz de seguimiento disponible en GitHub
+
+Consulta reviews/SRR/respuesta_expertos.md en la propuesta SRR si está disponible. Registra las opiniones de los dos expertos del MDR / Review 1: EXP-01 pide justificar el brazo frente a una alternativa más simple; EXP-02 exige evaluar gases/polvo; EXP-03 amplía seguridad e impacto en diseño/costes. En tu síntesis aporta explícitamente la respuesta de M1 a EXP-01 y los datos de M2/M3 para EXP-02/03. No marques estas observaciones resueltas solo por redactar el texto.

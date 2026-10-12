@@ -33,3 +33,7 @@ Revisar accesibilidad del enlace entregado; un repositorio privado no concede ac
 [Plan de trabajo](plan_trabajo_hoy.md) · [Encargo para el otro agente](encargo_agente_tecnico.md)
 
 El reparto es propuesto. Eidan debe entregar el encargo al otro agente; su envío y sus aportes no están confirmados.
+
+## Observaciones de los expertos
+
+[Seguimiento de las dos evaluaciones del MDR / Review 1](respuesta_expertos.md): comparación del brazo, emisiones de gases/polvo y ampliación de seguridad con impacto en diseño y costes. Las respuestas técnicas siguen abiertas; documentar una acción no equivale a resolverla.

@@ -80,3 +80,7 @@ Para el guion: 1 min problema/experimento; 2 min observaciones y respuesta; 3 mi
 ## Fuentes de planificación
 
 [Plantilla oficial del informe SRR](https://docs.google.com/document/d/1VEZzT6vw134w6CKLxHCs_u7poRDYHhSM/edit), [lineamientos de Review 2](https://docs.google.com/document/d/12ZDWNiUHeyCW8tckpVIAnYeAPqpNIW_J/edit), evaluación de AEGINS de Review 1 consultada en Drive, y documentos de este repositorio. Los documentos del programa determinan el alcance de entrega; el índice previo del repo no sustituye la plantilla oficial.
+
+## Seguimiento de la evaluación de expertos
+
+La [matriz de respuesta a Review 1](respuesta_expertos.md) desarrolla las dos opiniones del documento Evaluation Grid localizado en AEGINS. Prioriza comparación del mecanismo, inventario de emisiones y controles de seguridad con su impacto en costes. Su fuente es MDR / Review 1, no un SRR ya evaluado. Integrar esta matriz en el informe y en el guion sin presentar trabajo pendiente como avance verificado.
