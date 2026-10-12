@@ -1,0 +1,9 @@
+# Identidades comprobadas: eidanYT es propietario; nicomanuQP tiene permiso write.
+# Cualquiera de los propietarios de una línea puede satisfacer code-owner review.
+# GitHub requiere una identidad distinta del autor para aprobar su PR.
+* @eidanYT @nicomanuQP
+/AGENTS.md @eidanYT @nicomanuQP
+/.github/ @eidanYT @nicomanuQP
+/management/agent_policy.json @eidanYT @nicomanuQP
+/tools/ @eidanYT @nicomanuQP
+/tests/ @eidanYT @nicomanuQP

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "profile": "tecnico",
+  "objective": "Sustituir por objetivo concreto",
+  "status": "borrador",
+  "completed": [
+    "Describir solo trabajo comprobado"
+  ],
+  "pending": [
+    {
+      "item": "Decisión o trabajo pendiente",
+      "owner": "Persona o función",
+      "due": "Por acordar"
+    }
+  ],
+  "sources": [
+    "Fuente concreta con versión/fecha o enlace"
+  ],
+  "next_action": "Siguiente acción concreta",
+  "reviewers": [
+    "Revisor propuesto, no aprobación"
+  ],
+  "estimates": [],
+  "verified_claims": []
+}
