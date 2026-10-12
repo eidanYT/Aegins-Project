@@ -84,3 +84,7 @@ Para el guion: 1 min problema/experimento; 2 min observaciones y respuesta; 3 mi
 ## Seguimiento de la evaluación de expertos
 
 La [matriz de respuesta a Review 1](respuesta_expertos.md) desarrolla las dos opiniones del documento Evaluation Grid localizado en AEGINS. Prioriza comparación del mecanismo, inventario de emisiones y controles de seguridad con su impacto en costes. Su fuente es MDR / Review 1, no un SRR ya evaluado. Integrar esta matriz en el informe y en el guion sin presentar trabajo pendiente como avance verificado.
+
+## Controles persistentes propuestos
+
+La [propuesta de reglas y controles](https://github.com/eidanYT/Aegins-Project/pull/2) añade AGENTS.md, ámbitos, registros de ejecución y CI. Su comprobación inicial en GitHub Actions pasó, pero todavía requiere revisión independiente e integración; la conexión actual no permite configurar protección de main. El prompt técnico incorpora el prefijo tecnico/ y recuperación de contexto. No se declara bloqueo administrativo activo.

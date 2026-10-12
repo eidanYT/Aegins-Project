@@ -83,3 +83,13 @@ En tu respuesta final a Eidan indica qué publicaste, enlace al PR, resultados e
 ## Matriz de seguimiento disponible en GitHub
 
 Consulta reviews/SRR/respuesta_expertos.md en la propuesta SRR si está disponible. Registra las opiniones de los dos expertos del MDR / Review 1: EXP-01 pide justificar el brazo frente a una alternativa más simple; EXP-02 exige evaluar gases/polvo; EXP-03 amplía seguridad e impacto en diseño/costes. En tu síntesis aporta explícitamente la respuesta de M1 a EXP-01 y los datos de M2/M3 para EXP-02/03. No marques estas observaciones resueltas solo por redactar el texto.
+
+## Reglas persistentes y registro de ejecución
+
+Eidan solicitó aplicar controles de agentes. La propuesta [Reglas y controles para coordinar agentes en Aegins](https://github.com/eidanYT/Aegins-Project/pull/2) contiene AGENTS.md, la política de ámbitos, registros y CI; **su integración y la activación administrativa de protección de main siguen pendientes**.
+
+Antes de iniciar o reanudar, comprueba si AGENTS.md y management/agent_policy.json ya están en main y lee su versión vigente. Si aún no se integraron, conserva el reparto de este encargo y lee la propuesta como borrador; no afirmes que la protección esté activa.
+
+Usa una rama con prefijo tecnico/ para este encargo. Además de los archivos técnicos asignados, crea o actualiza únicamente tu propio registro management/agent_runs/<rama-con-barras-reemplazadas-por-guiones-bajos>.json desde templates/agent_run.json cuando la plantilla esté disponible. Conserva objetivo, avances comprobados, fuentes, pendientes con dueño/fecha, siguiente acción y revisores. Incluye estimaciones nuevas con unidad/fuente/estado y evidencias declaradas verificadas con método/alcance/archivo.
+
+No edites AGENTS.md, workflows, política o validador para hacer pasar una comprobación, ni uses otro perfil para ampliar este encargo. Recupera el contexto del registro, los archivos y el PR al reanudar. La CI no sustituye revisión científica ni aprobación de interfaces.

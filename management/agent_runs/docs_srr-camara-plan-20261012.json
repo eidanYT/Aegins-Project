@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "profile": "integracion",
+  "objective": "Documentar contexto de Eidan, cámara, plan SRR y seguimiento de expertos",
+  "status": "borrador",
+  "completed": [
+    "Borrador de cámara y pieza propuesta publicados en el PR SRR",
+    "Plan de hoy y encargo técnico publicados",
+    "Opiniones de ambos expertos MDR resumidas en matriz de seguimiento",
+    "Encargo actualizado para adoptar reglas persistentes cuando se integren"
+  ],
+  "pending": [
+    {
+      "item": "Elección de plataforma, base de pieza y material",
+      "owner": "Eidan y equipo técnico",
+      "due": "Por acordar"
+    },
+    {
+      "item": "Completar propuestas M4/M5 e integrar aportes M1/M2/M3",
+      "owner": "Integrador y otro agente",
+      "due": "Durante la preparación del SRR"
+    },
+    {
+      "item": "Revisión independiente e integración de reglas; protección de main",
+      "owner": "Revisor independiente y administrador",
+      "due": "Por acordar"
+    }
+  ],
+  "sources": [
+    "Propuesta de Eidan del 12 de octubre de 2026",
+    "Lineamientos y plantilla oficiales de Review 2 consultados en Drive",
+    "Evaluation Grid de AEGINS de MDR / Review 1",
+    "Referencias NASA enlazadas en el borrador de contención"
+  ],
+  "next_action": "Retomar desde reglas vigentes y documentos reales; completar aportes técnicos y decisiones abiertas",
+  "reviewers": [
+    "nicomanuQP",
+    "Responsables de los módulos afectados"
+  ],
+  "estimates": [],
+  "verified_claims": []
+}
