@@ -29,3 +29,11 @@ Se pueden preparar borradores en paralelo. Cuando falte un dato de otro módulo,
 Marcar una tarea cuando exista una entrega revisada enlazada; esta lista no sustituye los documentos técnicos.
 
 [Volver al inicio](../README.md) · [Cómo proponer y revisar](colaboracion.md)
+
+## Actualización del 12 de octubre de 2026
+
+Eidan ha solicitado una prórroga; su aprobación sigue pendiente. Las fechas históricas de la tabla anterior no confirman una nueva agenda.
+
+El [plan de trabajo de hoy](../reviews/SRR/plan_trabajo_hoy.md) propone cuatro horas para un borrador integrado del SRR, con aportes de los cinco módulos y revisión del equipo. El [encargo del otro agente](../reviews/SRR/encargo_agente_tecnico.md) delimita M1/M2/M3 y evita edición simultánea de documentos comunes.
+
+La plantilla oficial consultada pide informe de hasta 30 páginas; los lineamientos fijan exposición de 10 minutos y preguntas de 15 minutos. Añadir al trabajo viabilidad económica/ambiental, mercado, costes de ciclo de vida, autonomía, respuesta a Review 1 y cronograma de desarrollo. Este plan no declara terminados análisis, ensayos ni entregables.
