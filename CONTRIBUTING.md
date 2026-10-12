@@ -78,3 +78,9 @@ Si usas GitHub Desktop: actualiza `main` con **Fetch origin / Pull origin**, cre
 - Conservar las versiones anteriores con su contexto, sin presentarlas como resultados vigentes.
 
 [Volver al inicio](README.md) · [Fuentes y documentación de GitHub](references/fuentes.md)
+
+## Trabajo con agentes
+
+Leer [AGENTS.md](AGENTS.md) y [controles de agentes](management/agent_guardrails.md) al iniciar o reanudar. Usar una rama con perfil permitido y mantener su registro de ejecución a partir de [la plantilla](templates/agent_run.json). Los ámbitos se comprueban contra la política de la base; no ampliar permisos dentro del mismo PR técnico.
+
+El control automatizado revisa ámbito, registros y enlaces. No acredita exactitud científica ni sustituye las conformidades de interfaces. Su obligatoriedad requiere que un administrador configure la protección de main según la guía.

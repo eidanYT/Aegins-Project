@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "profiles": {
+    "tecnico": {
+      "prefixes": [
+        "tecnico/"
+      ],
+      "allowed": [
+        "modules/movimiento_NICOMANUQP/",
+        "modules/extrusion_Gabriel/",
+        "modules/uv_termica/",
+        "models/srr_agente_tecnico/",
+        "reviews/SRR/aportes_agente_tecnico.md"
+      ]
+    },
+    "integracion": {
+      "prefixes": [
+        "integracion/",
+        "docs/srr-"
+      ],
+      "allowed": [
+        "modules/integracion_Shelton/",
+        "modules/control_metrologia_Eidan/",
+        "system/",
+        "interfaces/",
+        "management/plan.md",
+        "management/equipo.md",
+        "management/colaboracion.md",
+        "models/srr_integracion/",
+        "reviews/SRR/",
+        "cad/",
+        "evidence/",
+        "README.md",
+        "EMPEZAR_AQUI.md"
+      ]
+    },
+    "gobernanza": {
+      "prefixes": [
+        "gobernanza/"
+      ],
+      "allowed": [
+        "AGENTS.md",
+        ".github/",
+        "management/agent_policy.json",
+        "management/agent_guardrails.md",
+        "templates/agent_run.json",
+        "tools/check_agent_policy.py",
+        "tests/test_agent_policy.py",
+        "CONTRIBUTING.md"
+      ]
+    }
+  }
+}

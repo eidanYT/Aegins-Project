@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "profile": "gobernanza",
+  "objective": "Preparar reglas persistentes, ámbitos de agentes y comprobaciones para el SRR",
+  "status": "en_revision",
+  "completed": [
+    "Inspección de reglas existentes y contexto SRR",
+    "Permiso write de nicomanuQP confirmado mediante GitHub",
+    "Reglas, política, registro, CODEOWNERS y workflow redactados",
+    "Pruebas locales de ámbito, política base, registros, evidencias y enlaces superadas"
+  ],
+  "pending": [
+    {
+      "item": "Revisión independiente e integración de la propuesta",
+      "owner": "Eidan y nicomanuQP",
+      "due": "Por acordar"
+    },
+    {
+      "item": "Activar protección de main y comprobar bloqueo de un PR inválido",
+      "owner": "Administrador humano del repositorio",
+      "due": "Después de integrar y ejecutar el control"
+    },
+    {
+      "item": "Adaptar registros de los PR SRR y del otro agente",
+      "owner": "Agentes e integrador",
+      "due": "Al reanudar desde la nueva política"
+    }
+  ],
+  "sources": [
+    "Documentos vigentes de Aegins-Project",
+    "Documentación oficial OpenAI de AGENTS.md y GitHub de protección/CODEOWNERS/Actions; consultada 2026-10-12"
+  ],
+  "next_action": "Ejecutar pruebas y publicar propuesta; la configuración de ramas requiere acceso administrativo humano",
+  "reviewers": [
+    "nicomanuQP (write confirmado)",
+    "eidanYT (propietario; no puede aprobar sus propios PR)"
+  ],
+  "estimates": [],
+  "verified_claims": []
+}

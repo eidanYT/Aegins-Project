@@ -31,3 +31,7 @@ Se puede proponer un modelo completo con supuestos visibles. Cada miembro revisa
 ## Siguiente avance y preguntas abiertas
 
 Indicar lo que puede continuar y lo que todavía debe resolverse.
+
+## Registro de ejecución del agente
+
+Enlace a management/agent_runs/<rama-con-barras-reemplazadas-por-guiones-bajos>.json. Indicar perfil, decisiones pendientes y siguiente acción. Las estimaciones deben declarar unidad, fuente y estado; las afirmaciones verificadas requieren método, alcance y archivo de evidencia. El registro no representa aprobación humana.

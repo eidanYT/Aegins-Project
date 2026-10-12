@@ -1,0 +1,35 @@
+name: Aegins agent policy
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+permissions:
+  contents: read
+jobs:
+  agent-policy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Fetch PR objects without checking out or running PR code
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_BRANCH: ${{ github.head_ref }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$PR_NUMBER" =~ ^[0-9]+$ ]]
+          git fetch --no-tags origin "refs/pull/${PR_NUMBER}/head"
+          HEAD_SHA="$(git rev-parse FETCH_HEAD)"
+          if git cat-file -e "$BASE_SHA:tools/check_agent_policy.py" 2>/dev/null; then
+            VALIDATOR_REF="$BASE_SHA"
+          else
+            echo "Bootstrap de controles: el código nuevo requiere revisión independiente."
+            VALIDATOR_REF="$HEAD_SHA"
+          fi
+          git show "$VALIDATOR_REF:tools/check_agent_policy.py" > "$RUNNER_TEMP/aegins-check-agent-policy.py"
+          python3 "$RUNNER_TEMP/aegins-check-agent-policy.py" --repo "$GITHUB_WORKSPACE" --base "$BASE_SHA" --head "$HEAD_SHA" --branch "$HEAD_BRANCH"
