@@ -11,11 +11,13 @@
     "Pruebas de conversiones, geometría, entradas inválidas y estados superadas antes de publicación",
     "Informe inicial y resumen de integración preparados; M1/M2/M3 todavía no incorporados",
     "Issues de seguimiento M4/M5 abiertas sin asignación ni conformidad inventada",
-    "Candidatos COTS M5 documentados con fuentes primarias, solo para comparar un demostrador terrestre"
+    "Candidatos COTS M5 documentados con fuentes primarias, solo para comparar un demostrador terrestre",
+    "Entrega M1-M3 contrastada en trece magnitudes e incorporada al informe e ICD-001/002, sin seleccionar sus hipotesis ni conformidades",
+    "Atribucion de seguridad/costes corregida tras releer el PDF original del MDR"
   ],
   "pending": [
     {
-      "item": "Material, espesor, trayectoria de caras y datos UV de M1/M2/M3",
+      "item": "Seleccion y caracterizacion de material/espesor/proceso; trayectoria continua y curado tras propuestas recibidas M1/M2/M3",
       "owner": "Otro agente técnico y responsables M1/M2/M3",
       "due": "Durante integración SRR"
     },
@@ -38,6 +40,11 @@
       "item": "Informe oficial y exposición finales con todos los aportes",
       "owner": "Integrador y equipo",
       "due": "Tras integrar aportes; fecha de entrega/prórroga por confirmar"
+    },
+    {
+      "item": "CAD de ensamble, mercado, costes sustentados y cronograma real",
+      "owner": "Integracion y equipo con los modulos",
+      "due": "Antes de entrega SRR; fecha por acordar"
     }
   ],
   "sources": [
@@ -51,9 +58,12 @@
     "https://github.com/eidanYT/Aegins-Project/issues/4",
     "https://www.pjrc.com/store/teensy41.html",
     "https://www.raspberrypi.com/products/raspberry-pi-5/",
-    "https://www.raspberrypi.com/products/raspberry-pi-global-shutter-camera/"
+    "https://www.raspberrypi.com/products/raspberry-pi-global-shutter-camera/",
+    "https://github.com/eidanYT/Aegins-Project/pull/6",
+    "Entrega tecnica fijada a commit 97ecaa8b791a9ba015076693d992796fa5ad2276",
+    "https://drive.google.com/file/d/1fCPoGXb0Y6MstuKdieDDerOqg5v8OnwV/view"
   ],
-  "next_action": "Publicar PR M4/M5 y verificar CI; incorporar datos del agente técnico y revisar incertidumbres/conformidades con el equipo",
+  "next_action": "Revisar conjuntamente las propuestas M1-M3 y M4-M5, registrar conformidades y completar CAD/mercado/costes/cronograma para maquetar el informe",
   "reviewers": [
     "Shelton Yauri para M4",
     "Eidan para M5",
@@ -97,10 +107,311 @@
     },
     {
       "name": "Escala de imagen ideal didáctica",
-      "value": 0.00005208333333333334,
+      "value": 5.208333333333334e-05,
       "unit": "m/pixel",
       "source": "system/ejemplo_trazabilidad.md; no incertidumbre real",
       "status": "EJEMPLO"
+    },
+    {
+      "name": "Hipotesis tecnica: edge",
+      "value": 0.05,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Eidan, bipiramide con aristas de 5 cm; base cuadrada y caras aclaradas en este chat; Bipiramide regular cuadrada; formalizacion compartida pendiente",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: bead_diameter",
+      "value": 0.0012,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; ICD-001 main d1b064e; diametro igual al de boquilla DREPP F01, no al filamento medido; Cordones circulares ideales de aristas",
+      "status": "EJEMPLO"
+    },
+    {
+      "name": "Hipotesis tecnica: track_width",
+      "value": 0.0012,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Hipotesis de este estudio; Caras: pista rectangular ideal; debe caracterizarse",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: wall_height",
+      "value": 0.0005,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Hipotesis de este estudio; Espesor de capa/pared ilustrativo; no elegido por Eidan",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: speed",
+      "value": 0.005,
+      "unit": "m/s",
+      "source": "M1-M3 entradas.json 97ecaa8; ICD-001 main d1b064e; Velocidad constante solo en tramos de deposicion",
+      "status": "EJEMPLO"
+    },
+    {
+      "name": "Hipotesis tecnica: uv_length",
+      "value": 0.002,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; ICD-001 main d1b064e; Zona uniforme hipotetica, no mapa optico",
+      "status": "EJEMPLO"
+    },
+    {
+      "name": "Hipotesis tecnica: irradiance",
+      "value": 2500.0,
+      "unit": "W/m2",
+      "source": "M1-M3 entradas.json 97ecaa8; ICD-001 main d1b064e; 250 mW/cm2; no inferida del LED comercial",
+      "status": "EJEMPLO"
+    },
+    {
+      "name": "Hipotesis tecnica: resin_density",
+      "value": 1760.0,
+      "unit": "kg/m3",
+      "source": "M1-M3 entradas.json 97ecaa8; F02 GE680 TDS 20.01.2025, pagina 2, extracto primario indexado; Liquido; confirmar ficha vigente y lote antes de seleccion",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: reference_viscosity",
+      "value": 54.0,
+      "unit": "Pa s",
+      "source": "M1-M3 entradas.json 97ecaa8; F02 GE680 TDS 20.01.2025 pagina 2; 54000 mPa s; 10 s^-1, gap 500 um; no curva reologica ni viscosidad de boquilla",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: nozzle_radius",
+      "value": 0.0006,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Mitad del diametro del caso; Conducto cilindrico ideal; boquilla real puede ser conica",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: nozzle_length",
+      "value": 0.01,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Hipotesis de sensibilidad; Longitud hidraulica cilindrica equivalente, no CAD real",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: tube_radius",
+      "value": 0.002,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Hipotesis de sensibilidad; Radio interior, tubo circular",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: tube_length",
+      "value": 0.5,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Hipotesis de sensibilidad; Alimentacion remota; longitud no aprobada",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: reservoir_volume",
+      "value": 2e-05,
+      "unit": "m3",
+      "source": "M1-M3 entradas.json 97ecaa8; Hipotesis de inventario; 20 mL utiles; envolvente y volumen muerto desconocidos",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: piston_diameter",
+      "value": 0.02,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Hipotesis geometrica; Diametro interior ideal; no componente seleccionado",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: reserve_fraction",
+      "value": 0.2,
+      "unit": "1",
+      "source": "M1-M3 entradas.json 97ecaa8; Reserva ilustrativa del estudio; 20% de volumen depositado; no cubre volumen muerto conocido",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: link_1",
+      "value": 0.12,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Brazo matematico propuesto; Distancia entre articulaciones, sin espesor",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: link_2",
+      "value": 0.1,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Brazo matematico propuesto; Distancia entre articulaciones, sin espesor",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: tool_length",
+      "value": 0.03,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Brazo matematico propuesto; Centro de muneca a punta, herramienta ideal",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: base_x",
+      "value": -0.12,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Brazo matematico propuesto; Base respecto al centro de probeta; y=z=0",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: standoff",
+      "value": 0.001,
+      "unit": "m",
+      "source": "M1-M3 entradas.json 97ecaa8; Hipotesis del estudio de poses; Punta separada de superficie; no ventana de deposicion",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: elbow_limit",
+      "value": 2.6179938779914944,
+      "unit": "rad",
+      "source": "M1-M3 entradas.json 97ecaa8; Hipotesis de limite ideal; 150 grados; no limites comerciales",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: other_joint_limit",
+      "value": 3.141592653589793,
+      "unit": "rad",
+      "source": "M1-M3 entradas.json 97ecaa8; Hipotesis de limite ideal; +/-180 grados; no limites comerciales",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: conductance_1",
+      "value": 0.1,
+      "unit": "W/K",
+      "source": "M1-M3 entradas.json 97ecaa8; Barrido de sensibilidad del autor; Solo calor local LED, sin driver/reaccion/radiacion",
+      "status": "EJEMPLO"
+    },
+    {
+      "name": "Hipotesis tecnica: conductance_2",
+      "value": 0.5,
+      "unit": "W/K",
+      "source": "M1-M3 entradas.json 97ecaa8; Barrido de sensibilidad del autor; Solo calor local LED, sin driver/reaccion/radiacion",
+      "status": "EJEMPLO"
+    },
+    {
+      "name": "Hipotesis tecnica: conductance_3",
+      "value": 1.0,
+      "unit": "W/K",
+      "source": "M1-M3 entradas.json 97ecaa8; Barrido de sensibilidad del autor; Solo calor local LED, sin driver/reaccion/radiacion",
+      "status": "EJEMPLO"
+    },
+    {
+      "name": "Hipotesis tecnica: led_current",
+      "value": 1.0,
+      "unit": "A",
+      "source": "M1-M3 entradas.json 97ecaa8; F04 tabla historica M365L3; Maximo CW publicado; caso de operacion, no pico de driver",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: led_voltage",
+      "value": 3.85,
+      "unit": "V",
+      "source": "M1-M3 entradas.json 97ecaa8; F04 tabla historica M365L3; Tipico, no maximo garantizado",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: led_radiant_power",
+      "value": 1.29,
+      "unit": "W",
+      "source": "M1-M3 entradas.json 97ecaa8; F04 tabla historica M365L3; Tipico a corriente maxima; no irradiancia en pieza",
+      "status": "TBR"
+    },
+    {
+      "name": "Hipotesis tecnica: led_count",
+      "value": 4,
+      "unit": "1",
+      "source": "M1-M3 entradas.json 97ecaa8; Hipotesis de cabezal UV; Cuatro emisores equivalentes; geometria, driver y refrigeracion pendientes",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: surface_area",
+      "value": 0.008660254037844387,
+      "unit": "m2",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: enclosed_volume_not_resin",
+      "value": 5.892556509887897e-05,
+      "unit": "m3",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: wire_q",
+      "value": 5.654866776461628e-09,
+      "unit": "m3/s",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: face_q",
+      "value": 3.0000000000000004e-09,
+      "unit": "m3/s",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: face_raster_length",
+      "value": 7.4,
+      "unit": "m",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: deposition_time_without_transits",
+      "value": 1600.0,
+      "unit": "s",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: material_with_reserve",
+      "value": 6.1423008158104756e-06,
+      "unit": "m3",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: retained_tube_volume",
+      "value": 6.283185307179586e-06,
+      "unit": "m3",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: conditional_resin_mass",
+      "value": 0.010810449435826437,
+      "unit": "kg",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: led_electric_power",
+      "value": 15.4,
+      "unit": "W",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: led_local_heat",
+      "value": 10.24,
+      "unit": "W",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: led_energy_without_driver",
+      "value": 24640.0,
+      "unit": "J",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
+    },
+    {
+      "name": "Contraste aritmetico: example_exposure",
+      "value": 1000.0,
+      "unit": "J/m2",
+      "source": "evidence/contraste_tecnico_srr.json; hipotesis M1-M3, no desempeno fisico",
+      "status": "TBR"
     }
   ],
   "verified_claims": []

@@ -1,0 +1,117 @@
+{
+  "source_commit": "97ecaa8b791a9ba015076693d992796fa5ad2276",
+  "scope": "Selected arithmetic recomputed by integration agent; not independent human review or physical verification",
+  "not_checked": [
+    "sources/TDS/SDS validity",
+    "robot poses and continuous paths",
+    "hydraulic model applicability",
+    "face support/curing/sealing",
+    "safety and host qualification"
+  ],
+  "comparisons": [
+    {
+      "name": "surface_area",
+      "value": 0.008660254037844387,
+      "reported": 0.008660254037844387,
+      "unit": "m2",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    },
+    {
+      "name": "enclosed_volume_not_resin",
+      "value": 5.892556509887897e-05,
+      "reported": 5.892556509887897e-05,
+      "unit": "m3",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    },
+    {
+      "name": "wire_q",
+      "value": 5.654866776461628e-09,
+      "reported": 5.654866776461627e-09,
+      "unit": "m3/s",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    },
+    {
+      "name": "face_q",
+      "value": 3.0000000000000004e-09,
+      "reported": 3e-09,
+      "unit": "m3/s",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    },
+    {
+      "name": "face_raster_length",
+      "value": 7.4,
+      "reported": 7.4,
+      "unit": "m",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    },
+    {
+      "name": "deposition_time_without_transits",
+      "value": 1600.0,
+      "reported": 1600.0,
+      "unit": "s",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    },
+    {
+      "name": "material_with_reserve",
+      "value": 6.1423008158104756e-06,
+      "reported": 6.142300815810474e-06,
+      "unit": "m3",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    },
+    {
+      "name": "retained_tube_volume",
+      "value": 6.283185307179586e-06,
+      "reported": 6.283185307179586e-06,
+      "unit": "m3",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    },
+    {
+      "name": "conditional_resin_mass",
+      "value": 0.010810449435826437,
+      "reported": 0.010810449435826434,
+      "unit": "kg",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    },
+    {
+      "name": "led_electric_power",
+      "value": 15.4,
+      "reported": 15.4,
+      "unit": "W",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    },
+    {
+      "name": "led_local_heat",
+      "value": 10.24,
+      "reported": 10.24,
+      "unit": "W",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    },
+    {
+      "name": "led_energy_without_driver",
+      "value": 24640.0,
+      "reported": 24640.0,
+      "unit": "J",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    },
+    {
+      "name": "example_exposure",
+      "value": 1000.0,
+      "reported": 1000.0,
+      "unit": "J/m2",
+      "arithmetic_matches": true,
+      "status": "TBR"
+    }
+  ]
+}

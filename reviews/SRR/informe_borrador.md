@@ -1,6 +1,6 @@
 # FORGE-UG — Borrador integrado SRR / Review 2
 
-**Estado: TBR, primera entrega de M4/M5.** Equipo: AEGINS. Preparado por Codex a solicitud de Eidan, 12 de octubre de 2026. Revisión/autoría final del equipo: pendiente. Este texto es fuente para la plantilla oficial; no sustituye aún el informe maquetado ni garantiza su límite de 30 páginas.
+**Estado: TBR, consolidación documental inicial de cinco módulos.** Equipo: AEGINS. Preparado por Codex a solicitud de Eidan, 12 de octubre de 2026. Revisión/autoría final del equipo: pendiente. Este texto es fuente para la plantilla oficial; no sustituye aún el informe maquetado ni garantiza su límite de 30 páginas.
 
 ## 1. Introducción
 
@@ -20,7 +20,7 @@ La pieza nominal será una bipirámide de base cuadrada, aristas de 0,05 m y car
 
 M4 compara cámara con retención/tratamiento interno y transferencia condicionada a un receptor del host. M5 compara control distribuido y un controlador integrado compatible, y desarrolla alternativas de medición exterior y por etapas.
 
-Datos necesarios de M1/M2/M3: comparación del mecanismo, trayectoria de superficies, material y deposición de caras, exposición/curado, datos de presión/calor y requisitos de interfaces. Estas entradas todavía no se han integrado en esta primera entrega.
+La [consolidación de módulos](consolidacion_modulos.md) incorpora la entrega M1/M2/M3: brazo orientable comparado con opción cartesiana, cálculo de caudal por modo, inventario de alimentación remota, exposición nominal y partición térmica. Se contrastó aritmética seleccionada; material, proceso autoportante de caras, trayectoria continua y compatibilidad siguen sin demostrar. Los valores analizados son instancias TBR, no selección de hardware o requisitos aprobados.
 
 Hay geometría nominal y cálculos reproducibles de sensibilidad, no ensayos físicos ni simulación validada del proceso. Faltan datos que permitan demostrar fabricabilidad, seguridad y prestaciones.
 
@@ -54,7 +54,7 @@ La selección de escenario no define límites de host; los ejemplos de metrolog�
 
 La pieza nominal tiene doce aristas únicas y ocho caras. El OBJ es una superficie nominal sin espesor ni trayectoria; la cámara debe incluir mecanismo, soporte, alimentación, UV, observación y acceso.
 
-[ICD-003](../../interfaces/ICD-003.md): datos y tiempo. [ICD-004](../../interfaces/ICD-004.md): host/recursos. [ICD-005](../../interfaces/ICD-005.md): fallos/contención. Montaje/proceso en ICD-001/002 requiere aportes M1/M2/M3.
+[ICD-001](../../interfaces/ICD-001.md): modo arista/cara y coordinación. [ICD-002](../../interfaces/ICD-002.md): marco, montaje y recorridos. [ICD-003](../../interfaces/ICD-003.md): datos y tiempo. [ICD-004](../../interfaces/ICD-004.md): host/recursos. [ICD-005](../../interfaces/ICD-005.md): fallos/contención. Las cinco interfaces contienen propuestas; las conformidades de los afectados siguen pendientes.
 
 [Presupuestos](../../system/presupuestos.md) reúne partidas y métodos. No se publican masas/potencias/costes de equipos desconocidos ni totales que oculten datos faltantes.
 
@@ -84,7 +84,7 @@ El [plan de hoy](plan_trabajo_hoy.md) organiza el borrador y exposición. Las re
 
 ## 8. Conclusiones y próximos pasos
 
-Esta primera entrega define el escenario, nominal de pieza y propuestas M4/M5, con modelos y contratos de integración revisables. El paso siguiente es incorporar datos técnicos de M1/M2/M3, cerrar decisiones y conformidades y completar la evidencia/viabilidad del conjunto.
+Esta entrega reúne escenario, nominal de pieza y propuestas de los cinco módulos, con modelos y contratos de integración revisables. El paso siguiente es cerrar decisiones y conformidades y completar CAD de ensamble, evidencia, mercado, presupuesto sustentado y cronograma del conjunto.
 
 Todavía no se demuestra impresión de caras, control físico, medida válida ni protección de tripulación. La decisión de avance a PDR debe considerar las incertidumbres y verificaciones pendientes, no solo la cantidad de documentos.
 

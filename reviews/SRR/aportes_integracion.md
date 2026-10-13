@@ -30,6 +30,8 @@ Referencia: estación espacial con tripulación y cámara interna. Pieza: bipir�
 
 ## Lo que falta para cerrar el diseño
 
+La entrega del otro agente ya fue contrastada e incorporada documentalmente en [consolidación de los cinco módulos](consolidacion_modulos.md). Sus hipótesis no se convierten en selecciones ni conformidades. El informe común y los ICD-001/002 incorporan sus impactos de proceso y montaje; los módulos M1/M2/M3 conservan su propia rama.
+
 M1: trayectoria/anclaje/recorrido/cargas. M2: material, formación de caras, espesor, inventario/emisiones y transitorios. M3: espectro, exposición, sombras, curado y calor. Host: asignaciones, gases, seguridad y operación. M5: métodos/criterios e instrumentación y calibración. M4: dimensionamiento y ruta aceptada.
 
 Las pruebas de código no demuestran seguridad de tripulación, fabricabilidad, exactitud real ni aptitud de vuelo. Conformidades y pruebas siguen pendientes.
