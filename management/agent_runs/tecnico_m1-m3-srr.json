@@ -10,51 +10,64 @@
     "Fuentes F01-F08 documentadas con versiones, condiciones y acceso; TDS primarios indexados diferenciados de texto completo; SDS vigentes pendientes",
     "Modelo 0.1 ejecutado: 12 comprobaciones internas pasan, 888 poses ideales dentro de limites supuestos; no verificacion independiente ni ensayo fisico",
     "Sintesis preparada para integrador con entradas/salidas, filas de requisitos/ICD, respuesta R1, peligros, revision y limites en archivos propios",
-    "Control local de ambito, registro y enlaces ejecutado con validador de main d1b064e: pasa; se repite sobre snapshot final antes de publicar; GitHub CI pendiente de consulta"
+    "Control local de ambito, registro y enlaces pasa con validador main d1b064e; nueva comprobacion antes de actualizar enlaces del snapshot final",
+    "Rama tecnico/m1-m3-srr publicada con arbol identico al validado; PR borrador #6 abierto y adjuntado al chat, sin merge ni autoaprobacion",
+    "CI GitHub Aegins agent policy, run 38329499363, commit 97ecaa8b791a9ba015076693d992796fa5ad2276: completed/success; control estructural, no verificacion cientifica",
+    "Seguimiento tecnico Issue #5 creado sin asignar personas; dependencias existentes M4 #3 y M5 #4 enlazadas; aclaraciones de usuario corroboradas documentalmente en #3"
   ],
   "pending": [
     {
       "item": "Reconciliar declaraciones del usuario con prompt/main: estacion conceptual y bipiramide cuadrada con caras; formalizar sin afirmar alojamiento/ambiente/gases disponibles",
       "owner": "Integrador/sistemas con Eidan",
-      "due": "2026-10-12 como objetivo; conformidad y fecha por acordar"
+      "due": "2026-10-12 como objetivo; conformidad y fecha por acordar",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/3"
     },
     {
       "item": "Revision independiente de fuentes/calculos y conformidad de todos los afectados por ICD; no autointegrar",
       "owner": "NICOMANUQP M1, Gabriel M2, humano M3 por asignar, M4/M5 y sistemas",
-      "due": "Por acordar"
+      "due": "Por acordar",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/5"
     },
     {
       "item": "TDS/SDS vigentes, formulacion, sellos/tubos, reologia, emisiones y presion maxima creible",
       "owner": "Gabriel M2 con M3/M4",
-      "due": "Por acordar; necesario antes de seleccion material"
+      "due": "Por acordar; necesario antes de seleccion material",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/5"
     },
     {
       "item": "CAD del brazo/cabezal, continuidad, colisiones, tubos/anclaje, cargas e imprimibilidad de caras y ultima union",
       "owner": "NICOMANUQP M1 con M2/M3 y Shelton M4",
-      "due": "Por acordar hacia PDR"
+      "due": "Por acordar hacia PDR",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/5"
     },
     {
       "item": "Ventana gel/curado/union, mapa optico, ruta termica y calor de reaccion, driver y BOM",
       "owner": "Humano M3 por designar con M2/M4",
-      "due": "Por acordar"
+      "due": "Por acordar",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/5"
     },
     {
       "item": "Metricas/errores, tiempos/calibracion, estado seguro y diccionario de señales",
       "owner": "Eidan M5 con M1/M2/M3/M4",
-      "due": "Por acordar"
+      "due": "Por acordar",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/4"
     },
     {
       "item": "Presupuesto integrado por fases, masa/picos/envolvente/BOM y costes con base y cotizaciones; revisar atribucion EXP-03",
       "owner": "Integrador/sistemas",
-      "due": "Por acordar para consolidacion SRR"
+      "due": "Por acordar para consolidacion SRR",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/3"
     }
   ],
   "sources": [
     "mensaje_inicio_agentes.md original aportado por Eidan; main d1b064ee53fec257597b8675a81d27660007ed80",
     "models/srr_agente_tecnico/fuentes.md F01-F08, consulta 2026-10-12; versiones/acceso/condiciones explicitados",
-    "models/srr_agente_tecnico/entradas.json v0.1 sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33"
+    "models/srr_agente_tecnico/entradas.json v0.1 sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+    "https://github.com/eidanYT/Aegins-Project/pull/6",
+    "https://github.com/eidanYT/Aegins-Project/issues/5; dependencias #3/#4",
+    "https://github.com/eidanYT/Aegins-Project/actions/runs/38329499363; primer commit 97ecaa8"
   ],
-  "next_action": "Abrir PR borrador con snapshot validado y consultar CI; entregar enlace a Eidan para revision independiente e integracion de M4/M5/documentos comunes, sin autointegrar",
+  "next_action": "Recibir y contrastar revision independiente en PR #6; integrador consolida M4/M5 y documentos comunes usando la sintesis y seguimientos #3/#4/#5; confirmar datos antes de seleccionar, aprobar interfaces o integrar",
   "reviewers": [
     "NICOMANUQP M1 propuesto, sin conformidad",
     "Gabriel Hurtado M2 propuesto, sin conformidad",

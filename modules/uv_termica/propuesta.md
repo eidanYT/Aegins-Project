@@ -1,6 +1,6 @@
 # Propuesta — M3: UV y térmica
 
-**Estado: TBR, propuesta para revisión; versión 0.1, 2026-10-12.** Autor: agente técnico por encargo de Eidan. Responsable/revisor humano M3: por asignar, sin conformidad. Rama `tecnico/m1-m3-srr`.
+**Estado: TBR, propuesta para revisión; versión 0.1, 2026-10-12.** Autor: agente técnico por encargo de Eidan. Responsable/revisor humano M3: por asignar, sin conformidad. Rama `tecnico/m1-m3-srr`, [PR #6](https://github.com/eidanYT/Aegins-Project/pull/6).
 
 [Alcance](ALCANCE_TECNICO.md) · [Requisitos](../../system/requisitos.md) · [Ficha óptica](candidatos.md) · [Modelo](../../models/srr_agente_tecnico/README.md)
 
@@ -55,4 +55,4 @@ UV accesible, sobretemperatura, luz parásita, bloqueo y proceso incompletamente
 
 Método A realizado: exposición nominal, mapa angular ideal y balance/sensibilidad; comprobaciones del autor. Revisión independiente y ensayos físicos pendientes. Para PDR: confirmar emisor/driver, mapa óptico, cinética y calor; construir CAD del cabezal con M1/M4. Este programa entrega diseño/CAD: los ensayos aquí descritos son un plan futuro, sin resultado ni financiación comprometida. Fecha y revisor M3 por acordar.
 
-[Fuentes F01–F04/F06/F07](../../models/srr_agente_tecnico/fuentes.md) · [Resultados](../../models/srr_agente_tecnico/resultados.json) · [Síntesis](../../reviews/SRR/aportes_agente_tecnico.md)
+[Fuentes F01–F04/F06/F07](../../models/srr_agente_tecnico/fuentes.md) · [Resultados](../../models/srr_agente_tecnico/resultados.json) · [Síntesis](../../reviews/SRR/aportes_agente_tecnico.md) · [Seguimiento técnico #5](https://github.com/eidanYT/Aegins-Project/issues/5)

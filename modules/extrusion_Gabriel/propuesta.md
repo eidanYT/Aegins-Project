@@ -1,6 +1,6 @@
 # Propuesta — M2: Material y extrusión
 
-**Estado: TBR, propuesta para revisión; versión 0.1, 2026-10-12.** Autor: agente técnico por encargo de Eidan. Revisor propuesto: Gabriel Hurtado, sin conformidad. Rama `tecnico/m1-m3-srr`.
+**Estado: TBR, propuesta para revisión; versión 0.1, 2026-10-12.** Autor: agente técnico por encargo de Eidan. Revisor propuesto: Gabriel Hurtado, sin conformidad. Rama `tecnico/m1-m3-srr`, [PR #6](https://github.com/eidanYT/Aegins-Project/pull/6).
 
 [Alcance](ALCANCE_TECNICO.md) · [Requisitos](../../system/requisitos.md) · [Fichas](candidatos.md) · [Cálculos](../../models/srr_agente_tecnico/README.md)
 
@@ -72,4 +72,4 @@ SDS regional vigente **TBD** para ambas formulaciones: no se dispone de clasific
 
 Método A realizado: conversión SI, geometría de consumo y sensibilidad; comprobación interna del autor, independiente pendiente. Obtener/contrastar TDS/SDS vigentes y seleccionar circuito CAD; planificar caracterización futura sin decir que se construirá durante este programa. Revisión con Gabriel y afectados, fecha por acordar.
 
-[Fuentes F01–F03/F06/F07](../../models/srr_agente_tecnico/fuentes.md) · [Resultados](../../models/srr_agente_tecnico/resultados.json) · [Síntesis](../../reviews/SRR/aportes_agente_tecnico.md)
+[Fuentes F01–F03/F06/F07](../../models/srr_agente_tecnico/fuentes.md) · [Resultados](../../models/srr_agente_tecnico/resultados.json) · [Síntesis](../../reviews/SRR/aportes_agente_tecnico.md) · [Seguimiento técnico #5](https://github.com/eidanYT/Aegins-Project/issues/5)

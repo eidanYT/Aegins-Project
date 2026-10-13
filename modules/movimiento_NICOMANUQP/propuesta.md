@@ -1,6 +1,6 @@
 # Propuesta — M1: Movimiento
 
-**Estado: TBR, propuesta para revisión; versión 0.1, 2026-10-12.** Autor: agente técnico por encargo de Eidan. Revisor propuesto: NICOMANUQP, sin conformidad registrada. Rama `tecnico/m1-m3-srr`.
+**Estado: TBR, propuesta para revisión; versión 0.1, 2026-10-12.** Autor: agente técnico por encargo de Eidan. Revisor propuesto: NICOMANUQP, sin conformidad registrada. Rama `tecnico/m1-m3-srr`, [PR #6](https://github.com/eidanYT/Aegins-Project/pull/6).
 
 [Alcance](ALCANCE_TECNICO.md) · [Requisitos](../../system/requisitos.md) · [Modelo reproducible](../../models/srr_agente_tecnico/README.md) · [Ficha de arquitecturas](candidatos.md)
 
@@ -60,4 +60,4 @@ M2 entregará depósito/tubos/presión y fuerzas; M3 óptica/calor; M4 rigidez y
 
 Método A: geometría, poses y consistencia directa/inversa del modelo ideal, [resultado reproducible](../../models/srr_agente_tecnico/resultados.json). Revisión independiente pendiente; no ensayo T/D ni aprobación. Completar CAD de cuerpos/recorrido, barrido continuo, colisiones y cargas para PDR; identificar actuadores y presupuesto sustentado. Contrastar fuentes y revisar con NICOMANUQP y afectados, fecha por acordar.
 
-[Fuentes F01/F05/F06/F07](../../models/srr_agente_tecnico/fuentes.md) · [Síntesis de integración](../../reviews/SRR/aportes_agente_tecnico.md)
+[Fuentes F01/F05/F06/F07](../../models/srr_agente_tecnico/fuentes.md) · [Síntesis de integración](../../reviews/SRR/aportes_agente_tecnico.md) · [Seguimiento técnico #5](https://github.com/eidanYT/Aegins-Project/issues/5)

@@ -1,6 +1,6 @@
 # Aportes técnicos M1–M3 para integración del SRR
 
-**Versión 0.1 — 2026-10-12; BORRADOR TBR, sin revisión independiente ni conformidades.** Rama `tecnico/m1-m3-srr`, base leída `d1b064ee53fec257597b8675a81d27660007ed80`. Se sigue el prompt original de Eidan. El otro agente conserva M4/M5 y documentación compartida.
+**Versión 0.1 — 2026-10-12; BORRADOR TBR, sin revisión independiente ni conformidades.** Rama `tecnico/m1-m3-srr`, [PR #6](https://github.com/eidanYT/Aegins-Project/pull/6), base leída `d1b064ee53fec257597b8675a81d27660007ed80`. Se sigue el prompt original de Eidan. El otro agente conserva M4/M5 y documentación compartida.
 
 ## Entrega y alcance establecido
 
@@ -81,6 +81,8 @@ Ninguna fila está conforme. No basta que el autor cubra varios módulos: sigue 
 **Atribución por revisar:** el PDF R1 tiene dos tablas de puntuación de expertos; el comentario de ampliar seguridad aparece firmado por ACHIEVED Orbital Team. La matriz compartida lo atribuye a experto 2. Se conserva su contenido técnico y se propone corregir la atribución al integrar, sin editar aquí el archivo fuera de ámbito. Las observaciones permanecen abiertas, sin aceptación del jurado.
 
 ## Verificación, revisión y próximos pasos
+
+Seguimientos abiertos: [M1–M3 #5](https://github.com/eidanYT/Aegins-Project/issues/5), [M4/host/emisiones #3](https://github.com/eidanYT/Aegins-Project/issues/3) y [M5/metrología/fallos #4](https://github.com/eidanYT/Aegins-Project/issues/4). #3 ya recoge las aclaraciones de estación y geometría del usuario; falta trasladarlas a la línea base común mediante integración. Los responsables y fechas de aceptación son propuestos, sin conformidad automática ni cierre de estas Issues.
 
 | Pendiente / impacto | Responsable propuesto | Fecha / siguiente acción |
 |---|---|---|
