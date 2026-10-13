@@ -93,3 +93,11 @@ Antes de iniciar o reanudar, comprueba si AGENTS.md y management/agent_policy.js
 Usa una rama con prefijo tecnico/ para este encargo. Además de los archivos técnicos asignados, crea o actualiza únicamente tu propio registro management/agent_runs/<rama-con-barras-reemplazadas-por-guiones-bajos>.json desde templates/agent_run.json cuando la plantilla esté disponible. Conserva objetivo, avances comprobados, fuentes, pendientes con dueño/fecha, siguiente acción y revisores. Incluye estimaciones nuevas con unidad/fuente/estado y evidencias declaradas verificadas con método/alcance/archivo.
 
 No edites AGENTS.md, workflows, política o validador para hacer pasar una comprobación, ni uses otro perfil para ampliar este encargo. Recupera el contexto del registro, los archivos y el PR al reanudar. La CI no sustituye revisión científica ni aprobación de interfaces.
+
+## Decisiones nuevas de Eidan para integrar M1/M2/M3
+
+Eidan eligió estación espacial con tripulación, dentro de cámara. Confirmó base cuadrada y pidió **aristas y caras cerradas**, con todas las aristas de 0,05 m. No hay material ni hardware elegidos.
+
+La primera propuesta de integración recoge las decisiones en system/caso_srr.json y cad/pieza_srr.md. Antes de continuar, revisa main y los PR de integración para localizar la versión de ese caso: puede seguir pendiente de revisión. La geometría nominal tiene ocho caras y doce aristas, pero no hay espesor ni trayectoria aprobados.
+
+M1 debe proponer recorrido de superficies y anclaje, además de aristas; M2, formación/espesor/material y gas/residuo interno; M3, exposición y sombras/curado de caras. No usar la longitud de aristas como tiempo o material total para las caras. Documenta la diferencia con el alcance anterior y los datos que requieres de M4/M5.

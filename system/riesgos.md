@@ -13,3 +13,16 @@ No es una evaluación de seguridad aprobada. La severidad/controles dependen del
 | R09 | Modelo o cifra sin validar | Diseño aparentemente correcto pero no sustentado | Todos | Trazabilidad y sensibilidad | Fuentes y revisión |
 Priorizar peligros de alta consecuencia aunque una probabilidad supuesta produzca un número bajo.
 No asumir que “no tripulado” elimina contaminación, incendio o pérdida del vehículo.
+
+## Ampliación por cámara, medición y caras cerradas
+
+Estas son hipótesis de peligro para evaluación; severidad/probabilidad no se asignan sin escenario e inventario. No son una evaluación aprobada.
+
+| ID | Evento | Impacto a evaluar | Trabajo y responsable propuestos | Evidencia pendiente |
+|---|---|---|---|---|
+| R10 | Acumulación, obstrucción o capacidad agotada en la gestión de gases | Presión, contaminación y posible exposición | M2/M4/host: inventario, ruta y balance por especie | Emisiones, capacidad y ensayos de contención/apertura |
+| R11 | Vista óptica inválida por sombras, brillo, transparencia o ventana | Conclusión geométrica sin cobertura/incertidumbre fiable | M5 con M3/M4: calibración, cobertura y validez | Patrón independiente y material/óptica reales |
+| R12 | Formación de caras y cierre de volumen con gas o residuo interno | Defectos, deformación o recuperación no prevista | M1/M2/M3 con M4/M5: estrategia de cierre e inspección por etapas | Fabricabilidad, espesor, uniones y gas interno |
+| R13 | Confundir HOLD lógico con seguridad física | Continuación o acceso sin contención aceptada | M4/M5/host: condiciones físicas y respuesta sin energía | Análisis y prueba por escenario de fallo |
+
+La selección de estación tripulada aumenta la relevancia de exposición y acceso, pero no determina sustancias ni límites. La pieza nominal cerrada no demuestra estanqueidad ni eliminación de gases.

@@ -1,0 +1,27 @@
+# SRR-GEO-001; units m; nominal edges and closed surface, zero thickness; not a robot trajectory
+v -0.025 -0.025 0
+v 0.025 -0.025 0
+v 0.025 0.025 0
+v -0.025 0.025 0
+v 0 0 0.0353553390593
+v 0 0 -0.0353553390593
+l 1 2
+l 2 3
+l 3 4
+l 4 1
+l 1 5
+l 2 5
+l 3 5
+l 4 5
+l 1 6
+l 2 6
+l 3 6
+l 4 6
+f 1 2 5
+f 2 3 5
+f 3 4 5
+f 4 1 5
+f 2 1 6
+f 3 2 6
+f 4 3 6
+f 1 4 6

@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "profile": "integracion",
+  "objective": "Completar propuestas M4/M5 e interfaces de integración para el SRR de FORGE-UG",
+  "status": "en_revision",
+  "completed": [
+    "main actualizado y reglas vigentes leídas; regla activa de main verificada mediante API",
+    "Decisiones de Eidan incorporadas: estación tripulada, cámara, base cuadrada y caras cerradas; sin hardware/material elegidos",
+    "Propuestas M4/M5, plan de metrología e interfaces ICD-003/004/005 desarrollados",
+    "Nominal de pieza, OBJ/SVG y cálculos/modelo lógico reproducibles preparados",
+    "Pruebas de conversiones, geometría, entradas inválidas y estados superadas antes de publicación",
+    "Informe inicial y resumen de integración preparados; M1/M2/M3 todavía no incorporados",
+    "Issues de seguimiento M4/M5 abiertas sin asignación ni conformidad inventada",
+    "Candidatos COTS M5 documentados con fuentes primarias, solo para comparar un demostrador terrestre"
+  ],
+  "pending": [
+    {
+      "item": "Material, espesor, trayectoria de caras y datos UV de M1/M2/M3",
+      "owner": "Otro agente técnico y responsables M1/M2/M3",
+      "due": "Durante integración SRR"
+    },
+    {
+      "item": "Host, ambiente, recursos y ruta de gases aceptada",
+      "owner": "Sistemas y M4/Shelton con el host",
+      "due": "Antes de selección de diseño; fecha por acordar"
+    },
+    {
+      "item": "Criterios de metrología/tiempo e instrumentación",
+      "owner": "M5/Eidan con módulos afectados",
+      "due": "Antes de congelar requisitos; fecha por acordar"
+    },
+    {
+      "item": "Revisión independiente y conformidades de interfaces",
+      "owner": "Equipo de módulos afectados",
+      "due": "Antes de integrar"
+    },
+    {
+      "item": "Informe oficial y exposición finales con todos los aportes",
+      "owner": "Integrador y equipo",
+      "due": "Tras integrar aportes; fecha de entrega/prórroga por confirmar"
+    }
+  ],
+  "sources": [
+    "AGENTS.md y documentación técnica de main",
+    "NASA Toxic Offgassing (consulta 2026-10-12 Lima)",
+    "NIST TN1297, combinación y reporte de incertidumbre (consulta 2026-10-12 Lima)",
+    "OpenCV 4.13.0, calibración y triangulación (consulta 2026-10-12 Lima)",
+    "Decisiones actuales de Eidan registradas en system/caso_srr.json",
+    "Regla Proteccion de main: activa, revisión CODEOWNERS/1 aprobación y agent-policy obligatorios; API consultada 2026-10-12 Lima",
+    "https://github.com/eidanYT/Aegins-Project/issues/3",
+    "https://github.com/eidanYT/Aegins-Project/issues/4",
+    "https://www.pjrc.com/store/teensy41.html",
+    "https://www.raspberrypi.com/products/raspberry-pi-5/",
+    "https://www.raspberrypi.com/products/raspberry-pi-global-shutter-camera/"
+  ],
+  "next_action": "Publicar PR M4/M5 y verificar CI; incorporar datos del agente técnico y revisar incertidumbres/conformidades con el equipo",
+  "reviewers": [
+    "Shelton Yauri para M4",
+    "Eidan para M5",
+    "NICOMANUQP/Gabriel/M3 para interfaces afectadas"
+  ],
+  "estimates": [
+    {
+      "name": "Arista nominal de la pieza",
+      "value": 0.05,
+      "unit": "m",
+      "source": "Eidan; system/caso_srr.json",
+      "status": "TBR"
+    },
+    {
+      "name": "Altura nominal total de bipirámide",
+      "value": 0.07071067811865477,
+      "unit": "m",
+      "source": "Derivación a*sqrt(2); cad/pieza_srr.md y geometria.py",
+      "status": "TBR"
+    },
+    {
+      "name": "Longitud total de aristas únicas, no deposición de caras",
+      "value": 0.6000000000000001,
+      "unit": "m",
+      "source": "Conectividad nominal; cad/pieza_srr.md",
+      "status": "TBR"
+    },
+    {
+      "name": "Desplazamiento temporal de ejemplo",
+      "value": 0.00025,
+      "unit": "m",
+      "source": "DEMO-001 y calculos.py; no error físico total",
+      "status": "EJEMPLO"
+    },
+    {
+      "name": "Asignación temporal didáctica",
+      "value": 0.02,
+      "unit": "s",
+      "source": "system/ejemplo_trazabilidad.md; no umbral de misión",
+      "status": "EJEMPLO"
+    },
+    {
+      "name": "Escala de imagen ideal didáctica",
+      "value": 0.00005208333333333334,
+      "unit": "m/pixel",
+      "source": "system/ejemplo_trazabilidad.md; no incertidumbre real",
+      "status": "EJEMPLO"
+    }
+  ],
+  "verified_claims": []
+}

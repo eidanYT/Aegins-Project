@@ -37,3 +37,11 @@ El reparto es propuesto. Eidan debe entregar el encargo al otro agente; su enví
 ## Observaciones de los expertos
 
 [Seguimiento de las dos evaluaciones del MDR / Review 1](respuesta_expertos.md): comparación del brazo, emisiones de gases/polvo y ampliación de seguridad con impacto en diseño y costes. Las respuestas técnicas siguen abiertas; documentar una acción no equivale a resolverla.
+
+## Primera propuesta técnica M4/M5
+
+[M4 — cámara e integración](../../modules/integracion_Shelton/propuesta.md) · [M5 — control y metrología](../../modules/control_metrologia_Eidan/propuesta.md) · [Resumen de integración](aportes_integracion.md) · [Pieza nominal](../../cad/pieza_srr.md)
+
+Referencia actual: estación espacial con tripulación y cámara; pieza de base cuadrada, aristas de 0,05 m y caras cerradas. Datos en system/caso_srr.json. Material, espesor, host y hardware siguen sin elegir.
+
+Hay propuestas e interfaces TBR, modelos y evidencia matemática. Las conformidades, fabricación, calibración y verificación de seguridad siguen pendientes; esta actualización no marca completa la lista de entrega.

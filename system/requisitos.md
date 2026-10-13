@@ -26,3 +26,17 @@ Plataforma conceptual elegida, probeta, rangos preliminares de proceso, métrica
 Si el alojamiento sigue sin conocerse, fijar una asignación provisional explícita con su fuente/razón y riesgo; no afirmar compatibilidad real.
 Cada TBD se vincula a una Issue, un propietario y fecha en system/pendientes.md.
 No confundir “tenemos plan de ensayo” con “requisito verificado por ensayo”.
+
+## Refinamiento M4/M5 y referencia actual
+
+**TBR:** la elección de escenario de Eidan está documentada en [misión](mision.md) y [caso común](caso_srr.json). No cierra SYS-001 en sus límites ambientales ni la compatibilidad con un host.
+
+| Requisito existente | Criterio a desarrollar | Evidencia o método | Estado |
+|---|---|---|---|
+| INT-001 / EXT-002 | Inventario/especies, contención nominal y fallos, apertura y residuos según host | A/I para concepto; T futuro de contención/emisiones | Criterios físicos TBD |
+| INT-002 / THM-001 | Recursos por estado, rutas de calor y asignaciones reales | I/A de presupuesto; ensayos futuros | Hardware/host TBD |
+| CTL-001 | Error temporal total derivado del error científico/proceso; reloj y origen de cada señal | A de sensibilidad, D/T de sincronización | Umbral y cadencia TBD |
+| MET-001 / SCI-002 | Geometría exterior y cobertura; método adicional para espesor/interior de caras cerradas | A de incertidumbre y T con patrón independiente | Magnitudes/criterios TBD |
+| SAF-001 | Condiciones físicas aceptadas por fallo, energía perdida y recuperación | A/D/T por escenario, sin equiparar estado lógico y seguridad | Secuencias/criterios TBD |
+
+Los valores de 0,10 mm y 20 ms del ejercicio siguen siendo ejemplos. No se han incorporado como umbrales obligatorios. Ver [evidencia de cálculos](../evidence/srr_integracion_calculos.md) para el alcance comprobado.
