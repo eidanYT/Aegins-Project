@@ -2,7 +2,7 @@
 
 ## Estado y procedencia
 Confirmado por el usuario: el programa pide un payload para satélite o estación y no especifica si es tripulada.
-La plataforma, ambiente interno, operación y recursos están TBD. No se declara cumplimiento de requisitos de la ISS.
+Eidan eligió como referencia un payload en estación espacial con tripulación, dentro de una cámara. Estación concreta, alojamiento, ambiente interno, operación y recursos siguen TBD. No se declara cumplimiento de requisitos de la ISS.
 Entrega del concurso: concepto, requisitos, modelos y CAD; pruebas físicas son un plan futuro.
 
 ## Pregunta científica propuesta (Esto puede cambiar)
@@ -39,7 +39,7 @@ No basta escribir “en el espacio es mejor”: identificar qué observable camb
 | Payload autónomo de satélite con cámara | Presión interna elegida, autonomía, estructura e interfaces con bus | Contención, disipación hacia nave y reacción del brazo sobre actitud |
 | Expuesto al exterior | Vacío, radiación, iluminación y ciclos térmicos | Materiales, lubricación, contaminación y gestión térmica cambian sustancialmente |
 
-Recomendación de método: comparar opciones en 48 horas y escoger UNA para la línea base SRR.
+D-001: Eidan eligió estación espacial con tripulación y cámara como escenario de referencia durante la preparación del SRR. El satélite queda como alternativa futura. La selección del escenario no define por sí sola interfaces o compatibilidad con una estación concreta.
 No sumar prestaciones de distintos escenarios en un diseño sin demostrar compatibilidad.
 Seleccionar solo satélite no determina que la resina esté expuesta a vacío; puede existir una cámara.
 Seleccionar estación no determina presión ni presencia de tripulación en el alojamiento.
@@ -58,8 +58,12 @@ El transformado entre marco de pieza y robot, el soporte y la factibilidad está
 
 Actualización de contexto del 12 de octubre de 2026 — **TBR, pendiente de revisión del equipo**.
 
-Eidan propone imprimir una estructura formada por **dos pirámides unidas por su base**, con **cada arista de 5 cm (0,05 m)**. La denominación geométrica general es bipirámide; no es un prisma. El polígono de la base común y el número de aristas no se han especificado: no se asume automáticamente un octaedro de base cuadrada.
+Eidan propone imprimir una estructura formada por **dos pirámides unidas por su base**, con **cada arista de 5 cm (0,05 m)**. La denominación geométrica general es bipirámide; no es un prisma. Eidan confirmó posteriormente una base cuadrada y la impresión de aristas y caras cerradas. Con todas las aristas iguales, la geometría nominal es una bipirámide cuadrada regular, con seis vértices, doce aristas únicas y ocho caras triangulares; el espesor está TBD.
 
-Quedan por definir: base común, geometría final y tolerancias, si se imprimen solo aristas o también caras, diámetro del cordón, anclaje, trayectoria y orden de impresión, transiciones, orientación y viabilidad cinemática. Esta propuesta no cambia todavía config/caso_demo.json, que sigue siendo un ejemplo didáctico.
+Quedan por definir: espesor de las caras, tolerancias, diámetro del cordón, material, anclaje, trayectorias de aristas y superficies, orden de impresión, transiciones, orientación y viabilidad cinemática. El nominal compartido está en [SRR-GEO-001](caso_srr.json), con [modelo derivado](../cad/pieza_srr.md). Esta propuesta no cambia todavía config/caso_demo.json, que sigue siendo un ejemplo didáctico.
 
-Se mantienen **estación espacial y satélite como plataformas alternativas**, sin selección D-001. Eidan propone que la impresora opere dentro de una cámara y plantea una salida de gases cuya conexión aún desconoce. El [borrador de contención para el SRR](../reviews/SRR/contencion_gases_borrador.md) recoge la observación del jurado, alternativas y verificaciones pendientes.
+**Referencia elegida: estación espacial con tripulación y cámara de proceso.** El satélite se conserva como alternativa futura; no se declara compatibilidad demostrada con ambos. Eidan propone que la impresora opere dentro de una cámara y plantea una salida de gases cuya conexión aún desconoce. El [borrador de contención para el SRR](../reviews/SRR/contencion_gases_borrador.md) recoge la observación del jurado, alternativas y verificaciones pendientes.
+
+## Alcance de la pieza cerrada
+
+Las ocho caras solicitadas son superficies nominales en el modelo geométrico. No se ha fijado espesor ni estanqueidad. La longitud total de aristas no da el volumen ni tiempo de deposición de las caras. M1/M2/M3 deben proponer formación de superficies, curado, cierre y gestión del gas eventualmente encerrado. M5 debe definir qué puede inspeccionar antes y después del cierre.

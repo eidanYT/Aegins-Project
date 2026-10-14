@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 590">
+<rect width="860" height="590" fill="#f7fafc"/>
+<text x="34" y="46" font-family="Arial" font-size="25" fill="#16324f">Pieza nominal para SRR — bipirámide de base cuadrada</text>
+<text x="34" y="78" font-family="Arial" font-size="16" fill="#526579">TBR · Geometría nominal · Sin robot, anclaje ni trayectoria aprobados</text>
+<line x1="406.363" y1="243.348" x2="564.050" y2="290.011" stroke="#0c8599" stroke-width="3"/>
+<line x1="564.050" y1="290.011" x2="453.637" y2="356.652" stroke="#0c8599" stroke-width="3"/>
+<line x1="453.637" y1="356.652" x2="295.950" y2="309.989" stroke="#0c8599" stroke-width="3"/>
+<line x1="295.950" y1="309.989" x2="406.363" y2="243.348" stroke="#0c8599" stroke-width="3"/>
+<line x1="406.363" y1="243.348" x2="430.000" y2="176.635" stroke="#345d9d" stroke-width="3"/>
+<line x1="564.050" y1="290.011" x2="430.000" y2="176.635" stroke="#345d9d" stroke-width="3"/>
+<line x1="453.637" y1="356.652" x2="430.000" y2="176.635" stroke="#345d9d" stroke-width="3"/>
+<line x1="295.950" y1="309.989" x2="430.000" y2="176.635" stroke="#345d9d" stroke-width="3"/>
+<line x1="406.363" y1="243.348" x2="430.000" y2="423.365" stroke="#345d9d" stroke-width="3"/>
+<line x1="564.050" y1="290.011" x2="430.000" y2="423.365" stroke="#345d9d" stroke-width="3"/>
+<line x1="453.637" y1="356.652" x2="430.000" y2="423.365" stroke="#345d9d" stroke-width="3"/>
+<line x1="295.950" y1="309.989" x2="430.000" y2="423.365" stroke="#345d9d" stroke-width="3"/>
+<circle cx="406.363" cy="243.348" r="4" fill="#16324f"/>
+<text x="414.363" y="235.348" font-family="Arial" font-size="15" fill="#16324f">V1</text>
+<circle cx="564.050" cy="290.011" r="4" fill="#16324f"/>
+<text x="572.050" y="282.011" font-family="Arial" font-size="15" fill="#16324f">V2</text>
+<circle cx="453.637" cy="356.652" r="4" fill="#16324f"/>
+<text x="461.637" y="348.652" font-family="Arial" font-size="15" fill="#16324f">V3</text>
+<circle cx="295.950" cy="309.989" r="4" fill="#16324f"/>
+<text x="303.950" y="301.989" font-family="Arial" font-size="15" fill="#16324f">V4</text>
+<circle cx="430.000" cy="176.635" r="4" fill="#16324f"/>
+<text x="438.000" y="168.635" font-family="Arial" font-size="15" fill="#16324f">V5</text>
+<circle cx="430.000" cy="423.365" r="4" fill="#16324f"/>
+<text x="438.000" y="415.365" font-family="Arial" font-size="15" fill="#16324f">V6</text>
+<text x="34" y="490" font-family="Arial" font-size="18" fill="#16324f">Arista nominal: 50.000 mm · 12 aristas únicas · 6 vértices</text>
+<text x="34" y="522" font-family="Arial" font-size="18" fill="#16324f">Envolvente alineada: 50.000 × 50.000 × 70.711 mm</text>
+<text x="34" y="558" font-family="Arial" font-size="15" fill="#526579">8 caras cerradas solicitadas · Espesor TBD · Proyección ilustrativa sin trayectoria.</text>
+</svg>

@@ -10,7 +10,7 @@ Esta matriz resume los comentarios en español y propone trabajo; no sustituye l
 
 ## Lo que ya valoraron positivamente
 
-El primer experto destacó la idea y su presentación. El segundo destacó la revisión bibliográfica y la relevancia del proyecto. Conservar esa claridad y las fuentes en el informe, enlazando cada afirmación importante a la evidencia correspondiente. Esta valoración no valida el mecanismo, la contención ni la compatibilidad con una plataforma.
+El primer experto destacó la idea y su presentación. El comentario sobre revisión bibliográfica, relevancia y ampliar seguridad figura bajo ACHIEVED Orbital Team en el texto del PDF; no se atribuye únicamente al experto 2. Conservar claridad y fuentes en el informe. Esta valoración no valida el mecanismo, la contención ni la compatibilidad con una plataforma.
 
 ## Comentarios explícitos y acciones de respuesta
 
@@ -18,7 +18,7 @@ El primer experto destacó la idea y su presentación. El segundo destacó la re
 |---|---|---|---|---|---|
 | EXP-01 — experto 1 | El brazo parece complejo y su adecuación a microgravedad es incierta. | Comparar el concepto orientable con una alternativa más simple. Explicar qué necesidad del experimento exige orientación y qué se pierde sin ella. Analizar alcance, montaje, cargas, tubos/cables y, cuando aplique, reacción sobre el satélite. | Otro agente redacta M1; NICOMANUQP revisa; M4/sistemas comprueban integración. | Tabla de alternativas con fuentes y criterios; geometría/poses bajo supuestos visibles; análisis de cargas o datos que faltan; enlace a MOT-001/002 e ICD-002/004. | Abierto: todavía no hay demostración de adecuación. |
 | EXP-02 — experto 1 | No se habían considerado emisiones de gases o polvo. | Identificar posibles contaminantes a partir del material y proceso. Desarrollar cámara y alternativas de gestión de emisiones; explicar el destino de gases, apertura y contención de material/partículas. | M2 aporta inventario; M3 aporta condiciones del proceso; Shelton/M4 integra; Eidan/M5 secuencias y señales. | Inventario/fuentes y plan de caracterización; esquema de cámara y ruta de gases condicionado al host; peligros y plan de verificación; INT-001, EXT-002 e ICD-005. | Abierto: existe propuesta de cámara, sin ruta ni eficacia verificadas. |
-| EXP-03 — experto 2 | Ampliar la seguridad más allá de requisitos térmicos; puede cambiar el diseño y aumentar costes. | Ampliar el análisis a exposición química, partículas/líquidos, UV, presión y fallos de energía/detección según inventario y escenario. Integrar los controles propuestos en arquitectura, recursos y costes. | M4/sistemas con M1/M2/M3/M5; revisión de módulos afectados. | Matriz de peligros y controles con verificaciones pendientes; presupuesto de cámara, conexiones, tratamiento e instrumentación; costes de desarrollo, pruebas, integración y operación. | Abierto: alcance de controles, asignaciones y costes por justificar. |
+| EXP-03 — ACHIEVED Orbital Team | Ampliar la seguridad más allá de requisitos térmicos; puede cambiar el diseño y aumentar costes. | Ampliar el análisis a exposición química, partículas/líquidos, UV, presión y fallos de energía/detección según inventario y escenario. Integrar los controles propuestos en arquitectura, recursos y costes. | M4/sistemas con M1/M2/M3/M5; revisión de módulos afectados. | Matriz de peligros y controles con verificaciones pendientes; presupuesto de cámara, conexiones, tratamiento e instrumentación; costes de desarrollo, pruebas, integración y operación. | Abierto: alcance de controles, asignaciones y costes por justificar. |
 
 La crítica al brazo expresa una duda técnica, no una prohibición. No se concluye que el brazo sea inviable ni necesario antes de comparar alternativas. Gases y polvo son peligros señalados por el jurado; los contaminantes concretos del proceso todavía deben identificarse.
 
@@ -26,7 +26,7 @@ La crítica al brazo expresa una duda técnica, no una prohibición. No se concl
 
 - Ya se registraron los dos escenarios candidatos, la pieza propuesta y la cámara en [misión](../../system/mision.md) y el [borrador de contención](contencion_gases_borrador.md).
 - Esta actualización convierte las observaciones en tareas trazables. **Documentarlas no las resuelve técnicamente.**
-- Faltan selección de plataforma/ambiente, geometría final de la pieza, material candidato y fuentes de emisiones, comparación del mecanismo y cuantificación de controles/recursos.
+- Eidan ya fijó estación tripulada y nominal de pieza con caras cerradas; alojamiento/ambiente, material y espesor siguen sin seleccionar. La [consolidación de módulos](consolidacion_modulos.md) incorpora comparación del mecanismo e inventario/recursos condicionales, con revisión pendiente.
 - No se afirma salida de gases a la cabina, al exterior o al soporte vital. La interfaz del host requiere acuerdo específico.
 - Responsables definitivos de M3 y coordinación de sistemas y fechas de resolución siguen por asignar. Las revisiones humanas propuestas no son conformidades.
 

@@ -1,0 +1,25 @@
+{
+  "id": "SRR-GEO-001",
+  "status": "TBR",
+  "source": "Eidan confirmó estación espacial con tripulación y base cuadrada; todas las aristas de 5 cm fueron propuestas en la conversación",
+  "reference_scenario": "crewed_space_station_internal_chamber",
+  "host": "TBD",
+  "print_mode": "edges_and_closed_faces",
+  "geometry": {
+    "type": "square_bipyramid",
+    "all_edges_equal": true,
+    "edge_length_m": 0.05,
+    "frame": "pieza_local_propuesto",
+    "base_center_m": [
+      0,
+      0,
+      0
+    ],
+    "z_axis": "normal a la base; origen y orientación respecto al robot TBD"
+  },
+  "notes": [
+    "Geometría nominal derivada; tolerancias, anclaje y trayectoria pendientes",
+    "No fija resina, presión de cámara ni equipo de vuelo",
+    "No sustituye config/caso_demo.json"
+  ]
+}

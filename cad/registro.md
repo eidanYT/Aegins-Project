@@ -10,3 +10,11 @@ Antes de modificar CAD avisar en la Issue y reservar edición de la pieza.
 No renombrar versiones como final_final2; usar revisión y registro.
 Para integrar CAD directamente en Git se puede evaluar Git LFS con todo el equipo; requiere configuración y revisar cuotas.
 GitHub bloquea archivos Git ordinarios mayores de 100 MiB; carga por navegador limitada a 25 MiB por archivo [G7].
+
+## Geometría nominal disponible para SRR
+
+| ID | Elemento | Estado / revisión | Archivos | Fuente y límite |
+|---|---|---|---|---|
+| CAD-002 | Bipirámide cuadrada con caras | TBR / revisión conceptual inicial | [OBJ en m](pieza_srr_bipiramide.obj), [SVG](pieza_srr_bipiramide.svg), [derivación](pieza_srr.md) | SRR-GEO-001; sin espesor, robot, anclaje o recorrido aprobado |
+
+El OBJ es una geometría exportada y reproducible, no un ensamble CAD de vuelo. La cámara y el mecanismo siguen pendientes de dimensionar con sus interfaces.

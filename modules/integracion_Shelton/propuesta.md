@@ -1,62 +1,89 @@
-# Propuesta — M4-Shelton: Recinto e integración
+# Propuesta — M4: Cámara e integración
 
-**Estado: BORRADOR SIN COMPLETAR.** Responsable: Shelton Yauri. Autor de esta propuesta: por completar.
-Rama / PR: por enlazar. Versión y fecha de trabajo: por completar.
+**Estado: TBR — propuesta conceptual para revisión.** Responsable de módulo: Shelton Yauri. Redacción: Codex a solicitud de Eidan, 12 de octubre de 2026. Rama: integracion/m4-m5-srr. Las conformidades de los módulos y del host siguen pendientes.
 
-[Instrucciones del módulo](README.md) · [Misión](../../system/mision.md) · [Requisitos](../../system/requisitos.md)
+## Objetivo y escenario
 
-## Objetivo y primera entrega
+Integrar una impresora de resina/UV candidata en una cámara dedicada dentro de una estación espacial con tripulación. Eidan eligió este escenario como referencia; el satélite queda como alternativa futura. No se ha elegido estación concreta, alojamiento, presión de trabajo, material ni equipo.
 
-Una propuesta de escenario de referencia, esquema de recinto, presupuesto inicial y preguntas de montaje, recursos y contención.
+La cámara debe estudiarse como parte del sistema de contención y gestión de residuos. Su existencia no demuestra ausencia de exposición de la tripulación. No se dispone de una conexión aprobada al soporte vital ni al exterior.
 
-Pregunta que debe responder: **¿Cómo cabe y se conecta el conjunto, y qué asignaciones o medidas deben confirmar los otros módulos?**
+## Geometría y envolvente
 
-## Geometría y comparación
+El caso nominal compartido es [SRR-GEO-001](../../system/caso_srr.json): bipirámide de base cuadrada, todas las aristas de 0,05 m, con aristas y caras cerradas solicitadas. La [geometría derivada](../../cad/pieza_srr.md) ocupa nominalmente 0,05 × 0,05 × 0,0707107 m en su marco local alineado.
 
-Describir el escenario y caso usado, lo que se comparará y qué supuestos se toman de otros módulos. Los datos del caso demostrativo son EJEMPLO.
+Esa envolvente es solo la pieza nominal. La cámara debe incluir anclaje, soporte, recorrido del mecanismo, cabezal y tubos, inspección, ventanas, gestión de residuos, cierre y pasamuros. La orientación respecto al mecanismo y las holguras quedan pendientes de M1; no se asigna un tamaño de cámara arbitrario.
 
-| Dato necesario | Propuesta y unidad | Fuente / condición | Estado del dato |
+Las caras cerradas exigen revisar trayectoria de superficies, espesor, curado y posible gas atrapado al cerrar el volumen. El volumen geométrico encerrado no es volumen de material impreso ni demuestra que la pieza sea hermética.
+
+## Alternativas de cámara y gases
+
+| Concepto | Ventaja que se estudia | Límite / dato necesario | Estado |
 |---|---|---|---|
-| Plataforma y ambiente de referencia | Por completar | Por completar | TBD |
-| Volumen, montaje, acceso y contención | Por completar | Por completar | TBD |
-| Masa, potencia, energía, calor y coste | Por completar | Por completar | TBD |
-| Recursos provisionales y límites de compatibilidad | Por completar | Por completar | TBD |
+| A: cámara confinada con retención y eventual tratamiento interno | Reduce dependencia inicial de una salida de gases del host; permite estudiar inventario y residuos localmente | Acumulación, capacidad de retención/tratamiento, temperatura, presión, fugas y apertura; eficacia por contaminante desconocida | TBR |
+| B: cámara con transferencia controlada a una interfaz del host | Puede permitir gestionar emisiones sin almacenar todo dentro del payload | Requiere receptor, conexión, límites, aislamiento y respuesta ante fallo aceptados por el host; no se presume disponible | TBR |
 
-## Alternativas
+**Propuesta de desarrollo:** usar A como concepto para el estudio inicial de contención, sin escoger todavía un filtro, válvula o cámara comercial. Mantener B condicionada a datos reales del alojamiento. Esto no es una selección de vuelo ni una aprobación de seguridad.
 
-Comparar opciones y explicar criterios, ventajas, límites y motivo de la elección preliminar. Enlazar fichas si se crean.
+La NASA describe la identificación y cuantificación de emisiones de materiales en recintos habitables como parte de su evaluación de contaminación [S1]. Para este proyecto aún falta inventario/SDS del material y caracterización del proceso; no se atribuyen contaminantes ni límites toxicológicos a una resina desconocida.
 
-| Opción | Qué cubre | Fuente | Limitación / dato faltante |
+## Arquitectura funcional propuesta
+
+```mermaid
+flowchart LR
+  HOST["Estación / alojamiento<br/>recursos e interfaces TBD"]
+  M4["M4: cámara, cierre,<br/>pasamuros y retención"]
+  PROC["M1/M2/M3: movimiento,<br/>material y UV"]
+  GAS["Gestión de emisiones<br/>retención/tratamiento TBR"]
+  M5["M5: supervisión,<br/>registro y metrología"]
+  HOST --- M4
+  PROC --- M4
+  M4 --- GAS
+  M5 --- M4
+  M5 --- PROC
+```
+
+Separar físicamente funciones de proceso, acceso, observación y conexiones. Ventanas y pasamuros requieren compatibilidad química, óptica, térmica y de presión por definir. Cables/tubos deben seguir el recorrido del mecanismo sin crear tracción o interferencias no evaluadas.
+
+## Recursos y costes
+
+Mantener la fuente común en [presupuestos](../../system/presupuestos.md). No hay datos suficientes para publicar masa, potencia o coste de M4.
+
+| Partida M4 | Información necesaria | Método inicial | Responsable de dato |
 |---|---|---|---|
-| A — por completar | Por completar | Por completar | Por completar |
-| B — por completar | Por completar | Por completar | Por completar |
+| Cámara, base y puerta | Dimensiones, material, espesor, sellos y cargas | Modelo de envolvente y masa por componentes; no diseño de recipiente a presión | M4 con M1/host |
+| Ventanas y pasamuros | Transmisión óptica, química, juntas, conexiones | Fichas y compatibilidad por escenario | M4/M2/M3/M5 |
+| Retención y gestión de gases | Emisiones, duración, capacidad y ruta | Balance por especie y evaluación de fallos | M2/M4 con host |
+| Gestión térmica | Calor de UV/proceso/control y ruta al alojamiento | Balance temporal con condiciones del host | M3/M4/M5 |
+| Integración y pruebas | Fabricación, inspección, ensayos y operación | Coste del ciclo de vida con fuente/fecha y exclusiones | M4/sistemas |
 
-## Modelo y verificación
+El [modelo paramétrico](analisis_contencion.md) ayuda a calcular cuando existan entradas. Un presupuesto con celdas desconocidas no se completa con cifras sin fuente.
 
-Describir el modelo, entradas, método y resultado o plan de comprobación.
-Esquema/CAD con revisión de envolvente y presupuesto con incertidumbre. No asumir límites de una plataforma real sin fuente.
+## Condiciones de acceso y fallos
 
-Enlazar cálculos, dibujos o archivos adicionales. Separar análisis/simulación de ensayo físico futuro.
+El acceso se define como una operación separada de impresión: terminación del proceso, gestión de presión/material/emisiones y autorización según el procedimiento aceptado. La geometría cerrada de la pieza también debe inspeccionarse antes de recuperación.
 
-## Interfaces y revisión
+Evaluar cierre defectuoso, fuga, obstrucción/saturación, sobrepresión, UV/temperatura fuera de condiciones, desprendimiento y pérdida de energía. La respuesta no consiste automáticamente en apagar todo o abrir una salida. Las secuencias se proponen en [ICD-005](../../interfaces/ICD-005.md) y requieren datos M2/M3/host.
 
-Requisitos relacionados: SYS-001, INT-001 e INT-002. Confirmar y ampliar vínculos según el trabajo.
+## Verificación y evidencias
 
-Puedes completar el modelo con supuestos TBR, incluidas partes de otras áreas. Marca aquí quién debe confirmar cada una. Esta tabla empieza pendiente: no contiene acuerdos.
+- SRR: inspección del escenario y esquema, comparación de conceptos, inventario de peligros y modelos paramétricos. La geometría nominal se puede comprobar matemáticamente.
+- PDR: dimensionamiento con datos de mecanismo/material/host, CAD integrado, rutas, presiones, calor y planes de prueba.
+- Prototipo futuro: pruebas de contención, apertura, presión y compatibilidad según límites aprobados; caracterización de emisiones y eficacia de gestión cuando aplique.
+- No se declara seguridad de tripulación, hermeticidad ni aptitud de vuelo verificadas.
 
-| ICD / apartado | Punto a resolver | Propuesta o supuesto | Quién revisa | Pregunta concreta | Estado de revisión | Respuesta / PR |
-|---|---|---|---|---|---|---|
-| ICD-002 / ICD-004 | Envolvente del movimiento, base, cargas y recorrido de cables/tubos | TBR: completar propuesta | M1 — NICOMANUQP | Completar pregunta concreta | Pendiente | — |
-| ICD-002 / ICD-005 | Depósito, tubos, fugas, residuos, presión y contención | TBR: completar propuesta | Gabriel — M2 | Completar pregunta concreta | Pendiente | — |
-| ICD-002 / ICD-004 / ICD-005 | Óptica, calor, protección UV y temperatura del recinto | TBR: completar propuesta | M3 — por asignar | Completar pregunta concreta | Pendiente | — |
-| ICD-003 / ICD-004 / ICD-005 | Montaje/visibilidad de cámaras, potencia/comunicaciones y estado seguro | TBR: completar propuesta | Eidan — M5 | Completar pregunta concreta | Pendiente | — |
+## Revisión necesaria
 
-Cuando exista un acuerdo, el dato compartido se mantiene en el ICD correspondiente y aquí se enlaza. Solo marcar Conforme con respuesta explícita y enlazada.
+| Interfaz | Pregunta concreta | Revisor | Estado |
+|---|---|---|---|
+| ICD-002 | ¿Qué volumen barrido, anclaje y carga exige imprimir aristas y caras? | M1 / NICOMANUQP | Pendiente |
+| ICD-005 | ¿Qué material, inventario, emisiones y presión residual deben contenerse? | M2 / Gabriel | Pendiente |
+| ICD-004/005 | ¿Qué calor, sombras, materiales ópticos y respuesta de parada exige UV? | M3 / responsable por asignar | Pendiente |
+| ICD-003/005 | ¿Qué cobertura, ventanas, señales y autorización de acceso requiere M5? | Eidan / M5 | Pendiente |
+| ICD-004 | ¿Qué alojamiento y rutas de gases/energía/calor están realmente disponibles? | Sistemas / host por definir | Pendiente |
 
-## Fuentes y archivos
+Fuentes: [S1 — NASA Toxic Offgassing](https://www.nasa.gov/centers-and-facilities/white-sands/toxic-offgassing/), misión/caso compartido, requisitos, interfaces y decisiones de Eidan. Referencia NASA orientativa; aplicabilidad contractual TBD.
 
-Añadir enlaces, fabricante/documento, versión y condiciones aplicables; enlazar los archivos creados dentro del módulo.
+Seguimiento: [datos de cámara, emisiones y alojamiento](https://github.com/eidanYT/Aegins-Project/issues/3). Fecha de resolución y conformidades: por acordar.
 
-## Próximo avance
-
-Escribir la siguiente acción concreta que puedes realizar y las preguntas que siguen abiertas.
+Próximo avance: integrar datos del otro agente, elegir ruta de gases con el host y dimensionar la cámara sin confundir envolvente de pieza con espacio del mecanismo.
