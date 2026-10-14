@@ -1,0 +1,584 @@
+{
+  "version": 1,
+  "profile": "tecnico",
+  "objective": "Entregar propuestas revisables M1 movimiento, M2 material/extrusion y M3 UV/termica segun prompt original de Eidan, para integrar SRR desde otra tarea",
+  "status": "listo_revision",
+  "completed": [
+    "Prompt original, AGENTS, CONTRIBUTING, guardrails, politica, plan, encargo, mision/requisitos/interfaces y modulos leidos; base main d1b064ee53fec257597b8675a81d27660007ed80",
+    "Sin PR tecnico existente en la inspeccion inicial; rama propia tecnico/m1-m3-srr desde main actualizado; main permanece sin cambios propios",
+    "Propuestas M1/M2/M3 y fichas de alternativas redactadas; presupuestos sin datos sustentados conservados TBD con siguiente accion",
+    "Fuentes F01-F08 documentadas con versiones, condiciones y acceso; TDS primarios indexados diferenciados de texto completo; SDS vigentes pendientes",
+    "Modelo 0.1 ejecutado: 12 comprobaciones internas pasan, 888 poses ideales dentro de limites supuestos; no verificacion independiente ni ensayo fisico",
+    "Sintesis preparada para integrador con entradas/salidas, filas de requisitos/ICD, respuesta R1, peligros, revision y limites en archivos propios",
+    "Control local de ambito, registro y enlaces pasa con validador main d1b064e; nueva comprobacion antes de actualizar enlaces del snapshot final",
+    "Rama tecnico/m1-m3-srr publicada con arbol identico al validado; PR borrador #6 abierto y adjuntado al chat, sin merge ni autoaprobacion",
+    "CI GitHub Aegins agent policy, run 38329499363, commit 97ecaa8b791a9ba015076693d992796fa5ad2276: completed/success; control estructural, no verificacion cientifica",
+    "Seguimiento tecnico Issue #5 creado sin asignar personas; dependencias existentes M4 #3 y M5 #4 enlazadas; aclaraciones de usuario corroboradas documentalmente en #3"
+  ],
+  "pending": [
+    {
+      "item": "Reconciliar declaraciones del usuario con prompt/main: estacion conceptual y bipiramide cuadrada con caras; formalizar sin afirmar alojamiento/ambiente/gases disponibles",
+      "owner": "Integrador/sistemas con Eidan",
+      "due": "2026-10-12 como objetivo; conformidad y fecha por acordar",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/3"
+    },
+    {
+      "item": "Revision independiente de fuentes/calculos y conformidad de todos los afectados por ICD; no autointegrar",
+      "owner": "NICOMANUQP M1, Gabriel M2, humano M3 por asignar, M4/M5 y sistemas",
+      "due": "Por acordar",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/5"
+    },
+    {
+      "item": "TDS/SDS vigentes, formulacion, sellos/tubos, reologia, emisiones y presion maxima creible",
+      "owner": "Gabriel M2 con M3/M4",
+      "due": "Por acordar; necesario antes de seleccion material",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/5"
+    },
+    {
+      "item": "CAD del brazo/cabezal, continuidad, colisiones, tubos/anclaje, cargas e imprimibilidad de caras y ultima union",
+      "owner": "NICOMANUQP M1 con M2/M3 y Shelton M4",
+      "due": "Por acordar hacia PDR",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/5"
+    },
+    {
+      "item": "Ventana gel/curado/union, mapa optico, ruta termica y calor de reaccion, driver y BOM",
+      "owner": "Humano M3 por designar con M2/M4",
+      "due": "Por acordar",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/5"
+    },
+    {
+      "item": "Metricas/errores, tiempos/calibracion, estado seguro y diccionario de señales",
+      "owner": "Eidan M5 con M1/M2/M3/M4",
+      "due": "Por acordar",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/4"
+    },
+    {
+      "item": "Presupuesto integrado por fases, masa/picos/envolvente/BOM y costes con base y cotizaciones; revisar atribucion EXP-03",
+      "owner": "Integrador/sistemas",
+      "due": "Por acordar para consolidacion SRR",
+      "tracking": "https://github.com/eidanYT/Aegins-Project/issues/3"
+    }
+  ],
+  "sources": [
+    "mensaje_inicio_agentes.md original aportado por Eidan; main d1b064ee53fec257597b8675a81d27660007ed80",
+    "models/srr_agente_tecnico/fuentes.md F01-F08, consulta 2026-10-12; versiones/acceso/condiciones explicitados",
+    "models/srr_agente_tecnico/entradas.json v0.1 sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+    "https://github.com/eidanYT/Aegins-Project/pull/6",
+    "https://github.com/eidanYT/Aegins-Project/issues/5; dependencias #3/#4",
+    "https://github.com/eidanYT/Aegins-Project/actions/runs/38329499363; primer commit 97ecaa8"
+  ],
+  "next_action": "Recibir y contrastar revision independiente en PR #6; integrador consolida M4/M5 y documentos comunes usando la sintesis y seguimientos #3/#4/#5; confirmar datos antes de seleccionar, aprobar interfaces o integrar",
+  "reviewers": [
+    "NICOMANUQP M1 propuesto, sin conformidad",
+    "Gabriel Hurtado M2 propuesto, sin conformidad",
+    "M3 humano por designar; revision especializada pendiente",
+    "Shelton Yauri M4 y Eidan M5 para interfaces; coordinacion de sistemas por asignar"
+  ],
+  "estimates": [
+    {
+      "name": "edge",
+      "value": 0.05,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Eidan, bipiramide con aristas de 5 cm; base cuadrada y caras aclaradas en este chat",
+      "status": "TBR",
+      "conditions": "Bipiramide regular cuadrada; formalizacion compartida pendiente"
+    },
+    {
+      "name": "bead_diameter",
+      "value": 0.0012,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; ICD-001 main d1b064e; diametro igual al de boquilla DREPP F01, no al filamento medido",
+      "status": "EJEMPLO",
+      "conditions": "Cordones circulares ideales de aristas"
+    },
+    {
+      "name": "track_width",
+      "value": 0.0012,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Hipotesis de este estudio",
+      "status": "TBR",
+      "conditions": "Caras: pista rectangular ideal; debe caracterizarse"
+    },
+    {
+      "name": "wall_height",
+      "value": 0.0005,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Hipotesis de este estudio",
+      "status": "TBR",
+      "conditions": "Espesor de capa/pared ilustrativo; no elegido por Eidan"
+    },
+    {
+      "name": "speed",
+      "value": 0.005,
+      "unit": "m/s",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; ICD-001 main d1b064e",
+      "status": "EJEMPLO",
+      "conditions": "Velocidad constante solo en tramos de deposicion"
+    },
+    {
+      "name": "uv_length",
+      "value": 0.002,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; ICD-001 main d1b064e",
+      "status": "EJEMPLO",
+      "conditions": "Zona uniforme hipotetica, no mapa optico"
+    },
+    {
+      "name": "irradiance",
+      "value": 2500.0,
+      "unit": "W/m2",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; ICD-001 main d1b064e",
+      "status": "EJEMPLO",
+      "conditions": "250 mW/cm2; no inferida del LED comercial"
+    },
+    {
+      "name": "resin_density",
+      "value": 1760.0,
+      "unit": "kg/m3",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; F02 GE680 TDS 20.01.2025, pagina 2, extracto primario indexado",
+      "status": "TBR",
+      "conditions": "Liquido; confirmar ficha vigente y lote antes de seleccion"
+    },
+    {
+      "name": "reference_viscosity",
+      "value": 54.0,
+      "unit": "Pa s",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; F02 GE680 TDS 20.01.2025 pagina 2; 54000 mPa s",
+      "status": "TBR",
+      "conditions": "10 s^-1, gap 500 um; no curva reologica ni viscosidad de boquilla"
+    },
+    {
+      "name": "nozzle_radius",
+      "value": 0.0006,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Mitad del diametro del caso",
+      "status": "TBR",
+      "conditions": "Conducto cilindrico ideal; boquilla real puede ser conica"
+    },
+    {
+      "name": "nozzle_length",
+      "value": 0.01,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Hipotesis de sensibilidad",
+      "status": "TBR",
+      "conditions": "Longitud hidraulica cilindrica equivalente, no CAD real"
+    },
+    {
+      "name": "tube_radius",
+      "value": 0.002,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Hipotesis de sensibilidad",
+      "status": "TBR",
+      "conditions": "Radio interior, tubo circular"
+    },
+    {
+      "name": "tube_length",
+      "value": 0.5,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Hipotesis de sensibilidad",
+      "status": "TBR",
+      "conditions": "Alimentacion remota; longitud no aprobada"
+    },
+    {
+      "name": "reservoir_volume",
+      "value": 2e-05,
+      "unit": "m3",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Hipotesis de inventario",
+      "status": "TBR",
+      "conditions": "20 mL utiles; envolvente y volumen muerto desconocidos"
+    },
+    {
+      "name": "piston_diameter",
+      "value": 0.02,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Hipotesis geometrica",
+      "status": "TBR",
+      "conditions": "Diametro interior ideal; no componente seleccionado"
+    },
+    {
+      "name": "reserve_fraction",
+      "value": 0.2,
+      "unit": "1",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Reserva ilustrativa del estudio",
+      "status": "TBR",
+      "conditions": "20% de volumen depositado; no cubre volumen muerto conocido"
+    },
+    {
+      "name": "link_1",
+      "value": 0.12,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Brazo matematico propuesto",
+      "status": "TBR",
+      "conditions": "Distancia entre articulaciones, sin espesor"
+    },
+    {
+      "name": "link_2",
+      "value": 0.1,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Brazo matematico propuesto",
+      "status": "TBR",
+      "conditions": "Distancia entre articulaciones, sin espesor"
+    },
+    {
+      "name": "tool_length",
+      "value": 0.03,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Brazo matematico propuesto",
+      "status": "TBR",
+      "conditions": "Centro de muneca a punta, herramienta ideal"
+    },
+    {
+      "name": "base_x",
+      "value": -0.12,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Brazo matematico propuesto",
+      "status": "TBR",
+      "conditions": "Base respecto al centro de probeta; y=z=0"
+    },
+    {
+      "name": "standoff",
+      "value": 0.001,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Hipotesis del estudio de poses",
+      "status": "TBR",
+      "conditions": "Punta separada de superficie; no ventana de deposicion"
+    },
+    {
+      "name": "elbow_limit",
+      "value": 2.6179938779914944,
+      "unit": "rad",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Hipotesis de limite ideal",
+      "status": "TBR",
+      "conditions": "150 grados; no limites comerciales"
+    },
+    {
+      "name": "other_joint_limit",
+      "value": 3.141592653589793,
+      "unit": "rad",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Hipotesis de limite ideal",
+      "status": "TBR",
+      "conditions": "+/-180 grados; no limites comerciales"
+    },
+    {
+      "name": "conductance_1",
+      "value": 0.1,
+      "unit": "W/K",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Barrido de sensibilidad del autor",
+      "status": "EJEMPLO",
+      "conditions": "Solo calor local LED, sin driver/reaccion/radiacion"
+    },
+    {
+      "name": "conductance_2",
+      "value": 0.5,
+      "unit": "W/K",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Barrido de sensibilidad del autor",
+      "status": "EJEMPLO",
+      "conditions": "Solo calor local LED, sin driver/reaccion/radiacion"
+    },
+    {
+      "name": "conductance_3",
+      "value": 1.0,
+      "unit": "W/K",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Barrido de sensibilidad del autor",
+      "status": "EJEMPLO",
+      "conditions": "Solo calor local LED, sin driver/reaccion/radiacion"
+    },
+    {
+      "name": "led_current",
+      "value": 1.0,
+      "unit": "A",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; F04 tabla historica M365L3",
+      "status": "TBR",
+      "conditions": "Maximo CW publicado; caso de operacion, no pico de driver"
+    },
+    {
+      "name": "led_voltage",
+      "value": 3.85,
+      "unit": "V",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; F04 tabla historica M365L3",
+      "status": "TBR",
+      "conditions": "Tipico, no maximo garantizado"
+    },
+    {
+      "name": "led_radiant_power",
+      "value": 1.29,
+      "unit": "W",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; F04 tabla historica M365L3",
+      "status": "TBR",
+      "conditions": "Tipico a corriente maxima; no irradiancia en pieza"
+    },
+    {
+      "name": "led_count",
+      "value": 4,
+      "unit": "1",
+      "source": "models/srr_agente_tecnico/entradas.json v0.1; Hipotesis de cabezal UV",
+      "status": "TBR",
+      "conditions": "Cuatro emisores equivalentes; geometria, driver y refrigeracion pendientes"
+    },
+    {
+      "name": "geometry.surface_area_m2",
+      "value": 0.008660254037844387,
+      "unit": "m2",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "geometry.enclosed_volume_m3",
+      "value": 5.892556509887897e-05,
+      "unit": "m3",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "geometry.wire_length_m",
+      "value": 0.6000000000000001,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.wire_q_m3_s",
+      "value": 5.654866776461627e-09,
+      "unit": "m3/s",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.face_q_m3_s",
+      "value": 3e-09,
+      "unit": "m3/s",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.raster_spacing_m",
+      "value": 0.001170304599708701,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.raster_length_m",
+      "value": 7.4,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.wire_time_s",
+      "value": 120.00000000000001,
+      "unit": "s",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.face_time_s",
+      "value": 1480.0,
+      "unit": "s",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.deposit_time_without_transits_s",
+      "value": 1600.0,
+      "unit": "s",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.wire_volume_m3",
+      "value": 6.785840131753953e-07,
+      "unit": "m3",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.face_volume_m3",
+      "value": 4.44e-06,
+      "unit": "m3",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.first_order_shell_volume_m3",
+      "value": 4.330127018922193e-06,
+      "unit": "m3",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.sum_without_overlap_correction_m3",
+      "value": 5.118584013175395e-06,
+      "unit": "m3",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.reserve_m3",
+      "value": 1.023716802635079e-06,
+      "unit": "m3",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.resin_with_reserve_mass_kg",
+      "value": 0.010810449435826434,
+      "unit": "kg",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.reservoir_resin_mass_kg",
+      "value": 0.0352,
+      "unit": "kg",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.ideal_piston_stroke_m",
+      "value": 0.06366197723675815,
+      "unit": "m",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "deposition.retained_tube_volume_m3",
+      "value": 6.283185307179586e-06,
+      "unit": "m3",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "uv_thermal.exposure_time_s",
+      "value": 0.4,
+      "unit": "s",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "EJEMPLO",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "uv_thermal.nominal_dose_J_m2",
+      "value": 1000.0,
+      "unit": "J/m2",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "EJEMPLO",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "uv_thermal.led_electric_W_typical",
+      "value": 15.4,
+      "unit": "W",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "uv_thermal.led_optical_W_typical",
+      "value": 5.16,
+      "unit": "W",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "uv_thermal.led_junction_heat_W_typical",
+      "value": 10.24,
+      "unit": "W",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "uv_thermal.led_energy_for_deposition_J_typical",
+      "value": 24640.0,
+      "unit": "J",
+      "source": "models/srr_agente_tecnico/resultados.json v0.1; entradas sha256 18f5a79f27257896eea335315e05982404f194352d2f3287b9231c3c7dbcdc33",
+      "status": "TBR",
+      "conditions": "Analisis sintetico con limites en README; no ensayo ni requisito aprobado"
+    },
+    {
+      "name": "aristas.total_dp_Pa",
+      "value": 84300.0,
+      "unit": "Pa",
+      "status": "TBR",
+      "source": "resultados.json v0.1; sensibilidad newtoniana, no presion de diseno",
+      "conditions": "Viscosidad constante, conductos ideales, sin sellos ni transitorios"
+    },
+    {
+      "name": "aristas.ideal_piston_force_N",
+      "value": 26.483626069761957,
+      "unit": "N",
+      "status": "TBR",
+      "source": "resultados.json v0.1; sensibilidad newtoniana, no presion de diseno",
+      "conditions": "Viscosidad constante, conductos ideales, sin sellos ni transitorios"
+    },
+    {
+      "name": "aristas.piston_speed_m_s",
+      "value": 1.7999999999999997e-05,
+      "unit": "m/s",
+      "status": "TBR",
+      "source": "resultados.json v0.1; sensibilidad newtoniana, no presion de diseno",
+      "conditions": "Viscosidad constante, conductos ideales, sin sellos ni transitorios"
+    },
+    {
+      "name": "aristas.hydraulic_power_W",
+      "value": 0.0004767052692557151,
+      "unit": "W",
+      "status": "TBR",
+      "source": "resultados.json v0.1; sensibilidad newtoniana, no presion de diseno",
+      "conditions": "Viscosidad constante, conductos ideales, sin sellos ni transitorios"
+    },
+    {
+      "name": "caras.total_dp_Pa",
+      "value": 44722.539008822605,
+      "unit": "Pa",
+      "status": "TBR",
+      "source": "resultados.json v0.1; sensibilidad newtoniana, no presion de diseno",
+      "conditions": "Viscosidad constante, conductos ideales, sin sellos ni transitorios"
+    },
+    {
+      "name": "caras.ideal_piston_force_N",
+      "value": 14.050000000000004,
+      "unit": "N",
+      "status": "TBR",
+      "source": "resultados.json v0.1; sensibilidad newtoniana, no presion de diseno",
+      "conditions": "Viscosidad constante, conductos ideales, sin sellos ni transitorios"
+    },
+    {
+      "name": "caras.piston_speed_m_s",
+      "value": 9.549296585513721e-06,
+      "unit": "m/s",
+      "status": "TBR",
+      "source": "resultados.json v0.1; sensibilidad newtoniana, no presion de diseno",
+      "conditions": "Viscosidad constante, conductos ideales, sin sellos ni transitorios"
+    },
+    {
+      "name": "caras.hydraulic_power_W",
+      "value": 0.00013416761702646782,
+      "unit": "W",
+      "status": "TBR",
+      "source": "resultados.json v0.1; sensibilidad newtoniana, no presion de diseno",
+      "conditions": "Viscosidad constante, conductos ideales, sin sellos ni transitorios"
+    }
+  ],
+  "verified_claims": []
+}

@@ -48,4 +48,6 @@ Hay propuestas e interfaces TBR, modelos y evidencia matemática. Las conformida
 
 ## Consolidación inicial de cinco módulos
 
-[Estado y contraste de módulos](consolidacion_modulos.md) · [Fuente del informe SRR](informe_borrador.md). Los aportes técnicos se citan por versión; no se fusionan ramas ni se adoptan como datos verificados. Informe final maquetado, ensamble CAD, mercado, presupuesto sustentado y cronograma siguen pendientes.
+[Estado y contraste de módulos](consolidacion_modulos.md) · [Fuente del informe SRR](informe_borrador.md). Los aportes técnicos se citan por versión y no se adoptan como datos verificados. Informe final maquetado, ensamble CAD, mercado, presupuesto sustentado y cronograma siguen pendientes.
+
+[Revisión conjunta y pendientes del 13 de octubre](revision_conjunta_2026-10-13.md): la propuesta técnica ya está en main como borrador TBR; integración sigue pendiente de aprobación e incorporación. El ajuste solicitado de revisores en Rulesets necesita actuación de Eidan en Settings; no se ha aplicado automáticamente.

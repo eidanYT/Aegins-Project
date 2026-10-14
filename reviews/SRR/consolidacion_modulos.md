@@ -1,6 +1,6 @@
 # Consolidación documental de los cinco módulos
 
-**TBR — propuestas, sin conformidades ni ensayos.** Integra la entrega técnica publicada en [SRR: propuestas M1–M3 con cálculos preliminares y límites](https://github.com/eidanYT/Aegins-Project/pull/6) y la primera entrega M4/M5. No fusiona ramas ni selecciona material/hardware.
+**TBR — propuestas, sin conformidades ni ensayos.** Integra la entrega técnica publicada en [SRR: propuestas M1–M3 con cálculos preliminares y límites](https://github.com/eidanYT/Aegins-Project/pull/6) y la primera entrega M4/M5. El PR técnico se revisó e incorporó a main el 13 de octubre; integración actualizada sin conflictos. No se selecciona material/hardware. Ver [revisión conjunta y pendientes](revision_conjunta_2026-10-13.md).
 
 La referencia común de Eidan está formalizada en D-001 y [SRR-GEO-001](../../system/caso_srr.json): estación espacial con tripulación, cámara y bipirámide cuadrada de aristas de 0,05 m con caras cerradas. Las hipótesis del análisis técnico no sustituyen esta decisión ni el caso didáctico.
 

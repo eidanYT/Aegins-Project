@@ -13,7 +13,11 @@
     "Issues de seguimiento M4/M5 abiertas sin asignación ni conformidad inventada",
     "Candidatos COTS M5 documentados con fuentes primarias, solo para comparar un demostrador terrestre",
     "Entrega M1-M3 contrastada en trece magnitudes e incorporada al informe e ICD-001/002, sin seleccionar sus hipotesis ni conformidades",
-    "Atribucion de seguridad/costes corregida tras releer el PDF original del MDR"
+    "Atribucion de seguridad/costes corregida tras releer el PDF original del MDR",
+    "2026-10-13: ambas propuestas revisadas; politica y modelos pasan; entrega tecnica reproducida en copia de su commit",
+    "PR tecnico revisado y aprobado documentalmente a peticion de Eidan; integrado en main sin cerrar conformidades fisicas",
+    "Integracion actualizada con main sin conflictos; revision conjunta y pendientes documentados",
+    "Identidades comprobadas: autor tecnico EidanAjahuanaQuiroz, autor integracion eidanYT; otra cuenta tiene write"
   ],
   "pending": [
     {
@@ -45,6 +49,11 @@
       "item": "CAD de ensamble, mercado, costes sustentados y cronograma real",
       "owner": "Integracion y equipo con los modulos",
       "due": "Antes de entrega SRR; fecha por acordar"
+    },
+    {
+      "item": "Desmarcar exigencia CODEOWNERS en Rulesets manteniendo una aprobacion y checks; aprobar PR de integracion desde otra cuenta",
+      "owner": "Eidan en Settings y EidanAjahuanaQuiroz para revision",
+      "due": "Antes del merge de integracion; herramientas no permiten cambiar reglas administrativas"
     }
   ],
   "sources": [
@@ -61,9 +70,12 @@
     "https://www.raspberrypi.com/products/raspberry-pi-global-shutter-camera/",
     "https://github.com/eidanYT/Aegins-Project/pull/6",
     "Entrega tecnica fijada a commit 97ecaa8b791a9ba015076693d992796fa5ad2276",
-    "https://drive.google.com/file/d/1fCPoGXb0Y6MstuKdieDDerOqg5v8OnwV/view"
+    "https://drive.google.com/file/d/1fCPoGXb0Y6MstuKdieDDerOqg5v8OnwV/view",
+    "https://github.com/eidanYT/Aegins-Project/pull/6",
+    "Revision del head tecnico 4f8f92dce2e6d9f8090bc72028a6cd8682bc95ca",
+    "Reglas y permisos consultados 2026-10-13; require_code_owner_review=true; EidanAjahuanaQuiroz write"
   ],
-  "next_action": "Revisar conjuntamente las propuestas M1-M3 y M4-M5, registrar conformidades y completar CAD/mercado/costes/cronograma para maquetar el informe",
+  "next_action": "Eidan ajusta regla de propietarios en Settings y otra cuenta aprueba PR de integracion; comprobar CI y merge autorizado; despues cerrar decisiones y entregables SRR",
   "reviewers": [
     "Shelton Yauri para M4",
     "Eidan para M5",
