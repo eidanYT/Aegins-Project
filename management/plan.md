@@ -1,39 +1,16 @@
-# Plan de trabajo
+# Hitos del PDR y desarrollo avanzado
 
-**Empieza ahora desde [tu módulo](../README.md#entra-en-tu-módulo-y-empieza).** Este plan reúne hitos y entregas importantes. No asigna un día de inicio a cada tarea.
+Fechas de 2026 confirmadas por Eidan el 18 de octubre de 2026. El 2027 de la agenda es un error de tipeo. No se inventan horas ni plazos oficiales distintos a los documentados.
 
-## Fechas importantes
-
-Fechas de 2026, hora de Lima. Proceden del plan anterior: la revisión interna es propuesta y las fechas de entrega/SRR siguen sujetas a confirmación de la agenda oficial. Actualizar esta tabla cuando se confirme.
-
-| Fecha | Hito | Resultado esperado |
+| Fecha | Hito | Criterio |
 |---|---|---|
-| 8–9 de octubre | Revisión interna del SRR — propuesta | Revisar el conjunto y registrar correcciones o preguntas abiertas. |
-| 10 de octubre | Entrega SRR — por confirmar | Entregar los documentos y la visualización exigidos, con versión identificada. |
-| 17 de octubre | Presentación SRR — por confirmar | Exponer el concepto y registrar las observaciones recibidas. |
+| Desde ahora | Trabajo en ambas líneas | Módulos desarrollan sus objetivos y revisan dependencias; no esperar a las sesiones para empezar. |
+| 23 y 30 de octubre | Actitud, OBDH y comunicaciones | Incorporar límites de movimiento, datos y control que correspondan. |
+| 6, 13 y 20 de noviembre | Potencia, térmica y estructuras | Cerrar recursos, CAD y análisis preliminares. |
+| 27 de noviembre | Costes, riesgos y AIV | Conciliar el expediente y pendientes con impacto de aceptación. |
+| 28 de noviembre | Entrega PDR | Todos los documentos una semana antes, según agenda. Verificar canal y formato vigente. |
+| 5 de diciembre | PDR Review 3 | Defender diseño preliminar integrado y evidencia trazable. |
+| 19 de diciembre | Gran final si finalista | Demostrar resultados avanzados alcanzados, utilidad y ruta de desarrollo. |
+| Según recursos y acuerdos | Validación física y espacial | Ensayos correlacionados y aceptación del proveedor y host; sin fecha comprometida. |
 
-## Tareas importantes
-
-Se pueden preparar borradores en paralelo. Cuando falte un dato de otro módulo, usar un supuesto TBR y pedir revisión; el supuesto no se convierte en acuerdo hasta que se revise.
-
-- [ ] Confirmar la agenda y los formatos de entrega del programa.
-- [ ] Definir la plataforma de referencia, la pieza de prueba y qué se comparará.
-- [ ] Preparar una propuesta de cada módulo con alternativas, fuentes y límites.
-- [ ] Acordar movimiento, alimentación, UV, mediciones, montaje y respuesta a fallos en las interfaces.
-- [ ] Integrar masa, volumen, potencia, calor y coste.
-- [ ] Preparar el modelo 3D conceptual y comprobar la coherencia entre módulos.
-- [ ] Completar concepto, especificaciones y visualización según la [lista SRR](../reviews/SRR/README.md).
-- [ ] Revisar el conjunto, identificar la versión de entrega y ensayar la exposición.
-- [ ] Registrar y atender las observaciones del SRR.
-
-Marcar una tarea cuando exista una entrega revisada enlazada; esta lista no sustituye los documentos técnicos.
-
-[Volver al inicio](../README.md) · [Cómo proponer y revisar](colaboracion.md)
-
-## Actualización del 12 de octubre de 2026
-
-Eidan ha solicitado una prórroga; su aprobación sigue pendiente. Las fechas históricas de la tabla anterior no confirman una nueva agenda.
-
-El [plan de trabajo de hoy](../reviews/SRR/plan_trabajo_hoy.md) propone cuatro horas para un borrador integrado del SRR, con aportes de los cinco módulos y revisión del equipo. El [encargo del otro agente](../reviews/SRR/encargo_agente_tecnico.md) delimita M1/M2/M3 y evita edición simultánea de documentos comunes.
-
-La plantilla oficial consultada pide informe de hasta 30 páginas; los lineamientos fijan exposición de 10 minutos y preguntas de 15 minutos. Añadir al trabajo viabilidad económica/ambiental, mercado, costes de ciclo de vida, autonomía, respuesta a Review 1 y cronograma de desarrollo. Este plan no declara terminados análisis, ensayos ni entregables.
+[Objetivos completos](../system/objetivos_pdr_y_desarrollo.md) · [Paquete PDR](../reviews/SRR/preparacion_PDR.md). Los hitos de definición, modelos, integración y revisión son puertas de madurez; no asignan una receta diaria a cada integrante.
