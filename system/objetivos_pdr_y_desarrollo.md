@@ -2,6 +2,8 @@
 
 Equipo AEGINS · Brazo de seis ejes · 18 de octubre de 2026
 
+[Documento independiente en Drive](https://docs.google.com/document/d/1inMmWbgGPaS9qYh_PXo-mJs9juY8hWAyJhXr5WGR60M/edit)
+
 El trabajo se organiza en dos resultados fundamentales: presentar un diseño preliminar integrado y defendible en el PDR, y desarrollar un expediente técnico con CAD dimensionado, modelos y simulación de impresión de mayor profundidad. Cada módulo elige sus métodos y organiza su trabajo para cumplir los requisitos, respetando las interfaces comunes y aportando evidencia revisable.
 
 La probeta de referencia es una bipirámide de base cuadrada, doce aristas de 0,05 m y ocho caras cerradas. El brazo tiene seis articulaciones revolutas y controla posición y orientación completas del TCP. El espesor y las tolerancias de fabricación y de la pieza se deben cerrar mediante dimensionamiento y presupuesto de errores.
