@@ -1,0 +1,14 @@
+{
+  "kind": "documentary_inspection",
+  "date": "2026-10-18",
+  "scope": "Documentary consistency; not simulation or physical validation",
+  "checks": {
+    "unique_objective_ids": 33,
+    "objective_ids_in_plan_and_requirements": true,
+    "spanish_report_native_tables_retained": 17,
+    "selected_functions_D1": 30,
+    "cost_inventory_rows_including_header": 39,
+    "old_model_files_removed": 6
+  },
+  "source": "English SRR revision 5 and user instruction of 18 October 2026"
+}
