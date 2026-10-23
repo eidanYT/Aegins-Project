@@ -1,31 +1,20 @@
-# Datos y decisiones pendientes
+# Decisiones y datos para cierre
 
-Este registro reúne preguntas técnicas abiertas. Las fechas del proyecto están únicamente en [el plan de hitos](../management/plan.md); puedes trabajar en cualquiera de estos puntos desde ahora.
+Las selecciones del SRR están recogidas; los puntos siguientes tienen evidencia pendiente. Las fechas son objetivos internos propuestos vinculados al PDR, salvo la entrega oficial derivada del 28 de noviembre. Crear o enlazar Issue existente al desarrollar cada punto, evitando duplicados.
 
-| ID | Qué falta | Dónde documentar la respuesta | Seguimiento |
-|---|---|---|---|
-| T01 | Formatos leídos: informe máximo 30 páginas y exposición 10 min + 15 min preguntas; falta agenda/prórroga confirmada | [Plan](../management/plan.md) y [paquete SRR](../reviews/SRR/README.md) | Issue por crear o enlazar |
-| T02 | Escenario elegido: estación tripulada con cámara; falta host, alojamiento, ambiente e interfaces | [Misión](mision.md) | Issue por crear o enlazar |
-| T03 | Base cuadrada, aristas de 0,05 m y caras cerradas elegidas; falta espesor, anclaje, trayectoria y métricas/criterios | [M1](../modules/movimiento_NICOMANUQP/propuesta.md), [M5](../modules/control_metrologia_Eidan/propuesta.md) y misión | Issue por crear o enlazar |
-| T04 | Resina y óptica preliminares | [M2](../modules/extrusion_Gabriel/propuesta.md), [M3](../modules/uv_termica/propuesta.md) e [ICD-001](../interfaces/ICD-001.md) | Issue por crear o enlazar |
-| T05 | Alimentación y sincronización | [ICD-001](../interfaces/ICD-001.md) e [ICD-003](../interfaces/ICD-003.md) | Issue por crear o enlazar |
-| T06 | Recursos de plataforma y cargas | [Presupuestos](presupuestos.md), [ICD-002](../interfaces/ICD-002.md) e [ICD-004](../interfaces/ICD-004.md) | Issue por crear o enlazar |
-| T07 | Metrología y muestreo | [M5](../modules/control_metrologia_Eidan/propuesta.md) e ICD-003 | Issue por crear o enlazar |
-| T08 | Contención, térmica y fallos | [Riesgos](riesgos.md) e [ICD-005](../interfaces/ICD-005.md) | Issue por crear o enlazar |
+| ID | Decisión o evidencia pendiente | Módulo de referencia | Fecha objetivo | Registro de aceptación |
+|---|---|---|---|---|
+| T01 | Formato y canal PDR; observaciones reales recibidas en SRR | Sistemas Eidan | Antes de congelar el paquete 28 nov | Paquete PDR |
+| T02 | Marcos y dimensiones 6R, variantes, TCP y tubos | M1 Nicolas con M2/M3/M4 | Antes de integrar trayectoria PDR | ICD-002 y CAD |
+| T03 | Espesor, apoyo, secuencia y cierre de ocho caras | M2 Gabriel con M1/M3/M5 | Antes de evaluar imprimibilidad PDR | PV01 |
+| T04 | Umbrales numéricos y presupuesto de error/latencia | M5 Isaac con todos | Antes de aceptar simulaciones PDR | ICD-001/003 |
+| T05 | Reología, presión, caudal y transitorios GE680 | M2 Gabriel | Modelo preliminar antes del 28 nov; ensayo según recursos | PV01 |
+| T06 | Dosis, responsividad a 365 nm y balance térmico | M3 Andres | Modelo preliminar antes del 28 nov; ensayo según recursos | PV01/PV03 |
+| T07 | Curvas de aire/filtros, emisiones por especie y acceso | M4 Shelton con M2/M3 | Dimensionamiento antes del 28 nov; prueba según recursos | PV02/PV04 |
+| T08 | Compatibilidad eléctrica, bus, memoria e imágenes | M5 Isaac con M1/M4 | Antes del 28 nov | ICD-003/004 |
+| T09 | Total de recursos, cotizaciones y márgenes | M4 Shelton con sistemas/todos | Antes del 28 nov | Presupuestos |
+| T10 | Host, proveedor, perfiles PSD/seno/choque y criterios | M4 Shelton con M1/sistemas | Hipótesis PDR antes del 28 nov; límites reales antes de calificar | PV06 e ICD-004 |
+| T11 | Herramienta de simulación, caso común y fidelidad | M5 Isaac con M1/M2/M3 | Antes de desarrollar integración avanzada | Decisión de software |
+| T12 | Nombre completo de Andres para portada | Sistemas Eidan y Andres | Próxima edición oficial | Tabla de equipo |
 
-Al abrir la Issue, enlázala aquí e identifica quién resolverá la pregunta. No marques un punto cerrado sin respuesta documentada.
-
-## Responsables y siguiente decisión
-
-| Punto | Responsable de trabajo propuesto | Fecha | Estado |
-|---|---|---|---|
-| Host/ambiente/interfaces | Sistemas con Shelton y Eidan | Por acordar | TBD |
-| Trayectorias de caras y volumen barrido | NICOMANUQP / otro agente técnico | Por acordar | TBD |
-| Material/espesor/emisiones | Gabriel / otro agente técnico | Por acordar | TBD |
-| UV, curado, sombras y calor | M3 / otro agente técnico; responsable humano por asignar | Por acordar | TBD |
-| Metrología y tiempo | Eidan / M5 con M1/M3/M4 | Por acordar | Propuesta TBR publicada para revisión |
-| Cámara y acceso | Shelton / M4 con M2/M3/M5/host | Por acordar | Propuesta TBR publicada para revisión |
-
-Las decisiones de Eidan están en [SRR-GEO-001](caso_srr.json) y misión. Estas asignaciones no son aceptación de tareas ni conformidades; las fechas deben acordarse. El trabajo de propuestas puede continuar mientras se resuelven los datos faltantes.
-
-Seguimiento M4/T02/T06/T08: [cámara, emisiones y alojamiento](https://github.com/eidanYT/Aegins-Project/issues/3). Seguimiento M5/T03/T05/T07/T08: [metrología, tiempo y fallos](https://github.com/eidanYT/Aegins-Project/issues/4). Los aportes M1/M2/M3 se coordinan mediante sus propuestas y estas dependencias; el material/UV de T04 todavía debe documentarse.
+No marcar cerrado sin decisión/evidencia, versión y revisión de los afectados. [Objetivos](../system/objetivos_pdr_y_desarrollo.md).

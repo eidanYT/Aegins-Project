@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "profile": "tecnico",
+  "objective": "Sincronizar SRR revisión 5 y objetivos PDR/desarrollo avanzado exclusivos 6R dentro del perfil tecnico",
+  "status": "listo_revision",
+  "completed": [
+    "Comparación de report inglés/español y asignaciones de módulo",
+    "Objetivos con criterios, evidencias y fuentes; sin resultados físicos nuevos",
+    "Retirada de implementación cinemática sustituida en perfil técnico; incorporación documental en integración"
+  ],
+  "pending": [
+    {
+      "item": "Revisión independiente y conformidades de interfaces",
+      "owner": "Equipo AEGINS y revisores afectados",
+      "due": "Antes de integrar y congelar PDR 28 noviembre 2026"
+    }
+  ],
+  "sources": [
+    "Report inglés SRR revisión 5, Drive 1sF6ue6xzVTxw11Q5jYj6G-STlRtV-LT6, actualizado 17 octubre 2026",
+    "Solicitud y confirmación de año de Eidan, 18 octubre 2026"
+  ],
+  "next_action": "Revisar PR, resolver observaciones y registrar conformidades sin autoaprobar ni integrar",
+  "reviewers": [
+    "Nicolas M1",
+    "Gabriel M2",
+    "Andres M3",
+    "Shelton M4",
+    "Isaac M5",
+    "Eidan sistemas"
+  ],
+  "estimates": [],
+  "verified_claims": []
+}

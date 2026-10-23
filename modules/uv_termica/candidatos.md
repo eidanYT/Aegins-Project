@@ -1,19 +1,12 @@
-# Fichas ópticas — M3
+# Selección de referencia de M3
 
-Versión 0.1, 2026-10-12, **TBR**. Humano M3/revisión especializada por asignar. [Fuentes F01–F04](../../models/srr_agente_tecnico/fuentes.md); [combinaciones material–fuente](propuesta.md).
+Fuente: report SRR inglés revisión 5 y traducción española. S significa seleccionado para diseño; alternativas como respaldo. Faltan dimensionamiento por función, compatibilidad y aceptación física.
 
-| Campo de componente | M3-OPT-A: sectores/anillo 365 nm | M3-OPT-B: foco orientable 365 nm | M3-REF: emisor M365L3 |
-|---|---|---|---|
-| Fabricante/modelo | Concepto, no producto | Concepto, no producto | Thorlabs, referencia terrestre de catálogo histórico F04 |
-| Requisitos / comparación | UV-001, THM-001; compara B | Mismos, compara A | Referencia de presupuesto, no selección |
-| Prestación continua/pico | Mapa E y límites TBD; no asumir emisión uniforme | Mapa E/óptica/recorrido TBD | Datos espectrales/radiantes típicos en F04; no mapa de pieza |
-| Exactitud/repetibilidad | Radiometría/calibración y tolerancia TBD | Igual | No se deriva dosimetría de potencia radiante |
-| Masa/CG/inercia/envolvente | TBD kg, m, kg·m², m³ | Igual, incluir obturador/óptica | Cabezal/disipador/driver TBD |
-| Electricidad / calor | Modelo de cuatro emisores como hipótesis, no BOM | Número de emisores/duty cycle TBD | I/V/Φ en F04; máximos de conjunto y driver TBD |
-| Conexiones | Brida, corriente regulada y sensores TBD | Igual; orientación y sombra con M1 | Driver/térmica necesarios, interfaces por confirmar |
-| Materiales/compatibilidad | Ventanas/pantallas/reflector y resina TBD | Igual | Banda de referencia respaldada para GE680, sin ventana de proceso propia |
-| Ambiente/límites | Encapsulado/temperatura/host TBD | Igual | No calificación espacial aportada |
-| Coste/disponibilidad | TBD USD; consulta 2026-10-12 sin cotización | Igual | Precio/versión/stock actual TBD; no precio histórico |
-| Verificación | Mapa E, gel y curado, boquilla/sombras, calor y enclavamiento | Igual y cobertura de caras/nodos | Obtener datasheet vigente y óptica/driver exactos |
+| Función | Referencia y estado | Alternativas | Motivo y evidencia pendiente |
+| --- | --- | --- | --- |
+| M3 Fuente UV | S: Nichia NVSU233B de 365 nm | LED montado Thorlabs 365 nm; Phoseon FireJet 365 nm | NVSU233B U365 elegido: 3.85 V, 1 A y 1.45 W ópticos típicos por LED a Ts=25 °C; cuatro dan 15.4 W eléctricos antes de drivers [P16]. Verificar dosis y refrigeración. |
+| M3 Disipación | S: Placa conductora y correas térmicas | Heat pipe; placa fría líquida | Referencia pasiva y flexible; exige sumidero y conductancia al alojamiento. El antecedente tecnológico no califica el conjunto. |
+| M3 Temperatura | S: Pt100 en placa térmica | Termopar K; TI TMP461-SP | Medida estable y calibrable en el montaje; no mide directamente la unión LED, la resina ni la boquilla. |
+| M3 Seguimiento UV | S: Fotodiodo SiC tipo SG01D | Thorlabs S120VC; Ophir PD300RM UVA | SG01D es la familia principal; se presupuesta SG01D-18 [P05]. La banda declarada al 10% del máximo llega cerca de 358 nm; verificar responsividad y margen de señal a 365 nm antes de usarlo. |
 
-La alternativa Dymax + UV/visible tiene fuente exacta **TBD** hasta justificar su banda y exposición. No asignar un LED de 405 nm solo por disponibilidad. Elegir entre A/B según ventana material y cobertura/anclaje; mantener coexistencia de gel localizado y postexposición como propuesta hasta medir cinética. No declarar mitigación UV eficaz por dibujar un recinto opaco.
+[Objetivos del módulo](README.md) · [Estado de cierre](propuesta.md).

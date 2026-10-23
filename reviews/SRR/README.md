@@ -1,53 +1,7 @@
-# Paquete SRR
-## DL1 — Concept Design v2.0
-- [ ] Pregunta, antecedentes y aportación delimitada.
-- [ ] Plataforma/ambiente elegido y ConOps.
-- [ ] Arquitectura y alternativa considerada.
-- [ ] Razón para usar brazo/orientación.
-- [ ] Riesgos y desarrollo futuro.
-## DL2 — System Specifications v2.0
-- [ ] Requisitos con criterios, fuentes y métodos de verificación.
-- [ ] Candidatos y selección preliminar justificada.
-- [ ] Interfaces y coordinación temporal.
-- [ ] Presupuestos de masa/volumen/potencia/calor/coste.
-- [ ] Incertidumbres y TBD con responsables y fechas.
-- [ ] Seguridad adaptada al escenario.
-## DL3 — 3D Visualisation
-- [ ] Geometría a escala coherente y anclaje.
-- [ ] Movimiento, alimentación y UV representados.
-- [ ] Qué está comprobado cinemáticamente y qué es ilustrativo.
-- [ ] No se presentan resultados físicos inventados.
-## Congelación
-Registrar tag srr-v0.1 o versión acordada, commit, fecha, autores y enlaces de entregables.
-Los archivos fuente del repo no sustituyen automáticamente los formatos que exija SGAC.
-Revisar accesibilidad del enlace entregado; un repositorio privado no concede acceso al jurado por enviar su URL.
+# Base documental SRR y transición al PDR
 
-## Borrador disponible para el informe
+La revisión 5 del report selecciona las referencias de materiales y hardware, la cámara tipo MSG y el brazo 6R. Su contenido se incorpora al repositorio en [report de referencia](report_referencia.md), [selección](../../system/seleccion_componentes.md), [requisitos](../../system/requisitos.md) y [presupuestos](../../system/presupuestos.md). Las ilustraciones completas están en el report de Drive enlazado.
 
-[Borrador — cámara de impresión y gestión de emisiones](contencion_gases_borrador.md): recoge la propuesta de Eidan y la respuesta preliminar a la observación del jurado sobre gases y partículas. Incluye decisiones abiertas, vínculos a interfaces y verificación propuesta.
+El trabajo vigente se organiza en [PDR y desarrollo avanzado](../../system/objetivos_pdr_y_desarrollo.md). El PDR exige un paquete integrado; el desarrollo avanzado añade CAD dimensionado, tolerancias, modelos, FEA y simulación de impresión. No hay nuevos ensayos físicos ni calificación espacial en esta actualización.
 
-**Estado TBR:** la ruta de gases y protección de tripulación no están aprobadas ni verificadas. La [misión](../../system/mision.md#pieza-de-demostración-propuesta-por-eidan) registra estación tripulada como referencia y bipirámide cuadrada de aristas de 5 cm con caras cerradas; espesor y proceso siguen por definir. Esta actualización no cierra los ítems de la lista SRR.
-
-## Organización del trabajo de hoy
-
-[Plan de trabajo](plan_trabajo_hoy.md) · [Encargo para el otro agente](encargo_agente_tecnico.md)
-
-Eidan confirmó el envío del encargo. La entrega M1–M3 está publicada en su propia propuesta de revisión y se recoge en la consolidación; no hay conformidades técnicas registradas.
-
-## Observaciones de los expertos
-
-[Seguimiento de las dos evaluaciones del MDR / Review 1](respuesta_expertos.md): comparación del brazo, emisiones de gases/polvo y ampliación de seguridad con impacto en diseño y costes. Las respuestas técnicas siguen abiertas; documentar una acción no equivale a resolverla.
-
-## Primera propuesta técnica M4/M5
-
-[M4 — cámara e integración](../../modules/integracion_Shelton/propuesta.md) · [M5 — control y metrología](../../modules/control_metrologia_Eidan/propuesta.md) · [Resumen de integración](aportes_integracion.md) · [Pieza nominal](../../cad/pieza_srr.md)
-
-Referencia actual: estación espacial con tripulación y cámara; pieza de base cuadrada, aristas de 0,05 m y caras cerradas. Datos en system/caso_srr.json. Material, espesor, host y hardware siguen sin elegir.
-
-Hay propuestas e interfaces TBR, modelos y evidencia matemática. Las conformidades, fabricación, calibración y verificación de seguridad siguen pendientes; esta actualización no marca completa la lista de entrega.
-
-## Consolidación inicial de cinco módulos
-
-[Estado y contraste de módulos](consolidacion_modulos.md) · [Fuente del informe SRR](informe_borrador.md). Los aportes técnicos se citan por versión y no se adoptan como datos verificados. Informe final maquetado, ensamble CAD, mercado, presupuesto sustentado y cronograma siguen pendientes.
-
-[Revisión conjunta y pendientes del 13 de octubre](revision_conjunta_2026-10-13.md): la propuesta técnica ya está en main como borrador TBR; integración sigue pendiente de aprobación e incorporación. El ajuste solicitado de revisores en Rulesets necesita actuación de Eidan en Settings; no se ha aplicado automáticamente.
+[Respuesta a observaciones MDR](respuesta_expertos.md) · [Paquete PDR](preparacion_PDR.md) · [Hitos](../../management/plan.md). Registrar el feedback real del SRR cuando el equipo lo aporte.

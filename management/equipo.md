@@ -1,13 +1,14 @@
-# Equipo y contactos
+# Equipo por módulos
 
-| Módulo o función | Responsable | Usuario GitHub |
-|---|---|---|
-| [M1-NICOMANUQP — Movimiento](../modules/movimiento_NICOMANUQP/README.md) | NICOMANUQP | nicomanuQP |
-| [M2-Gabriel — Material y extrusión](../modules/extrusion_Gabriel/README.md) | Gabriel Hurtado | Por completar |
-| [M3 — UV y térmica](../modules/uv_termica/README.md) | Por asignar | Por completar |
-| [M4-Shelton — Recinto e integración](../modules/integracion_Shelton/README.md) | Shelton Yauri | Por completar |
-| [M5-Eidan — Control y metrología](../modules/control_metrologia_Eidan/README.md) | Eidan | eidanYT |
-| Coordinación de sistemas | Por asignar | Por completar |
+| Módulo | Participante de referencia | Usuario GitHub |
+| --- | --- | --- |
+| M1 Movimiento y estructura del brazo | Nicolas Quispe Papuico | nicomanuQP |
+| M2 Material y extrusión | Gabriel Hurtado Curi | Por confirmar |
+| M3 UV y térmica | Andres Zelada Solano | Por confirmar |
+| M4 Cámara e integración | Shelton Yauri Huamani | Por confirmar |
+| M5 Control y metrología | Isaac Oscco Tomilla | Por confirmar |
+| Sistemas y coordinación | Eidan Ajahuana Quiroz | eidanYT |
 
+Fuente: tabla de responsabilidades del report inglés SRR revisión 5. M5 corresponde a Isaac; su carpeta conserva el nombre histórico para no romper enlaces. La portada inglesa y su tabla usan variantes del apellido de Andres; se conserva aquí la atribución de la tabla de módulos. Confirmar el nombre completo para la próxima portada oficial.
 
-[Volver al inicio](../README.md) · [Cómo coordinar revisiones](colaboracion.md)
+Cada módulo determina cómo llegar a sus [objetivos](../system/objetivos_pdr_y_desarrollo.md). La aceptación de interfaces requiere revisión cruzada; estas asociaciones no son aprobaciones técnicas.

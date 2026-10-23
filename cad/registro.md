@@ -1,20 +1,13 @@
-# Registro de CAD y archivos grandes
-Para empezar: carpeta compartida de Drive con versiones explícitas y exportación STEP/PDF o imágenes revisables.
-GitHub contiene este índice. La referencia debe apuntar a una versión congelada, no a un “último archivo” que cambie silenciosamente.
+# Registro CAD del brazo 6R y ensamble
 
-| ID | Pieza/ensamble | Responsable/editor actual | Revisión | Nativo/versión CAD | Exportación | Enlace | Hash o identificación de versión | Interfaces |
-|---|---|---|---|---|---|---|---|---|
-| CAD-001 | Envolvente común | TBD | TBD | TBD | TBD | TBD | TBD | ICD-002/004 |
+Meta: una fuente paramétrica controlada para brazo, muñeca, cabezal, tubos, cámara, montaje y retención de lanzamiento. No se ha creado CAD de fabricación en esta actualización de objetivos.
 
-Antes de modificar CAD avisar en la Issue y reservar edición de la pieza.
-No renombrar versiones como final_final2; usar revisión y registro.
-Para integrar CAD directamente en Git se puede evaluar Git LFS con todo el equipo; requiere configuración y revisar cuotas.
-GitHub bloquea archivos Git ordinarios mayores de 100 MiB; carga por navegador limitada a 25 MiB por archivo [G7].
+| Conjunto | Datos exigidos | Módulos que aceptan | Estado |
+|---|---|---|---|
+| Brazo 6R y muñeca | Piezas, ejes, ceros, offsets, límites, tolerancias, ajustes, masa/CG/inercia | M1 con M2/M3/M4/M5 | Pendiente |
+| Extrusor y alimentación | Brida, TCP, volumen muerto, conexiones y tubos móviles | M2 con M1/M3/M4 | Pendiente |
+| Óptica y térmica | Volumen UV, sombras, sensores y ruta conductiva | M3 con M1/M2/M4/M5 | Pendiente |
+| Cámara y transporte | Base, paneles, puertas, filtros, arnés, fijación y bloqueos | M4 con todos | Pendiente |
+| Metrología | Posiciones, campos de visión, calibración y ventanas | M5 con M4/M1 | Pendiente |
 
-## Geometría nominal disponible para SRR
-
-| ID | Elemento | Estado / revisión | Archivos | Fuente y límite |
-|---|---|---|---|---|
-| CAD-002 | Bipirámide cuadrada con caras | TBR / revisión conceptual inicial | [OBJ en m](pieza_srr_bipiramide.obj), [SVG](pieza_srr_bipiramide.svg), [derivación](pieza_srr.md) | SRR-GEO-001; sin espesor, robot, anclaje o recorrido aprobado |
-
-El OBJ es una geometría exportada y reproducible, no un ensamble CAD de vuelo. La cámara y el mecanismo siguen pendientes de dimensionar con sus interfaces.
+Cada versión enlaza archivos nativos, STEP, planos, BOM y exportación cinemática. Registrar unidades, marcos, fecha, revisión y commit. Comprobar que masas/inercias del robot y la malla FEA corresponden al mismo CAD. [Criterios avanzados](../system/objetivos_pdr_y_desarrollo.md).
