@@ -1,98 +1,47 @@
-# M5-Eidan — Control y metrología
+# M5 Control y metrología
 
-**Responsable: Eidan.** [Volver al inicio](../../README.md) · [Contactos](../../management/equipo.md)
+Participante de referencia: **Isaac Oscco Tomilla**. Estado de criterios nuevos: propuesta para revisión del equipo, 18 de octubre de 2026.
 
-Eidan, propón cómo coordinar la operación del sistema, registrar datos y medir si la pieza impresa cumple las métricas elegidas.
+El módulo elige cómo alcanzar los resultados y aporta evidencia revisable. Interfaces: ICD-001, ICD-002, ICD-003, ICD-004 e ICD-005.
 
-## Get started: empieza ahora
+### PDR-M5-01 Definir control, señales y estados
 
-**Primera entrega:** Una propuesta con métricas de la pieza, estados de operación, señales, instrumentación candidata y presupuesto inicial de errores. No necesitas esperar una fecha ni la respuesta de todos para preparar un borrador.
+**Resultado y aceptación.** Arquitectura GR740, SAMRH71, RTG4, seis EPOS4 y CAN para control; imágenes CASPEX por interfaz y buffer dimensionados por separado. Definir lazos, cadencias, relojes, latencia, validez y secuencia nominal/fallo. La seguridad física no depende solo del computador.
 
-1. En GitHub, abre el selector de rama `main`, escribe `m5/propuesta-medicion` y selecciona **Create branch … from main**.
-2. En esa rama, entra en `modules/control_metrologia_Eidan` y abre [propuesta.md](propuesta.md). Ya está creado.
-3. Pulsa el lápiz (**Edit this file**), rellena la estructura siguiendo los pasos de abajo y usa **Preview**.
-4. Guarda con **Commit changes** en tu rama y un mensaje que explique lo que avanzaste. Para continuar, vuelve a abrir esa misma rama.
+**Evidencia de cierre.** Arquitectura de software/hardware y diccionario ICD; estados con permisos, timeouts y recuperación autorizada.
 
-La carpeta pertenece al mismo repositorio; no crees otro repositorio para tu módulo.
+### PDR-M5-02 Cerrar criterio geométrico y presupuesto de error
 
-## Desarrolla tu propuesta
+**Resultado y aceptación.** Definir error de posición y orientación TCP, eRMS de pieza, desviación máxima, espesor/diámetro, cobertura, muestras inválidas e incertidumbre. Separar error de máquina, proceso, tiempo y medición. Fijar valores numéricos justificados antes de aceptar resultados de diseño.
 
-### 1. Qué medir
+**Evidencia de cierre.** Presupuesto de errores y calibración a través de ventanas reales; comparación de orientación fija/variable con controles equivalentes.
 
-Abre [misión](../../system/mision.md) y [ejemplo de trazabilidad](../../system/ejemplo_trazabilidad.md). Propón cómo medir trayectoria del material, diámetro y continuidad, y cómo comparar orientación fija/variable. Usa supuestos TBR si la pieza todavía no está acordada con M1.
+### PDR-M5-03 Dimensionar cómputo, almacenamiento y energía
 
-Escríbelo en el apartado **Geometría y comparación** de tu propuesta.
+**Resultado y aceptación.** Presupuesto CPU, memoria, imágenes, telemetría y alimentación con ECC/estrategia de fallos/radiación. UT8MR2M8 de 2 MB se reserva a estados y parámetros; no se da por suficiente para imágenes. Resolver compatibilidad de sensores, encoders, controladores y buses.
 
-### 2. Cómo operar
+**Evidencia de cierre.** Cronograma de tareas y tráfico, memoria por función y matriz de compatibilidad; TSIM es apoyo de software y no evidencia de latencia física.
 
-Dibuja los estados: comprobación, preparación, impresión, finalización, inspección y fallo. Explica qué permite pasar de uno a otro y qué datos requieren. La parada depende también de presión/material y UV.
+## Desarrollo avanzado
 
-Escríbelo en el apartado **Alternativas** de tu propuesta.
+### ADV-M5-01 Integrar simulación de brazo extrusor y UV
 
-### 3. Señales e instrumentación
+**Resultado y aceptación.** Un único reloj de simulación coordina seis articulaciones, trayectoria, caudal, presión, dosis, temperatura y material añadido. Separar comandos, estimaciones y mediciones. Modelos intercambian datos con unidades, marcos, secuencia, validez y latencia explícitos.
 
-Define comandos y lecturas con unidad, emisor/receptor, tiempo, validez y fuente. Propón cámaras, sensores y arquitectura de control por sus necesidades; diferencia comando, estimación y medida.
+**Evidencia de cierre.** Escena reproducible de la bipirámide con doce aristas y ocho caras cerradas, más una segunda geometría, vídeo y logs temporales; estado de física/calibración declarado.
 
-Escríbelo en el apartado **Modelo y verificación** de tu propuesta.
+### ADV-M5-02 Verificar interfaces y recuperación
 
-### 4. Error y registro
+**Resultado y aceptación.** Ensayos de software en el lazo con emuladores de sensores/actuadores, retardos, jitter, pérdidas/reordenación, CRC/formato incorrecto, calibración inválida, atasco y fallo de energía. Pasar a hardware en el lazo cuando exista equipo. Distinguir emulación ROS del protocolo de vuelo.
 
-Identifica contribuciones de calibración, perspectiva, ruido y desfase temporal. Propón un ejemplo de registro claramente sintético y señala qué se comprobará ahora por análisis y qué exige ensayo futuro.
+**Evidencia de cierre.** Pruebas automáticas de contrato y de fallos con criterio temporal derivado del presupuesto, registro de eventos y trazabilidad a ICD-001/003/005.
 
-Escríbelo en el apartado **Interfaces y revisión** de tu propuesta.
+### ADV-M5-03 Demostrar calidad y comparación de impresión
 
-Requisitos que debes consultar en [el registro](../../system/requisitos.md): **SCI-001, SCI-002, CTL-001, MET-001 y SAF-001**. Los valores del caso demostrativo son ejemplos, no límites aprobados.
+**Resultado y aceptación.** Reconstruir geometría simulada o medida sin usar los comandos como verdad de medición. Comparar orientación fija y variable en tareas accesibles a ambas, con registro de lote, exposición, apoyo y velocidad. Propagar incertidumbre y reportar fracasos.
 
-## Si necesitas más archivos
+**Evidencia de cierre.** Informe de error, espesor, cobertura, volumen y dosis; contraste de resultados con referencia independiente y conjunto de casos retenidos.
 
-Mantén la primera entrega en `propuesta.md`. Para ampliarla, desde **esta carpeta y tu rama** usa **Add file → Create new file**:
+## Registro del resultado
 
-- `candidatos/CAND-01.md`: copia [templates/componente.md](../../templates/componente.md), rellena modelo/concepto, prestaciones, fuentes y dudas. Repite para la alternativa crítica.
-- `analisis/calculo.md`: documenta entradas, unidades, método, resultado y limitaciones. Cambia el nombre por el cálculo concreto.
-- Para un archivo existente: **Add file → Upload files** en tu rama.
-
-Escribir `candidatos/CAND-01.md` crea la subcarpeta junto con el archivo. No hace falta crear carpetas vacías. Guarda con **Commit changes** y enlaza cada archivo desde tu propuesta.
-
-Si hace falta, crea `analisis/error_medida.md` y `ejemplo_log.csv`. El registro puede tener tiempo, estado, velocidad comandada/estimada, caudal comandado/estimado, presión, temperatura, validez y fallo; incluye unidades y procedencia en su diccionario.
-
-## Con quién revisar las interfaces
-
-Una interfaz (ICD) es el acuerdo sobre lo que tu módulo envía, recibe o necesita del otro. Trabaja los acuerdos compartidos en `interfaces/`; tu propuesta explica el razonamiento y enlaza el ICD.
-
-| Habla con | Para resolver | Documento compartido |
-|---|---|---|
-| M1 — NICOMANUQP | Pieza, trayectoria nominal, coordenadas y datos de movimiento | [ICD-001](../../interfaces/ICD-001.md) / [ICD-003](../../interfaces/ICD-003.md) |
-| Gabriel — M2 | Caudal/presión, punto de medida, retraso y parada de alimentación | [ICD-001](../../interfaces/ICD-001.md) / [ICD-003](../../interfaces/ICD-003.md) / [ICD-005](../../interfaces/ICD-005.md) |
-| M3 — por asignar | Consigna UV, temperatura, tiempos e interferencias de iluminación | [ICD-001](../../interfaces/ICD-001.md) / [ICD-003](../../interfaces/ICD-003.md) / [ICD-005](../../interfaces/ICD-005.md) |
-| Shelton — M4 | Campo de visión/montaje, recursos eléctricos y respuesta segura | [ICD-004](../../interfaces/ICD-004.md) / [ICD-005](../../interfaces/ICD-005.md) |
-
-Cuando M3 no tenga responsable, registra la pregunta y pide al equipo que designe revisor. Los usuarios para solicitar revisión están en [equipo](../../management/equipo.md).
-
-### Paso a paso, sin esperar una reunión
-
-1. Abre en **tu rama** el ICD enlazado en la tabla. Los cinco documentos ya existen; revisa si hay una Issue o PR trabajando el mismo punto.
-2. Escribe el intercambio que propones: datos o conexión, unidades, rango, tiempos, condiciones y fallo. Marca tus valores TBR y lo desconocido TBD.
-3. En **Puntos pendientes de revisión**, indica el apartado, la propuesta, el miembro que debe revisar y una pregunta concreta. Copia la misma tabla en el PR.
-4. Abre o enlaza una Issue de **Cambio de interfaz** y comparte tu PR con esas personas. Registra la respuesta en GitHub y enlázala desde la tabla.
-5. Mientras responden, continúa con tus cálculos o alternativas usando supuestos visibles. Incorpora correcciones en la misma rama; integra el acuerdo cuando los afectados hayan dejado conformidad y se haya revisado el conjunto.
-
-**Ejemplo para tu módulo:** Puedes proponer un sistema completo de control usando supuestos TBR. Marca el retardo de alimentación para Gabriel, el control UV para M3, el marco de coordenadas para M1 y la posición de cámaras/estado seguro para Shelton.
-
-Puedes proponer un modelo completo, incluso con partes de otros módulos. Señala quién debe verificar o confirmar cada parte; no la presentes como aceptada por el equipo. La [guía de colaboración](../../management/colaboracion.md) incluye la tabla y explica cómo registrar conformidades.
-
-## Comparte y cierra tu primera entrega
-
-1. Ve a **Pull requests → New pull request**: **base: main**, **compare: m5/propuesta-medicion**.
-2. Escribe un título que describa la entrega y enlaza tu propuesta, requisitos e ICD modificados.
-3. Incluye los puntos pendientes y solicita revisión a los contactos de la tabla. Si aún está en desarrollo, abre un PR en borrador; al estar listo, márcalo para revisión.
-4. Responde observaciones, guarda correcciones en tu rama y registra la conformidad de los afectados. Otro integrante revisa los cambios técnicos importantes antes de integrarlos.
-
-Tu primera entrega está preparada para revisión cuando:
-
-- [ ] La propuesta responde: **¿Cómo mediremos diferencias entre piezas y qué señales, tiempos y montajes deben confirmar los otros módulos?**
-- [ ] Las alternativas, fuentes, unidades, supuestos y límites están claros.
-- [ ] Los puntos que requieren revisión tienen pregunta, contacto y enlace al ICD.
-- [ ] Hay un método o resultado documentado: Método de medida, presupuesto inicial de errores y registro sintético. El tamaño de píxel no demuestra exactitud; el encoder del brazo no mide por sí solo la geometría del material.
-- [ ] El PR permite encontrar los archivos y distinguir trabajo propuesto de acuerdos.
-
-[Detalle técnico del módulo](ALCANCE_TECNICO.md) · [Guía de GitHub](../../CONTRIBUTING.md) · [Hitos](../../management/plan.md)
+Mantener en [propuesta](propuesta.md) las decisiones, fuentes y evidencias de cada ID. Toda cifra requiere unidades, condiciones y procedencia; los umbrales pendientes se cierran antes de declarar cumplimiento. [Requisitos comunes](../../system/requisitos.md) · [Interfaces](../../interfaces/README.md) · [Equipo](../../management/equipo.md).

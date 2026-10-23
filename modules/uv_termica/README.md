@@ -1,98 +1,41 @@
-# M3 — UV y térmica
+# M3 UV y térmica
 
-**Responsable: Responsable por asignar.** [Volver al inicio](../../README.md) · [Contactos](../../management/equipo.md)
+Participante de referencia: **Andres Zelada Solano**. Estado de criterios nuevos: propuesta para revisión del equipo, 18 de octubre de 2026.
 
-Propón cómo iluminar el material para curarlo y cómo gestionar la temperatura del proceso y del equipo.
+El módulo elige cómo alcanzar los resultados y aporta evidencia revisable. Interfaces: ICD-001, ICD-002, ICD-004 e ICD-005.
 
-## Get started: empieza ahora
+### PDR-M3-01 Definir óptica y ventana de curado
 
-**Primera entrega:** Una propuesta resina–fuente UV con alternativa, distribución de iluminación, balance térmico inicial y puntos por revisar. No necesitas esperar una fecha ni la respuesta de todos para preparar un borrador.
+**Resultado y aceptación.** Nichia NVSU233B U365 a 365 nm, cuatro emisores de referencia; geometría y distancia de iluminación vinculadas a orientación, caudal y velocidad. La irradiancia en resina se calcula o mide; la potencia óptica del LED no la sustituye. Establecer criterios de gel, unión y curado final con GE680.
 
-1. En GitHub, abre el selector de rama `main`, escribe `m3/propuesta-uv` y selecciona **Create branch … from main**.
-2. En esa rama, entra en `modules/uv_termica` y abre [propuesta.md](propuesta.md). Ya está creado.
-3. Pulsa el lápiz (**Edit this file**), rellena la estructura siguiendo los pasos de abajo y usa **Preview**.
-4. Guarda con **Commit changes** en tu rama y un mensaje que explique lo que avanzaste. Para continuar, vuelve a abrir esa misma rama.
+**Evidencia de cierre.** Mapa de irradiancia/dosis propuesto y plan de caracterización; sensibilidad a sombras e incidencia en las ocho caras.
 
-La carpeta pertenece al mismo repositorio; no crees otro repositorio para tu módulo.
+### PDR-M3-02 Cerrar balance térmico preliminar y medición
 
-## Desarrolla tu propuesta
+**Resultado y aceptación.** Placa conductora y straps, Pt100 y fotodiodo SiC SG01D como referencias. Separar calor de LED, driver, motores, electrónica, absorción y reacción; definir ruta al host. Comprobar responsividad y margen de señal SG01D a 365 nm antes de confirmar variante.
 
-### 1. Material y caso
+**Evidencia de cierre.** Balance con incertidumbre, temperaturas límite por material y ubicación de sensores; PV03 e ICD-004.
 
-Abre [misión](../../system/mision.md), [propuesta de Gabriel](../extrusion_Gabriel/propuesta.md) e [ICD-001](../../interfaces/ICD-001.md). Si la resina o velocidad no están acordadas, trabaja con supuestos TBR y registra qué debe confirmarse.
+### PDR-M3-03 Especificar protección UV y fallos
 
-Escríbelo en el apartado **Geometría y comparación** de tu propuesta.
+**Resultado y aceptación.** Definir inhibición física de UV ante puerta abierta, presión inválida o pérdida de permiso y el tratamiento del calor residual. Evaluar Lexan, Rosco R3114, adhesivo y Acktar a 365 nm, envejecimiento y limpieza.
 
-### 2. Fuente y óptica
+**Evidencia de cierre.** Esquema de interbloqueo con M4/M5 y plan de transmisión/exposición PV03; límites de seguridad pendientes de fuente aplicable.
 
-Compara dos opciones de iluminación compatibles con la evidencia del material. Documenta espectro, irradiancia a distancia definida, cobertura y sombras. Separa potencia eléctrica y óptica.
+## Desarrollo avanzado
 
-Escríbelo en el apartado **Alternativas** de tu propuesta.
+### ADV-M3-01 Acoplar exposición y curado al movimiento
 
-### 3. Exposición y calor
+**Resultado y aceptación.** Integrar irradiancia sobre cada tramo depositado usando pose, sombras, velocidad y estado temporal del material. Relacionar dosis con gel, conversión, unión y contracción mediante datos de la formulación; identificar resultados solo cualitativos cuando falten datos.
 
-Estima la exposición a lo largo de la trayectoria y el balance térmico. Incluye geometría, tiempo, fuentes y límites; una dosis calculada no demuestra curado suficiente.
+**Evidencia de cierre.** Mapa temporal de dosis y estado de curado con incertidumbre; zonas deficientes y excesivas trazadas al plan de impresión.
 
-Escríbelo en el apartado **Modelo y verificación** de tu propuesta.
+### ADV-M3-02 Correlacionar térmica y protección óptica
 
-### 4. Integración
+**Resultado y aceptación.** Modelo térmico transitorio de cabezal, resina, electrónica y recinto con caminos conductivos, radiación y convección interna justificada. Incorporar peor caso y fallos, transmisión real del panel y calibración de sensores.
 
-Propón disposición de óptica, disipación y sensores. Identifica riesgo de curar dentro de la boquilla y cómo afecta la luz a cámaras y recinto.
+**Evidencia de cierre.** Temperaturas, flujo al host y exposición exterior frente a límites acordados, convergencia y plan/datos de correlación PV03.
 
-Escríbelo en el apartado **Interfaces y revisión** de tu propuesta.
+## Registro del resultado
 
-Requisitos que debes consultar en [el registro](../../system/requisitos.md): **UV-001 y THM-001**. Los valores del caso demostrativo son ejemplos, no límites aprobados.
-
-## Si necesitas más archivos
-
-Mantén la primera entrega en `propuesta.md`. Para ampliarla, desde **esta carpeta y tu rama** usa **Add file → Create new file**:
-
-- `candidatos/CAND-01.md`: copia [templates/componente.md](../../templates/componente.md), rellena modelo/concepto, prestaciones, fuentes y dudas. Repite para la alternativa crítica.
-- `analisis/calculo.md`: documenta entradas, unidades, método, resultado y limitaciones. Cambia el nombre por el cálculo concreto.
-- Para un archivo existente: **Add file → Upload files** en tu rama.
-
-Escribir `candidatos/CAND-01.md` crea la subcarpeta junto con el archivo. No hace falta crear carpetas vacías. Guarda con **Commit changes** y enlaza cada archivo desde tu propuesta.
-
-Si lo necesitas, crea `analisis/exposicion_termica.md`; conserva en `propuesta.md` el enlace y las conclusiones.
-
-## Con quién revisar las interfaces
-
-Una interfaz (ICD) es el acuerdo sobre lo que tu módulo envía, recibe o necesita del otro. Trabaja los acuerdos compartidos en `interfaces/`; tu propuesta explica el razonamiento y enlaza el ICD.
-
-| Habla con | Para resolver | Documento compartido |
-|---|---|---|
-| Gabriel — M2 | Material, respuesta al UV, temperatura admisible y boquilla | [ICD-001](../../interfaces/ICD-001.md) / [ICD-002](../../interfaces/ICD-002.md) / [ICD-005](../../interfaces/ICD-005.md) |
-| M1 — NICOMANUQP | Velocidad, orientación y sombras durante la trayectoria | [ICD-001](../../interfaces/ICD-001.md) / [ICD-002](../../interfaces/ICD-002.md) |
-| Shelton — M4 | Montaje óptico, ruta del calor, protección y recursos | [ICD-002](../../interfaces/ICD-002.md) / [ICD-004](../../interfaces/ICD-004.md) / [ICD-005](../../interfaces/ICD-005.md) |
-| Eidan — M5 | Control UV, temperatura, temporización e interferencia con cámaras | [ICD-001](../../interfaces/ICD-001.md) / [ICD-003](../../interfaces/ICD-003.md) / [ICD-005](../../interfaces/ICD-005.md) |
-
-Cuando M3 no tenga responsable, registra la pregunta y pide al equipo que designe revisor. Los usuarios para solicitar revisión están en [equipo](../../management/equipo.md).
-
-### Paso a paso, sin esperar una reunión
-
-1. Abre en **tu rama** el ICD enlazado en la tabla. Los cinco documentos ya existen; revisa si hay una Issue o PR trabajando el mismo punto.
-2. Escribe el intercambio que propones: datos o conexión, unidades, rango, tiempos, condiciones y fallo. Marca tus valores TBR y lo desconocido TBD.
-3. En **Puntos pendientes de revisión**, indica el apartado, la propuesta, el miembro que debe revisar y una pregunta concreta. Copia la misma tabla en el PR.
-4. Abre o enlaza una Issue de **Cambio de interfaz** y comparte tu PR con esas personas. Registra la respuesta en GitHub y enlázala desde la tabla.
-5. Mientras responden, continúa con tus cálculos o alternativas usando supuestos visibles. Incorpora correcciones en la misma rama; integra el acuerdo cuando los afectados hayan dejado conformidad y se haya revisado el conjunto.
-
-**Ejemplo para tu módulo:** Si propones una fuente UV, marca qué respuesta de la resina debe confirmar Gabriel, qué espacio/disipación debe revisar Shelton y qué tiempos o interferencias de cámara debe revisar Eidan.
-
-Puedes proponer un modelo completo, incluso con partes de otros módulos. Señala quién debe verificar o confirmar cada parte; no la presentes como aceptada por el equipo. La [guía de colaboración](../../management/colaboracion.md) incluye la tabla y explica cómo registrar conformidades.
-
-## Comparte y cierra tu primera entrega
-
-1. Ve a **Pull requests → New pull request**: **base: main**, **compare: m3/propuesta-uv**.
-2. Escribe un título que describa la entrega y enlaza tu propuesta, requisitos e ICD modificados.
-3. Incluye los puntos pendientes y solicita revisión a los contactos de la tabla. Si aún está en desarrollo, abre un PR en borrador; al estar listo, márcalo para revisión.
-4. Responde observaciones, guarda correcciones en tu rama y registra la conformidad de los afectados. Otro integrante revisa los cambios técnicos importantes antes de integrarlos.
-
-Tu primera entrega está preparada para revisión cuando:
-
-- [ ] La propuesta responde: **¿La combinación material–fuente cubre el caso supuesto y qué límites ópticos o térmicos siguen pendientes?**
-- [ ] Las alternativas, fuentes, unidades, supuestos y límites están claros.
-- [ ] Los puntos que requieren revisión tienen pregunta, contacto y enlace al ICD.
-- [ ] Hay un método o resultado documentado: Mapa aproximado de iluminación y balance térmico justificados. Indica qué requerirá caracterización futura del material.
-- [ ] El PR permite encontrar los archivos y distinguir trabajo propuesto de acuerdos.
-
-[Detalle técnico del módulo](ALCANCE_TECNICO.md) · [Guía de GitHub](../../CONTRIBUTING.md) · [Hitos](../../management/plan.md)
+Mantener en [propuesta](propuesta.md) las decisiones, fuentes y evidencias de cada ID. Toda cifra requiere unidades, condiciones y procedencia; los umbrales pendientes se cierran antes de declarar cumplimiento. [Requisitos comunes](../../system/requisitos.md) · [Interfaces](../../interfaces/README.md) · [Equipo](../../management/equipo.md).

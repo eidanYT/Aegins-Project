@@ -1,19 +1,13 @@
-# Fichas de arquitecturas — M1
+# Selección de referencia de M1
 
-Versión 0.1, 2026-10-12. Campos de la plantilla de componente; **conceptos/candidatos TBR, ninguno seleccionado o calificado**. Revisión propuesta NICOMANUQP, pendiente.
+Fuente: report SRR inglés revisión 5 y traducción española. S significa seleccionado para diseño; alternativas como respaldo. Faltan dimensionamiento por función, compatibilidad y aceptación física.
 
-| Campo | M1-A: serial compacto 5R, sexto giro opcional | M1-B: XYZ con cabezal orientable | M1-R: UR5e terrestre |
-|---|---|---|---|
-| Requisitos / comparación | MOT-001/002; compara con B/R | MOT-001/002; compara con A | Referencia documental frente a A/B |
-| Fabricante/modelo | Concepto propio, no producto | Concepto, no producto | Universal Robots UR5e, F05 diciembre 2024 |
-| Prestación continua/pico | Muñeca ideal de dos enlaces; límites del [modelo](../../models/srr_agente_tecnico/README.md). Cargas/velocidades TBD | Recorrido/orientación y carga TBD; deberá cubrir mismas poses | 6 ejes; alcance 0,85 m; carga 5 kg, condiciones catálogo F05; no prestación espacial |
-| Exactitud/repetibilidad | TBD; residuo matemático no es precisión | TBD; guías/encoders/calibración | No se asigna repetibilidad de catálogo al cordón |
-| Masa/CG/inercia/envolvente | TBD kg, m, kg·m², m³; cuerpos no modelados | TBD, incluir marco/guías | Masa con cable 20,6 kg F05; CG/inercia TBD |
-| Electricidad/consumo | TBD V/A/W; depende de actuadores/perfil | TBD V/A/W | F05: 200 W moderado, 570 W máximo; no presupuesto del concepto A |
-| Interfaces | Brida/TCP/cables/tubos/base TBD, ICD-002/004 | Guías/cabezal y cableado TBD | Integración industrial no transferible automáticamente |
-| Materiales/compatibilidad | BOM, lubricantes, sellos y emisiones TBD | Igual, más guías/portacables | Ficha no acredita compatibilidad de resina/recinto/host |
-| Ambiente/límites | Estación como contexto del usuario por formalizar; no host elegido | Mismos requisitos de comparación | Equipo terrestre, sin calificación espacial presentada |
-| Coste/disponibilidad | TBD USD; sin cotización 2026-10-12 | TBD USD; sin cotización | TBD USD y revisión actual; ficha histórica sin precio |
-| Calificación | No existe evidencia | No existe evidencia | No se aporta calificación espacial |
+| Función | Referencia y estado | Alternativas | Motivo y evidencia pendiente |
+| --- | --- | --- | --- |
+| M1 Estructura del brazo | S: Aluminio 6061; brazo 6R | 7075; Ti 6Al 4V; CFRP | Seis articulaciones; dimensionar eslabones, muñeca y torsión de tubos. El material no califica el conjunto. |
+| M1 Motor | S: maxon EC 32 flat adaptado | Phytron phySPACE/VSS; Kollmorgen TBM2G | Familia principal elegida. Se presupuesta variante 267121 de 24 V / 15 W / Hall; revisar disponibilidad por estado NRND [P01]. Faltan demostrar adaptación espacial, par articular y vida. Presupuesto: 6 unidades; dimensionar por eje. |
+| M1 Transmisión | S: Harmonic Drive CSF/CSG | maxon GP 22 UP adaptado; accionamiento directo | Comparar reducción, holgura, elasticidad, lubricación y vida. El accionamiento directo aumenta la demanda de par. Presupuesto: 6 unidades; dimensionar por eje. |
+| M1 Medición angular | S: Renishaw RESOLUTE | Celera Motion IncOder; resolver Moog | Comparar resolución, contaminación, alineación y acondicionamiento. Sin afirmar vuelo del artículo propuesto. Presupuesto: 6 unidades; dimensionar por eje. |
+| M1 Controlador de motor | S: maxon EPOS4 | Elmo Gold Twitter; etapa propia con MCU | Los lazos rápidos quedan locales. Se presupuesta EPOS4 Module 50/5 534130 [P02]. Ajustar placa, potencia y protocolo de encoder; el precio del lector no demuestra compatibilidad directa con EPOS4. Presupuesto: 6 unidades; dimensionar por eje. |
 
-Decisión: desarrollar A bajo TBR para justificar cinco variables de tarea; revisar sexto giro cuando óptica/cables lo requieran. B sigue en comparación. Primero alcance, seguridad/retención y compatibilidad; después masa/coste. Datos faltantes impiden ponderación sustentada. Para verificar: CAD con cuerpos y barrido continuo, cargas/tubos/rigidez y revisión independiente. [Propuesta](propuesta.md) · [Fuentes](../../models/srr_agente_tecnico/fuentes.md).
+[Objetivos del módulo](README.md) · [Estado de cierre](propuesta.md).
