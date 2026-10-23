@@ -17,7 +17,7 @@ El equipo trabaja por resultados y criterios de aceptación. Cada módulo elige 
 | M2 Material y extrusión | Gabriel Hurtado Curi | [Requisitos del módulo](modules/extrusion_Gabriel/README.md) |
 | M3 UV y térmica | Andres Zelada Solano | [Requisitos del módulo](modules/uv_termica/README.md) |
 | M4 Cámara e integración | Shelton Yauri Huamani | [Requisitos del módulo](modules/integracion_Shelton/README.md) |
-| M5 Control y metrología | Isaac Oscco Tomilla | [Requisitos del módulo](modules/control_metrologia_Eidan/README.md) |
+| M5 Control y metrología | Eidan Ajahuana Quiroz | [Requisitos del módulo](modules/control_metrologia_Eidan/README.md) |
 | Sistemas y coordinación | Eidan Ajahuana Quiroz | [Integración y aceptación](system/objetivos_pdr_y_desarrollo.md) |
 
 ## Base técnica y estado
