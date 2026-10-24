@@ -4,7 +4,7 @@ Participante de referencia: **Andres Zelada Solano**. Estado de criterios nuevos
 
 El módulo elige cómo alcanzar los resultados y aporta evidencia revisable. Interfaces: ICD-001, ICD-002, ICD-004 e ICD-005.
 
-### PDR-M3-01 Definir óptica y ventana de curado
+### PDR-M3-01 Analizar los componentes 
 
 **Resultado y aceptación.** Nichia NVSU233B U365 a 365 nm, cuatro emisores de referencia; geometría y distancia de iluminación vinculadas a orientación, caudal y velocidad. La irradiancia en resina se calcula o mide; la potencia óptica del LED no la sustituye. Establecer criterios de gel, unión y curado final con GE680.
 
@@ -18,19 +18,11 @@ El módulo elige cómo alcanzar los resultados y aporta evidencia revisable. Int
 
 ### PDR-M3-03 Especificar protección UV y fallos
 
-**Resultado y aceptación.** Definir inhibición física de UV ante puerta abierta, presión inválida o pérdida de permiso y el tratamiento del calor residual. Evaluar Lexan, Rosco R3114, adhesivo y Acktar a 365 nm, envejecimiento y limpieza.
-
-**Evidencia de cierre.** Esquema de interbloqueo con M4/M5 y plan de transmisión/exposición PV03; límites de seguridad pendientes de fuente aplicable.
+**Resultado y aceptación.** Definir inhibición física de UV ante puerta abierta (tenemos la solucion de la ISS que trabajan con presion negativa, pero falta investigar mas) , presión inválida o pérdida de permiso y el tratamiento del calor residual. Evaluar Lexan, Rosco R3114, adhesivo y Acktar a 365 nm, envejecimiento y limpieza.
 
 ## Desarrollo avanzado
 
-### ADV-M3-01 Acoplar exposición y curado al movimiento
-
-**Resultado y aceptación.** Integrar irradiancia sobre cada tramo depositado usando pose, sombras, velocidad y estado temporal del material. Relacionar dosis con gel, conversión, unión y contracción mediante datos de la formulación; identificar resultados solo cualitativos cuando falten datos.
-
-**Evidencia de cierre.** Mapa temporal de dosis y estado de curado con incertidumbre; zonas deficientes y excesivas trazadas al plan de impresión.
-
-### ADV-M3-02 Correlacionar térmica y protección óptica
+### ADV-M3-01 Correlacionar térmica y protección óptica
 
 **Resultado y aceptación.** Modelo térmico transitorio de cabezal, resina, electrónica y recinto con caminos conductivos, radiación y convección interna justificada. Incorporar peor caso y fallos, transmisión real del panel y calibración de sensores.
 
