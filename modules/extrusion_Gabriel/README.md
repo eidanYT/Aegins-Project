@@ -4,27 +4,21 @@ Participante de referencia: **Gabriel Hurtado Curi**. Estado de criterios nuevos
 
 El módulo elige cómo alcanzar los resultados y aporta evidencia revisable. Interfaces: ICD-001, ICD-002, ICD-004 e ICD-005.
 
-### PDR-M2-01 Cerrar la definición del circuito de resina
+## Desarrollo avanzado
+
+### ADV-M2-01 Cerrar la definición del circuito de resina
 
 **Resultado y aceptación.** Referencia GE680, viproHEAD 5, boquilla de acero inoxidable, línea PTFE protegida de UV y sensor de presión Kulite. Documentar variantes, diámetros interiores, longitudes, volumen muerto, compatibilidad, almacenamiento y limpieza. SDS/TDS e inventario de peligros y emisiones con fuentes; no atribuir ausencia de emisiones sin datos.
 
 **Evidencia de cierre.** Esquema fluídico, BOM y fichas; las variantes pendientes tienen criterio y fecha de selección.
 
-### PDR-M2-02 Dimensionar entrega y transitorios
+### ADV-M2-02 Dimensionar entrega y transitorios
 
 **Resultado y aceptación.** Derivar caudales de aristas y caras del perfil de velocidad, sección y espesor; estimar pérdidas de presión y límites del dosificador, considerando viscosidad, temperatura, compresibilidad, burbujas, arranque, parada y presión residual.
 
 **Evidencia de cierre.** Modelo Q(t), presión y consumo; ventana de operación propuesta y plan de caracterización PV01.
 
-### PDR-M2-03 Justificar formación de caras y contención del material
-
-**Resultado y aceptación.** Secuencia de anclaje, deposición, unión entre pistas y cierre de ocho caras; identificar soportes, contracción, estabilidad antes de curar y criterios de calidad. Incluir atasco, fuga, cebado y fin de cartucho.
-
-**Evidencia de cierre.** Protocolo de probeta con métricas y criterios propuestos; revisión M1/M3/M4/M5 e integración en PV01/PV02.
-
-## Desarrollo avanzado
-
-### ADV-M2-01 Correlacionar un modelo del extrusor
+### ADV-M2-03 Correlacionar un modelo del extrusor
 
 **Resultado y aceptación.** Modelo de entrega con retardo, cumplimiento del caudal, presión, elasticidad y rezume, ajustado a datos de banco cuando estén disponibles. La ley newtoniana solo se usa dentro de su aplicabilidad; calibrar reología dependiente de cizalla y temperatura si se necesita.
 
