@@ -1,5 +1,7 @@
 # Colaboración y cierre de requisitos
 
+Aplicar el [reparto vigente de los cinco integrantes](../system/reparto_trabajo_2026-10-24.md). Para CAD, Nicolas y Gabriel reservan piezas/subensambles y un editor integra cada ensamble; Eidan coordina versiones de CAD y modelos, Shelton Capella y Andres los datos de componentes. Mantener independientes la elaboración y la revisión técnica de resultados.
+
 Cada módulo selecciona sus métodos para cumplir los [objetivos PDR y avanzados](../system/objetivos_pdr_y_desarrollo.md). Una Issue registra un requisito o decisión con su ID, resultado esperado, criterio, evidencia y dependencia. Evitar duplicar instrucciones individuales; mantener una fuente de verdad para cada parámetro común.
 
 Las propuestas se publican en ramas y PR según AGENTS.md. Revisar las interfaces afectadas y registrar conformidad explícita de cada módulo, versión y enlace. Una conformidad de diseño no prueba comportamiento físico. No enviar mensajes a personas sin autorización de Eidan.

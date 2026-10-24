@@ -1,5 +1,7 @@
 # Interfaces: acuerdos entre módulos
 
+Shelton elabora Capella y coordina la representación de interfaces; Eidan asume M5 y revisión de sistemas. El [reparto vigente](../system/reparto_trabajo_2026-10-24.md) define las colaboraciones. Esta actualización de responsables no concede conformidades técnicas ni cambia valores de interfaz.
+
 Una interfaz describe qué necesita un módulo del otro y qué le proporciona: datos, conexiones, montaje, recursos o reacción ante fallos. Escribe aquí el acuerdo compartido y enlázalo desde tu propuesta.
 
 ## Abre el documento que necesitas

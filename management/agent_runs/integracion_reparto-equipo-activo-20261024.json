@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "profile": "integracion",
+  "objective": "Registrar reparto operativo de cinco integrantes activos y separar CAD, modelado matemático, control y metrología según instrucciones de Eidan del 24 de octubre de 2026",
+  "status": "listo_revision",
+  "completed": [
+    "Revisados main, reglas, misión, requisitos, pendientes, ICD y ausencia de PR abiertos",
+    "Registrado reparto acordado y M5 actualizado a Eidan en documentación operativa",
+    "Conservados criterios PDR/ADV y atribuciones históricas; elegidos SolidWorks y Capella en curso según Eidan"
+  ],
+  "pending": [
+    {
+      "item": "Revisión independiente del reparto y de las dependencias; confirmar capacidad y fechas internas",
+      "owner": "Equipo activo con revisor independiente",
+      "due": "Antes de integrar el PR"
+    },
+    {
+      "item": "Asignar alcance y carga de óptica/térmica y detalle de cámara antes de desarrollar cada cálculo",
+      "owner": "Eidan con Andres y Shelton",
+      "due": "Primera revisión de configuración"
+    },
+    {
+      "item": "Confirmar nombre completo de Andres para próxima portada oficial",
+      "owner": "Andres y Eidan",
+      "due": "Próxima edición oficial"
+    }
+  ],
+  "sources": [
+    "Instrucciones de Eidan en conversación del 24 de octubre de 2026",
+    "main eb0c270fc0f09508d56d7f75ba0b6c3d2c0281c4",
+    "system/reparto_trabajo_2026-10-24.md"
+  ],
+  "next_action": "Revisión independiente y conformidad de los integrantes afectados antes de integrar; ejecutar las primeras entregas sin declarar verificación física",
+  "reviewers": [
+    "Nicolas Quispe Papuico para geometría y colaboración CAD",
+    "Gabriel Hurtado Curi para CAD y circuito de resina",
+    "Andres Zelada para componentes y adaptaciones",
+    "Shelton Yauri Huamani para Capella e interfaces"
+  ],
+  "estimates": [],
+  "verified_claims": []
+}

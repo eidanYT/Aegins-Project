@@ -1,5 +1,9 @@
 # Sincronización del SRR y decisiones vigentes
 
+## Actualización organizativa del 24 de octubre de 2026
+
+El [reparto vigente](reparto_trabajo_2026-10-24.md) registra cinco integrantes activos, salida de Isaac, M5 a cargo de Eidan, Capella por Shelton y SolidWorks elegido. La base inglesa revisión 5 y la española revisión 6 conservan sus estados de fecha; el cambio organizativo no reescribe los originales ni declara nuevas pruebas.
+
 Fuente principal: report inglés SRR revisión 5, archivo actualizado el 17 de octubre de 2026. Se comparó con la versión española y se incorporan contenido, selección, criterios, presupuestos, riesgos y verificación a las rutas activas. La transcripción del report mantiene las fuentes abreviadas y tablas; las imágenes siguen en Drive. No es una nueva verificación de cada fuente primaria ni una recotización.
 
 ## Decisiones incorporadas

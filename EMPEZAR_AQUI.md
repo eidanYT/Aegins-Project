@@ -1,5 +1,7 @@
 # Trabajar por requisitos
 
+Consultar primero el [reparto operativo de los cinco integrantes activos](system/reparto_trabajo_2026-10-24.md). Las listas PDR/ADV siguientes son criterios técnicos de referencia; la prioridad y colaboración actuales se organizan en ese plan.
+
 Abrir los [objetivos PDR y desarrollo avanzado](system/objetivos_pdr_y_desarrollo.md) y los criterios del [módulo](README.md). El objetivo final y su evidencia de aceptación sustituyen la lista de instrucciones diarias por integrante. Cada módulo puede proponer métodos, análisis y herramientas, conservando contratos comunes.
 
 Para cada ID registrar estado, criterio, entradas y fuentes, método de verificación, resultado, archivos y revisor. Cuando falte un límite, asignar una decisión con dueño y fecha; no declarar cumplimiento hasta cerrarlo. Las interfaces se acuerdan con los módulos afectados. Publicar cambios en rama y PR según [las reglas del repositorio](AGENTS.md); la revisión es independiente y las conformidades quedan enlazadas.

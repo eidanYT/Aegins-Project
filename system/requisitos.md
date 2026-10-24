@@ -1,5 +1,7 @@
 # Requisitos de misión sistema PDR y desarrollo avanzado
 
+Reparto operativo actualizado el 24 de octubre: [equipo activo y entregables](reparto_trabajo_2026-10-24.md). Los IDs PDR/ADV conservan su alcance técnico; su cobertura puede proceder de entregas compartidas. Eidan asume M5 y el modelo matemático; Shelton elabora Capella con coordinación de Eidan. Un cambio de responsable no cambia el estado de evidencia.
+
 Fuente de la línea base MIS-SRR y SYS-SRR: report inglés revisión 5, con traducción española. Las selecciones documentadas son referencias de diseño. Los criterios nuevos PDR/ADV son propuestas de aceptación del plan del 18 de octubre de 2026 y requieren revisión técnica. A análisis, I inspección, D demostración, T ensayo. No hay evidencia física nueva.
 
 ## Misión
@@ -39,11 +41,11 @@ Fuente de la línea base MIS-SRR y SYS-SRR: report inglés revisión 5, con trad
 
 El texto normativo y la evidencia exigida están en [objetivos PDR y desarrollo avanzado](../system/objetivos_pdr_y_desarrollo.md). Los IDs siguientes amplían los requisitos del SRR; no los renumeran. Registrar por ID evidencia, commit, método, resultado, versión y revisor.
 
-| ID | Resultado | Módulo y participante | Estado |
+| ID | Resultado | Referencia técnica por módulo | Estado |
 | --- | --- | --- | --- |
 | PDR-SYS-01 | Entregar el paquete PDR integrado | Eidan Ajahuana Quiroz | Criterio propuesto; evidencia pendiente |
 | PDR-SYS-02 | Gestionar decisiones y cierre por evidencia | Eidan Ajahuana Quiroz | Criterio propuesto; evidencia pendiente |
-| ADV-SYS-01 | Entregar arquitectura de sistema trazable | Eidan Ajahuana Quiroz | Criterio propuesto; evidencia pendiente |
+| ADV-SYS-01 | Entregar arquitectura de sistema trazable | Shelton Yauri Huamani; coordinación Eidan | Criterio propuesto; evidencia pendiente |
 | ADV-SYS-02 | Consolidar el expediente avanzado y la demostración final | Eidan Ajahuana Quiroz | Criterio propuesto; evidencia pendiente |
 | ADV-SYS-03 | Decidir si procede software propio e IA | Eidan Ajahuana Quiroz | Criterio propuesto; evidencia pendiente |
 | PDR-M1-01 | Definir el brazo 6R y su geometría | Nicolas Quispe Papuico | Criterio propuesto; evidencia pendiente |
@@ -68,12 +70,12 @@ El texto normativo y la evidencia exigida están en [objetivos PDR y desarrollo 
 | ADV-M4-01 | Cerrar ensamble e interfaces físicas | Shelton Yauri Huamani | Criterio propuesto; evidencia pendiente |
 | ADV-M4-02 | Evaluar respuesta a lanzamiento y elaborar la campaña de ensayo | Shelton Yauri Huamani | Criterio propuesto; evidencia pendiente |
 | ADV-M4-03 | Modelar aire, emisiones y fallos de contención | Shelton Yauri Huamani | Criterio propuesto; evidencia pendiente |
-| PDR-M5-01 | Definir control, señales y estados | Isaac Oscco Tomilla | Criterio propuesto; evidencia pendiente |
-| PDR-M5-02 | Cerrar criterio geométrico y presupuesto de error | Isaac Oscco Tomilla | Criterio propuesto; evidencia pendiente |
-| PDR-M5-03 | Dimensionar cómputo, almacenamiento y energía | Isaac Oscco Tomilla | Criterio propuesto; evidencia pendiente |
-| ADV-M5-01 | Integrar simulación de brazo extrusor y UV | Isaac Oscco Tomilla | Criterio propuesto; evidencia pendiente |
-| ADV-M5-02 | Verificar interfaces y recuperación | Isaac Oscco Tomilla | Criterio propuesto; evidencia pendiente |
-| ADV-M5-03 | Demostrar calidad y comparación de impresión | Isaac Oscco Tomilla | Criterio propuesto; evidencia pendiente |
+| PDR-M5-01 | Definir control, señales y estados | Eidan Ajahuana Quiroz | Criterio propuesto; evidencia pendiente |
+| PDR-M5-02 | Cerrar criterio geométrico y presupuesto de error | Eidan Ajahuana Quiroz | Criterio propuesto; evidencia pendiente |
+| PDR-M5-03 | Dimensionar cómputo, almacenamiento y energía | Eidan Ajahuana Quiroz | Criterio propuesto; evidencia pendiente |
+| ADV-M5-01 | Integrar simulación de brazo extrusor y UV | Eidan Ajahuana Quiroz | Criterio propuesto; evidencia pendiente |
+| ADV-M5-02 | Verificar interfaces y recuperación | Eidan Ajahuana Quiroz | Criterio propuesto; evidencia pendiente |
+| ADV-M5-03 | Demostrar calidad y comparación de impresión | Eidan Ajahuana Quiroz | Criterio propuesto; evidencia pendiente |
 
 ## Asignación de umbrales
 

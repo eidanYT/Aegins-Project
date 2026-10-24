@@ -1,6 +1,10 @@
 # M5 Control y metrología
 
-Participante de referencia: **Isaac Oscco Tomilla**. Estado de criterios nuevos: propuesta para revisión del equipo, 18 de octubre de 2026.
+## Trabajo actual
+
+Eidan lleva el modelo matemático y la factibilidad integrada, control y metrología, con apoyo del equipo. La primera geometría procede del CAD de Nicolas y Gabriel; los cálculos de cinemática y cargas son entregables diferenciados del dibujo CAD. Control y medición pueden definirse en paralelo. Véase el [reparto vigente](../../system/reparto_trabajo_2026-10-24.md). Los criterios siguientes se conservan para trazabilidad y requieren evidencia.
+
+Participante de referencia: **Eidan Ajahuana Quiroz**. Estado de criterios nuevos: propuesta para revisión del equipo, 18 de octubre de 2026.
 
 El módulo elige cómo alcanzar los resultados y aporta evidencia revisable. Interfaces: ICD-001, ICD-002, ICD-003, ICD-004 e ICD-005.
 

@@ -1,12 +1,14 @@
 # Software y estrategia de simulación
 
+Decisiones de equipo del 24 de octubre de 2026: SolidWorks es la herramienta CAD elegida; Shelton desarrolla la arquitectura en Capella. El software de simulación integrada sigue por seleccionar. Eidan lleva modelos, control y metrología; Nicolas y Gabriel aportan geometría y datos de diseño. [Reparto vigente](reparto_trabajo_2026-10-24.md).
+
 ## Software recomendado y criterio de elección
 
 La elección propuesta se debe confirmar con una prueba corta de importación del mismo CAD 6R y el mismo tramo de impresión. Comparar tiempo de preparación, soporte del brazo personalizado, orientación completa, acceso a señales, automatización, exportación y licencias disponibles. Fijar versiones compatibles y dependencias reproducibles; no se incluyen precios ni licencias supuestamente disponibles.
 
 | Necesidad | Opción propuesta | Uso y límite |
 |---|---|---|
-| CAD y planos | El CAD paramétrico con licencia y experiencia del equipo; FreeCAD puede evaluarse como alternativa | Mantener una fuente nativa, exportar STEP y propiedades de masa; comprobar que el exportador del robot conserva marcos, ejes y unidades. Elegir por el ensamble real, planos y tolerancias. |
+| CAD y planos | SolidWorks elegido por el equipo el 24 de octubre de 2026 | Mantener una fuente nativa, exportar STEP y propiedades de masa; comprobar que el exportador del robot conserva marcos, ejes y unidades. Elegir por el ensamble real, planos y tolerancias. |
 | Primera simulación de impresión robótica | RoboDK más slicer/CAM y modelo personalizado | Su documentación permite G-code y eventos de extrusor. Comprobar integración del brazo propio, postprocesador y orientación 6R; no asumir que un slicer convencional resuelve trayectorias no planas ni que el visor modele resina y curado. |
 | Integración abierta y fallos | ROS 2, MoveIt 2, ros2_control y Gazebo mediante gz_ros2_control | MoveIt planifica trayectorias con restricciones y colisiones; Gazebo permite integrar controladores y modelos. Añadir el modelo de dosificación, cordones y UV: no vienen validados para GE680. Empezar en PC; no presupone portabilidad directa a GR740. |
 | Dinámica y control con acceso institucional | MATLAB y Simulink con Simscape Multibody y Robotics System Toolbox | Importación URDF/CAD y simulación multicuerpo/control. Requiere toolboxes/licencias y revisión de propiedades importadas; el proceso de resina necesita modelo adicional. |
