@@ -1,5 +1,9 @@
 # FORGE UG AEGINS
 
+## Reparto vigente del equipo activo
+
+**[Responsabilidades y primeras entregas del 24 de octubre](system/reparto_trabajo_2026-10-24.md)**. Shelton lleva Capella; Andres, componentes y adaptaciones; Nicolas y Gabriel preparan el CAD preliminar en SolidWorks con apoyo de Eidan. Eidan lleva el modelo matemático, factibilidad integrada, control, metrología e integración del PDR. Isaac ya no participa. Los criterios por módulo se conservan como referencia técnica.
+
 Fabricación aditiva robótica en microgravedad con brazo articulado de seis ejes, extrusión de GE680 y curado UV dentro de una cámara para estación tripulada. La probeta de referencia es una bipirámide cuadrada de doce aristas de 0,05 m y ocho caras cerradas.
 
 ## Dos trabajos fundamentales

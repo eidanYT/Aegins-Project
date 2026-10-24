@@ -1,6 +1,6 @@
 # Estado técnico de M5
 
-Participante de referencia: Isaac Oscco Tomilla. La selección de referencia procede del report SRR inglés; la tabla no declara trabajo completado.
+Participante de referencia: Eidan Ajahuana Quiroz. La selección de referencia procede del report SRR inglés; la tabla no declara trabajo completado.
 
 | ID | Resultado actual | Evidencia y versión | Pendiente y criterio | Revisión |
 | --- | --- | --- | --- | --- |

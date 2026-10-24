@@ -1,5 +1,11 @@
 # Objetivos de FORGE UG para el PDR y el desarrollo avanzado
 
+## Organización vigente desde el 24 de octubre de 2026
+
+El [reparto del equipo activo](reparto_trabajo_2026-10-24.md) actualiza las responsabilidades y primeras entregas: Shelton lleva Capella e interfaces; Andres, componentes y adaptaciones; Nicolas y Gabriel, CAD preliminar con apoyo de Eidan; Eidan, modelos matemáticos, factibilidad integrada, control, metrología e integración del PDR. Isaac ya no participa.
+
+Los objetivos PDR/ADV se mantienen como criterios técnicos y se cubren con entregas compartidas, sin exigir tres paquetes nuevos por integrante. La entrega CAD describe geometría y distribución; los cálculos y simulación se desarrollan con Eidan y el apoyo de los especialistas. Capella se desarrolla desde ahora y aporta al PDR, aunque su criterio completo conserve el ID ADV-SYS-01. SolidWorks está elegido; la herramienta de simulación integrada sigue por decidir. Los estados de cumplimiento requieren evidencia.
+
 Equipo AEGINS · Brazo de seis ejes · 18 de octubre de 2026
 
 [Documento independiente en Drive](https://docs.google.com/document/d/1inMmWbgGPaS9qYh_PXo-mJs9juY8hWAyJhXr5WGR60M/edit)
@@ -18,16 +24,16 @@ Los umbrales de exactitud, rigidez, presión, fuga, dosis, temperatura, latencia
 
 ## Módulos y participantes
 
-| Módulo | Participante de referencia | Colaboración para el cierre |
+| Módulo | Referente para revisión técnica | Colaboración para el cierre |
 | --- | --- | --- |
 | M1 Movimiento y estructura del brazo | Nicolas Quispe Papuico | ICD-001, ICD-002, ICD-003 e ICD-004 |
 | M2 Material y extrusión | Gabriel Hurtado Curi | ICD-001, ICD-002, ICD-004 e ICD-005 |
 | M3 UV y térmica | Andres Zelada Solano | ICD-001, ICD-002, ICD-004 e ICD-005 |
 | M4 Cámara e integración | Shelton Yauri Huamani | ICD-002, ICD-003, ICD-004 e ICD-005 |
-| M5 Control y metrología | Isaac Oscco Tomilla | ICD-001, ICD-002, ICD-003, ICD-004 e ICD-005 |
+| M5 Control y metrología | Eidan Ajahuana Quiroz | ICD-001, ICD-002, ICD-003, ICD-004 e ICD-005 |
 | Sistemas y coordinación | Eidan Ajahuana Quiroz | Los cinco módulos y revisión independiente |
 
-La asociación de participantes procede de la tabla de responsabilidades del report inglés. La carpeta histórica de M5 conserva el nombre control_metrologia_Eidan para evitar romper enlaces; el participante de referencia actual es Isaac. Cualquier integrante puede contribuir a otro módulo y los afectados revisan sus interfaces.
+La tabla conserva las referencias de módulos con M5 actualizado a Eidan. Para las responsabilidades de ejecución y colaboración se aplica el reparto del 24 de octubre enlazado arriba. Cualquier integrante puede contribuir a otro módulo y los afectados revisan sus interfaces.
 
 ## Trabajo 1 PDR
 
@@ -60,11 +66,15 @@ Participante de referencia: Nicolas Quispe Papuico.
 
 ### PDR-M1-02 Justificar capacidad y cargas
 
+Ejecución actual: Eidan elabora el modelo matemático con la geometría de Nicolas y Gabriel y su revisión técnica.
+
 **Resultado y aceptación.** Comparación 6R frente a movimiento cartesiano para la misma tarea accesible; dimensionamiento de par continuo y pico por articulación, rigidez, holgura y cargas de base/cabezal, incluyendo gravedad de ensayo terrestre y condición orbital por separado.
 
 **Evidencia de cierre.** Memoria de cálculo y selección por eje; hipótesis de fricción, reductora y ciclo declaradas.
 
 ### PDR-M1-03 Demostrar factibilidad de trayectoria
+
+Ejecución actual: Eidan integra el análisis de trayectoria; Nicolas y Gabriel aportan CAD, marcos y datos del mecanismo.
 
 **Resultado y aceptación.** Trayectoria preliminar continua con posición y orientación completas, traslados sin extrusión, aproximaciones y salida. Identificar singularidades, colisiones y torsión finita de tubos; cualquier tramo no resuelto queda identificado, con impacto en la probeta.
 
@@ -81,6 +91,8 @@ Participante de referencia: Gabriel Hurtado Curi.
 **Evidencia de cierre.** Esquema fluídico, BOM y fichas; las variantes pendientes tienen criterio y fecha de selección.
 
 ### PDR-M2-02 Dimensionar entrega y transitorios
+
+Ejecución actual: Eidan desarrolla el modelo con apoyo de Gabriel y los datos de circuito y componentes.
 
 **Resultado y aceptación.** Derivar caudales de aristas y caras del perfil de velocidad, sección y espesor; estimar pérdidas de presión y límites del dosificador, considerando viscosidad, temperatura, compresibilidad, burbujas, arranque, parada y presión residual.
 
@@ -138,7 +150,7 @@ Participante de referencia: Shelton Yauri Huamani.
 
 ## M5 Control y metrología para el PDR
 
-Participante de referencia: Isaac Oscco Tomilla.
+Participante de referencia: Eidan Ajahuana Quiroz.
 
 ### PDR-M5-01 Definir control, señales y estados
 
@@ -243,7 +255,7 @@ Participante de referencia: Shelton Yauri Huamani.
 
 ## M5 Control y metrología en desarrollo avanzado
 
-Participante de referencia: Isaac Oscco Tomilla.
+Participante de referencia: Eidan Ajahuana Quiroz.
 
 ### ADV-M5-01 Integrar simulación de brazo extrusor y UV
 
@@ -268,6 +280,8 @@ Participante de referencia: Isaac Oscco Tomilla.
 Participante de referencia: Eidan Ajahuana Quiroz.
 
 ### ADV-SYS-01 Entregar arquitectura de sistema trazable
+
+Responsable de elaboración: Shelton Yauri Huamani. Eidan coordina la integración y la revisión del equipo. En desarrollo desde ahora y utilizable en el PDR.
 
 **Resultado y aceptación.** Modelo en Capella/Arcadia o equivalente con contexto, actores, escenarios nominales y fallos, funciones, cadenas funcionales, componentes físicos/lógicos y asignaciones de requisitos e ICD. El modelo debe concordar con CAD, software, presupuestos y riesgos.
 
@@ -310,7 +324,7 @@ La elección propuesta se debe confirmar con una prueba corta de importación de
 
 | Necesidad | Opción propuesta | Uso y límite |
 |---|---|---|
-| CAD y planos | El CAD paramétrico con licencia y experiencia del equipo; FreeCAD puede evaluarse como alternativa | Mantener una fuente nativa, exportar STEP y propiedades de masa; comprobar que el exportador del robot conserva marcos, ejes y unidades. Elegir por el ensamble real, planos y tolerancias. |
+| CAD y planos | SolidWorks elegido por el equipo el 24 de octubre de 2026 | Mantener una fuente nativa, exportar STEP y propiedades de masa; comprobar que el exportador del robot conserva marcos, ejes y unidades. Elegir por el ensamble real, planos y tolerancias. |
 | Primera simulación de impresión robótica | RoboDK más slicer/CAM y modelo personalizado | Su documentación permite G-code y eventos de extrusor. Comprobar integración del brazo propio, postprocesador y orientación 6R; no asumir que un slicer convencional resuelve trayectorias no planas ni que el visor modele resina y curado. |
 | Integración abierta y fallos | ROS 2, MoveIt 2, ros2_control y Gazebo mediante gz_ros2_control | MoveIt planifica trayectorias con restricciones y colisiones; Gazebo permite integrar controladores y modelos. Añadir el modelo de dosificación, cordones y UV: no vienen validados para GE680. Empezar en PC; no presupone portabilidad directa a GR740. |
 | Dinámica y control con acceso institucional | MATLAB y Simulink con Simscape Multibody y Robotics System Toolbox | Importación URDF/CAD y simulación multicuerpo/control. Requiere toolboxes/licencias y revisión de propiedades importadas; el proceso de resina necesita modelo adicional. |

@@ -1,5 +1,7 @@
 # Hitos del PDR y desarrollo avanzado
 
+El [reparto de trabajo del 24 de octubre](../system/reparto_trabajo_2026-10-24.md) organiza el avance paralelo de Capella, componentes, CAD y modelos. El primer hito interno es una configuración CAD preliminar compatible; la fecha de revisión se acuerda con el equipo. Se reutiliza el SRR para preparar el PDR mientras continúa el diseño.
+
 Fechas de 2026 confirmadas por Eidan el 18 de octubre de 2026. El 2027 de la agenda es un error de tipeo. No se inventan horas ni plazos oficiales distintos a los documentados.
 
 | Fecha | Hito | Criterio |
