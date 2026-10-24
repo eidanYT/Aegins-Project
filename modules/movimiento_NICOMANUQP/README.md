@@ -16,31 +16,30 @@ El módulo elige cómo alcanzar los resultados y aporta evidencia revisable. Int
 
 **Evidencia de cierre.** Memoria de cálculo y selección por eje; hipótesis de fricción, reductora y ciclo declaradas.
 
-### PDR-M1-03 Demostrar factibilidad de trayectoria
-
-**Resultado y aceptación.** Trayectoria preliminar continua con posición y orientación completas, traslados sin extrusión, aproximaciones y salida. Identificar singularidades, colisiones y torsión finita de tubos; cualquier tramo no resuelto queda identificado, con impacto en la probeta.
-
-**Evidencia de cierre.** Simulación 6R versionada, cobertura y lista de tramos factibles y pendientes; un vídeo aislado no cierra el criterio.
-
 ## Desarrollo avanzado
 
-### ADV-M1-01 Entregar CAD apto para fabricación y análisis
+### ADV-M1-01 Demostrar factibilidad de trayectoria
+
+**Resultado y aceptación.** *(Te puedo ayudar en esta parte) Trayectoria preliminar continua con posición y orientación completas, traslados sin extrusión, aproximaciones y salida. Identificar singularidades, colisiones y torsión finita de tubos; cualquier tramo no resuelto queda identificado, con impacto en la probeta.
+
+### ADV-M1-02 Entregar CAD apto para fabricación y análisis
 
 **Resultado y aceptación.** Todas las piezas y uniones del brazo y cabezal están dimensionadas; planos con datums, ajustes, tolerancias geométricas y dimensionales funcionales, materiales y acabados, BOM, masas, centros de gravedad e inercias. El presupuesto de tolerancias se propaga al TCP. Exportar nativos y STEP, además de URDF/Xacro o formato equivalente, sin perder unidades ni marcos.
 
 **Evidencia de cierre.** Planos y ensamble revisados; comparación entre CAD y modelo cinemático; cadena de tolerancias y procedimiento de calibración.
 
-### ADV-M1-02 Cerrar dinámica y elementos finitos
+### ADV-M1-03 Cerrar dinámica y elementos finitos
 
 **Resultado y aceptación.** Modelo dinámico 6R con masas e inercias del CAD, cargas de tubos y proceso; FEA estático, modal y respuesta al ambiente de lanzamiento aplicable en configuración bloqueada. Incluir contactos, tornillos, precarga, rodamientos y retención de articulaciones; demostrar convergencia y sensibilidad a rigidez y amortiguamiento.
 
 **Evidencia de cierre.** Casos reproducibles, reacciones, deformación TCP, tensiones, modos y márgenes frente a criterios acordados. Revisión con M4 y correlación física futura.
 
-### ADV-M1-03 Ejecutar movimiento de impresión verificable
+### ADV-M1-04 Ejecutar movimiento de impresión verificable
 
 **Resultado y aceptación.** Toda la secuencia aprobada de la bipirámide y una geometría adicional se ejecutan con límites articulares y de actuadores respetados, sin colisiones dentro de la resolución declarada y con holgura mínima aprobada. Se evalúan orientaciones completas, cambios de rama IK, singularidades y envolvente de tubos.
 
 **Evidencia de cierre.** Trayectoria temporizada, q1 a q6, velocidades, aceleraciones, pares, error TCP/orientación y distancia mínima; M5 integra con extrusor y UV.
+
 
 ## Registro del resultado
 
