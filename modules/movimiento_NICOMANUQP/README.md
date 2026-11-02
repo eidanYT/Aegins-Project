@@ -44,3 +44,7 @@ El módulo elige cómo alcanzar los resultados y aporta evidencia revisable. Int
 ## Registro del resultado
 
 Mantener en [propuesta](propuesta.md) las decisiones, fuentes y evidencias de cada ID. Toda cifra requiere unidades, condiciones y procedencia; los umbrales pendientes se cierran antes de declarar cumplimiento. [Requisitos comunes](../../system/requisitos.md) · [Interfaces](../../interfaces/README.md) · [Equipo](../../management/equipo.md).
+
+## Avance de Nicolas del 1 de noviembre de 2026
+
+[Índice del entregable M1 y archivos en Drive](entregas/2026-11-01_v01/README.md). Geometría conceptual 6R y documentación disponibles para revisión. Avance parcial TBR; PDR-M1-01 continúa abierto.

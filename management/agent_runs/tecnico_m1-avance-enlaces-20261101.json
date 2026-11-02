@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "profile": "tecnico",
+  "objective": "Publicar un índice del avance M1 de Nicolas y actualizar su estado parcial, manteniendo los archivos completos en Drive con sus permisos actuales.",
+  "status": "listo_revision",
+  "completed": [
+    "Índice con enlaces al informe, síntesis y paquete de Drive.",
+    "Propuesta PDR-M1-01 actualizada a avance parcial TBR, sin cierre.",
+    "Comparados main y los PR abiertos; no había PR abierto al iniciar.",
+    "Nicolas autorizó expresamente la publicación pública; se adopta su opción de enlaces a Drive para evitar duplicar archivos pesados."
+  ],
+  "pending": [
+    {
+      "item": "Revisar la geometría e interfaces; completar nativos SolidWorks y relaciones.",
+      "owner": "Nicolas con Gabriel, Andres, Shelton y Eidan",
+      "due": "Por acordar antes de integrar trayectoria PDR"
+    },
+    {
+      "item": "Reconciliar numeración de objetivos M1 entre README y requisitos.",
+      "owner": "Eidan y equipo",
+      "due": "Antes de aceptación PDR"
+    }
+  ],
+  "sources": [
+    "main 57a22ad85357ab5e66d8c61ca2fad31f79c55153; misión, requisitos, pendientes e ICD-001 a ICD-004",
+    "https://docs.google.com/document/d/1cDgifdjYNcrZxUzzIAfSseGoUWyatxJl7vDxVLU_ftY/edit",
+    "https://docs.google.com/document/d/1Vm-qlyCIlopHHRs-bQlOUls6e6rhYnCBzwKL2UXWFq0/edit"
+  ],
+  "next_action": "Revisión independiente del avance y de las interfaces; completar nativos SolidWorks y relaciones antes de solicitar cierre de PDR-M1-01.",
+  "reviewers": [
+    "Eidan eidanYT, revisión propuesta sin aprobación",
+    "Gabriel M2, Andres M3 y Shelton M4, usuarios por confirmar"
+  ],
+  "estimates": [],
+  "verified_claims": []
+}
